@@ -3,7 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sample report — Collective Research</title>
+<title>Sample Report — Collective Research</title>
+<meta name="description" content="See what a Collective Research Digital Maturity report looks like before you take part. A simulated example showing Standard, Pro and Premium report tiers.">
+<meta property="og:title" content="Sample Report — Collective Research">
+<meta property="og:description" content="A simulated example showing what your Digital Maturity benchmark report could look like across Standard, Pro and Premium tiers.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://collectiveresearch.net/sample-report.html">
+<meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://collectiveresearch.net/sample-report.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
@@ -18,7 +25,16 @@
   body { margin:0; font-family:'Inter',Helvetica,Arial,sans-serif; color:var(--charcoal); background:#fff; -webkit-font-smoothing:antialiased; }
   .page { max-width: 820px; margin: 0 auto; }
 
-  .nav { display:flex; align-items:center; justify-content:space-between; padding:24px 32px; border-bottom:1px solid var(--border); }
+  .skip-link {
+    position: absolute; top: -40px; left: 0;
+    background: var(--teal); color: #fff; padding: 8px 16px;
+    font-size: 13px; text-decoration: none;
+    border-radius: 0 0 var(--radius) 0; z-index: 200; transition: top .2s ease;
+  }
+  .skip-link:focus { top: 0; }
+
+  .site-header { border-bottom: 1px solid var(--border); }
+  nav.nav { display:flex; align-items:center; justify-content:space-between; padding:24px 32px; }
   .nav-brand { display:flex; align-items:center; gap:12px; }
   .nav-brand-name { font-size:16px; font-weight:500; }
   .nav-links { display:flex; align-items:center; gap:24px; }
@@ -43,7 +59,6 @@
   h2 { font-size: 19px; font-weight: 500; margin: 0; }
   .tier-desc { font-size: 13px; color: var(--gray-text); margin: 8px 0 28px; line-height: 1.7; }
 
-  /* Score summary card */
   .score-card {
     display: flex; align-items: center; gap: 24px;
     border: 1px solid var(--border); border-radius: var(--radius);
@@ -53,18 +68,14 @@
   .score-big span { font-size: 14px; color: var(--gray-faint); font-weight: 400; }
   .score-note { font-size: 13px; color: var(--gray-text); line-height: 1.7; }
 
-  /* Bar chart */
   .bars { margin-bottom: 28px; }
   .bar-row { margin-bottom: 18px; }
   .bar-label-row { display:flex; justify-content:space-between; align-items:baseline; margin-bottom: 6px; }
   .bar-label { font-size: 13px; font-weight: 500; }
   .bar-values { font-size: 12px; color: var(--gray-faint); }
   .bar-track { position: relative; height: 10px; background: var(--bg-track); border-radius: 6px; }
-  .bar-fill { position: absolute; left:0; top:0; height:100%; background: var(--teal); border-radius: 6px; transition: width .6s ease; }
-  .bar-marker {
-    position: absolute; top: -4px; width: 2px; height: 18px;
-    background: var(--charcoal); border-radius: 1px;
-  }
+  .bar-fill { position: absolute; left:0; top:0; height:100%; background: var(--teal); border-radius: 6px; }
+  .bar-marker { position: absolute; top: -4px; width: 2px; height: 18px; background: var(--charcoal); border-radius: 1px; }
   .bar-marker.purple { background: var(--purple); }
   .bar-marker.teal-light { background: var(--teal-light-1); }
 
@@ -73,29 +84,22 @@
   .legend-swatch { width: 12px; height: 12px; border-radius: 3px; }
   .legend-line { width: 2px; height: 12px; }
 
-  /* Commentary */
-  .commentary {
-    border-left: 3px solid var(--teal); padding: 4px 0 4px 16px; margin-bottom: 28px;
-  }
+  .commentary { border-left: 3px solid var(--teal); padding: 4px 0 4px 16px; margin-bottom: 28px; }
   .commentary p { font-size: 13px; color: var(--gray-text); line-height: 1.75; margin: 0 0 10px; }
   .commentary p:last-child { margin-bottom: 0; }
 
-  /* Table */
   table { width: 100%; border-collapse: collapse; font-size: 13px; margin-bottom: 28px; }
   th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--border); }
-  th { font-weight: 500; color: var(--charcoal); font-size: 12px; text-transform: uppercase; letter-spacing: 0.03em; color: var(--gray-faint); }
+  th { font-weight: 500; font-size: 12px; text-transform: uppercase; letter-spacing: 0.03em; color: var(--gray-faint); }
   td { color: var(--gray-text); }
   td.highlight { color: var(--charcoal); font-weight: 500; }
 
-  /* Recommendations */
   .rec-list { display: flex; flex-direction: column; gap: 14px; }
-  .rec {
-    display: flex; gap: 14px; border: 1px solid var(--border); border-radius: var(--radius); padding: 16px;
-  }
+  .rec { display: flex; gap: 14px; border: 1px solid var(--border); border-radius: var(--radius); padding: 16px; }
   .rec-icon {
     flex-shrink: 0; width: 28px; height: 28px; border-radius: 50%;
     background: #F3F1FF; color: var(--purple); display:flex; align-items:center; justify-content:center;
-    font-size: 13px; font-weight: 500;
+    font-size: 13px; font-weight: 500; aria-hidden: true;
   }
   .rec h3 { font-size: 13px; font-weight: 500; margin: 0 0 4px; }
   .rec p { font-size: 13px; color: var(--gray-text); margin: 0; line-height: 1.7; }
@@ -103,11 +107,12 @@
   .back-link { display:inline-block; margin-top:8px; font-size:13px; color:var(--teal); text-decoration:none; font-weight:500; }
   .back-link:hover { text-decoration: underline; }
 
-  .footer { padding: 28px 32px; text-align: center; border-top: 1px solid var(--border); }
-  .footer p { font-size: 12px; color: var(--gray-faint); line-height: 1.6; margin: 0; }
+  .site-footer { border-top: 1px solid var(--border); }
+  .footer-inner { padding: 28px 32px; text-align: center; }
+  .footer-inner p { font-size: 12px; color: var(--gray-faint); line-height: 1.6; margin: 0; }
 
   @media (max-width: 640px) {
-    .nav, .content, .footer { padding-left: 20px; padding-right: 20px; }
+    nav.nav, .content, .footer-inner { padding-left: 20px; padding-right: 20px; }
     .nav-links { gap: 14px; }
     .score-card { flex-direction: column; align-items: flex-start; gap: 8px; }
     table { font-size: 12px; }
@@ -116,181 +121,185 @@
 </style>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 <div class="page">
 
-  <div class="nav">
-    <div class="nav-brand">
-      <svg width="24" height="24" viewBox="0 0 56 56" aria-hidden="true">
-        <polygon points="24,11 36.4,19.98 31.64,34.52 16.36,34.52 11.64,19.98" fill="none" stroke="#1D9E75" stroke-width="2" stroke-linejoin="round" opacity="0.45"/>
-        <line x1="24" y1="11" x2="24" y2="24" stroke="#AFA9EC" stroke-width="2" opacity="0.7"/>
-        <line x1="36.4" y1="19.98" x2="24" y2="24" stroke="#AFA9EC" stroke-width="2" opacity="0.7"/>
-        <line x1="31.64" y1="34.52" x2="24" y2="24" stroke="#AFA9EC" stroke-width="2" opacity="0.7"/>
-        <line x1="16.36" y1="34.52" x2="24" y2="24" stroke="#AFA9EC" stroke-width="2" opacity="0.7"/>
-        <line x1="11.64" y1="19.98" x2="24" y2="24" stroke="#AFA9EC" stroke-width="2" opacity="0.7"/>
-        <line x1="31.64" y1="34.52" x2="43" y2="46" stroke="#2C2C2A" stroke-width="5" stroke-linecap="round"/>
-        <circle cx="24" cy="11" r="4" fill="#1D9E75"/>
-        <circle cx="36.4" cy="19.98" r="4" fill="#5DCAA5"/>
-        <circle cx="31.64" cy="34.52" r="4" fill="#1D9E75"/>
-        <circle cx="16.36" cy="34.52" r="4" fill="#9FE1CB"/>
-        <circle cx="11.64" cy="19.98" r="4" fill="#9FE1CB"/>
-        <circle cx="24" cy="24" r="3.5" fill="#7F77DD"/>
-      </svg>
-      <span class="nav-brand-name">Collective Research</span>
-    </div>
-    <div class="nav-links">
-      <a href="pricing.html">Pricing</a>
-      <a href="how-it-works.html">How it works</a>
-      <a href="index.html">Home</a>
-    </div>
-  </div>
-
-  <div class="content">
-    <p class="eyebrow">Sample report</p>
-    <h1>What your report could look like</h1>
-    <p class="lede">Below is a simulated example for a fictional participant — "Acme Manufacturing" — showing what each report tier includes. Real reports use the same format, built from actual survey data.</p>
-    <div class="disclaimer">
-      <strong>Sample data only.</strong> All scores, company names, sample sizes and figures on this page are illustrative and do not reflect any real study or company.
-    </div>
-
-    <!-- STANDARD -->
-    <div class="tier-section">
-      <div class="tier-header">
-        <h2>Standard report</h2>
-        <span class="tier-badge">Standard</span>
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <div class="nav-brand">
+        <svg width="24" height="24" viewBox="0 0 56 56" aria-hidden="true" focusable="false">
+          <polygon points="24,11 36.4,19.98 31.64,34.52 16.36,34.52 11.64,19.98" fill="none" stroke="#1D9E75" stroke-width="2" stroke-linejoin="round" opacity="0.45"/>
+          <line x1="24" y1="11" x2="24" y2="24" stroke="#AFA9EC" stroke-width="2" opacity="0.7"/>
+          <line x1="36.4" y1="19.98" x2="24" y2="24" stroke="#AFA9EC" stroke-width="2" opacity="0.7"/>
+          <line x1="31.64" y1="34.52" x2="24" y2="24" stroke="#AFA9EC" stroke-width="2" opacity="0.7"/>
+          <line x1="16.36" y1="34.52" x2="24" y2="24" stroke="#AFA9EC" stroke-width="2" opacity="0.7"/>
+          <line x1="11.64" y1="19.98" x2="24" y2="24" stroke="#AFA9EC" stroke-width="2" opacity="0.7"/>
+          <line x1="31.64" y1="34.52" x2="43" y2="46" stroke="#2C2C2A" stroke-width="5" stroke-linecap="round"/>
+          <circle cx="24" cy="11" r="4" fill="#1D9E75"/>
+          <circle cx="36.4" cy="19.98" r="4" fill="#5DCAA5"/>
+          <circle cx="31.64" cy="34.52" r="4" fill="#1D9E75"/>
+          <circle cx="16.36" cy="34.52" r="4" fill="#9FE1CB"/>
+          <circle cx="11.64" cy="19.98" r="4" fill="#9FE1CB"/>
+          <circle cx="24" cy="24" r="3.5" fill="#7F77DD"/>
+        </svg>
+        <span class="nav-brand-name">Collective Research</span>
       </div>
-      <p class="tier-desc">Your Digital Maturity Snapshot, plus how you compare to the overall average across all participants.</p>
+      <div class="nav-links">
+        <a href="pricing.html">Pricing</a>
+        <a href="how-it-works.html">How it works</a>
+        <a href="index.html">Home</a>
+      </div>
+    </nav>
+  </header>
 
-      <div class="score-card">
-        <div class="score-big">3.3<span> / 5</span></div>
-        <div class="score-note">Acme Manufacturing's overall Digital Maturity score — slightly above the all-participant average of 3.2.</div>
+  <main id="main-content">
+    <div class="content">
+      <p class="eyebrow">Sample report</p>
+      <h1>What your report could look like</h1>
+      <p class="lede">Below is a simulated example for a fictional participant, "Acme Manufacturing", showing what each report tier includes. Real reports use the same format, built from actual survey data.</p>
+      <div class="disclaimer" role="note">
+        <strong>Sample data only.</strong> All scores, company names, sample sizes and figures on this page are illustrative and do not reflect any real study or company.
       </div>
 
-      <div class="bars">
-        <div class="bar-row">
-          <div class="bar-label-row"><span class="bar-label">Strategy &amp; leadership</span><span class="bar-values">You: 3.8 · Average: 3.2</span></div>
-          <div class="bar-track"><div class="bar-fill" style="width:76%;"></div><div class="bar-marker" style="left:64%;"></div></div>
+      <section aria-labelledby="standard-heading" class="tier-section">
+        <div class="tier-header">
+          <h2 id="standard-heading">Standard report</h2>
+          <span class="tier-badge">Standard</span>
         </div>
-        <div class="bar-row">
-          <div class="bar-label-row"><span class="bar-label">Technology &amp; data</span><span class="bar-values">You: 2.6 · Average: 3.1</span></div>
-          <div class="bar-track"><div class="bar-fill" style="width:52%;"></div><div class="bar-marker" style="left:62%;"></div></div>
-        </div>
-        <div class="bar-row">
-          <div class="bar-label-row"><span class="bar-label">Processes &amp; operations</span><span class="bar-values">You: 3.4 · Average: 3.0</span></div>
-          <div class="bar-track"><div class="bar-fill" style="width:68%;"></div><div class="bar-marker" style="left:60%;"></div></div>
-        </div>
-        <div class="bar-row">
-          <div class="bar-label-row"><span class="bar-label">Organization &amp; culture</span><span class="bar-values">You: 3.0 · Average: 3.3</span></div>
-          <div class="bar-track"><div class="bar-fill" style="width:60%;"></div><div class="bar-marker" style="left:66%;"></div></div>
-        </div>
-        <div class="bar-row">
-          <div class="bar-label-row"><span class="bar-label">Customer experience</span><span class="bar-values">You: 4.1 · Average: 3.4</span></div>
-          <div class="bar-track"><div class="bar-fill" style="width:82%;"></div><div class="bar-marker" style="left:68%;"></div></div>
-        </div>
-        <div class="bar-row">
-          <div class="bar-label-row"><span class="bar-label">People &amp; talent</span><span class="bar-values">You: 2.9 · Average: 3.2</span></div>
-          <div class="bar-track"><div class="bar-fill" style="width:58%;"></div><div class="bar-marker" style="left:64%;"></div></div>
-        </div>
-      </div>
+        <p class="tier-desc">Your Digital Maturity Snapshot, plus how you compare to the overall average across all participants.</p>
 
-      <div class="legend">
-        <div class="legend-item"><span class="legend-swatch" style="background:var(--teal);"></span> Your score</div>
-        <div class="legend-item"><span class="legend-line" style="background:var(--charcoal);"></span> All-participant average (N=47)</div>
-      </div>
+        <div class="score-card">
+          <div class="score-big" aria-label="Score: 3.3 out of 5">3.3<span> / 5</span></div>
+          <div class="score-note">Acme Manufacturing's overall Digital Maturity score, slightly above the all-participant average of 3.2.</div>
+        </div>
 
-      <div class="commentary">
-        <p><strong>What this means:</strong> Acme is ahead of average in Customer Experience and Strategy &amp; Leadership — strong foundations to build on. Technology &amp; Data and People &amp; Talent are the two areas furthest below average, and likely where effort would have the most impact.</p>
-      </div>
-    </div>
-
-    <!-- PRO -->
-    <div class="tier-section">
-      <div class="tier-header">
-        <h2>Pro report</h2>
-        <span class="tier-badge pro">Pro</span>
-      </div>
-      <p class="tier-desc">Everything in Standard, plus comparison to companies in your sector and of your size — so you know who you're really being compared to.</p>
-
-      <div class="bars">
-        <div class="bar-row">
-          <div class="bar-label-row"><span class="bar-label">Technology &amp; data</span><span class="bar-values">You: 2.6 · Manufacturing: 2.8 · 51&ndash;200 employees: 3.0</span></div>
-          <div class="bar-track">
-            <div class="bar-fill" style="width:52%;"></div>
-            <div class="bar-marker purple" style="left:56%;"></div>
-            <div class="bar-marker teal-light" style="left:60%;"></div>
+        <div class="bars" aria-label="Dimension scores">
+          <div class="bar-row">
+            <div class="bar-label-row"><span class="bar-label">Strategy &amp; leadership</span><span class="bar-values">You: 3.8 · Average: 3.2</span></div>
+            <div class="bar-track"><div class="bar-fill" style="width:76%;"></div><div class="bar-marker" style="left:64%;" aria-hidden="true"></div></div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label-row"><span class="bar-label">Technology &amp; data</span><span class="bar-values">You: 2.6 · Average: 3.1</span></div>
+            <div class="bar-track"><div class="bar-fill" style="width:52%;"></div><div class="bar-marker" style="left:62%;" aria-hidden="true"></div></div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label-row"><span class="bar-label">Processes &amp; operations</span><span class="bar-values">You: 3.4 · Average: 3.0</span></div>
+            <div class="bar-track"><div class="bar-fill" style="width:68%;"></div><div class="bar-marker" style="left:60%;" aria-hidden="true"></div></div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label-row"><span class="bar-label">Organization &amp; culture</span><span class="bar-values">You: 3.0 · Average: 3.3</span></div>
+            <div class="bar-track"><div class="bar-fill" style="width:60%;"></div><div class="bar-marker" style="left:66%;" aria-hidden="true"></div></div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label-row"><span class="bar-label">Customer experience</span><span class="bar-values">You: 4.1 · Average: 3.4</span></div>
+            <div class="bar-track"><div class="bar-fill" style="width:82%;"></div><div class="bar-marker" style="left:68%;" aria-hidden="true"></div></div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label-row"><span class="bar-label">People &amp; talent</span><span class="bar-values">You: 2.9 · Average: 3.2</span></div>
+            <div class="bar-track"><div class="bar-fill" style="width:58%;"></div><div class="bar-marker" style="left:64%;" aria-hidden="true"></div></div>
           </div>
         </div>
-        <div class="bar-row">
-          <div class="bar-label-row"><span class="bar-label">People &amp; talent</span><span class="bar-values">You: 2.9 · Manufacturing: 3.0 · 51&ndash;200 employees: 3.1</span></div>
-          <div class="bar-track">
-            <div class="bar-fill" style="width:58%;"></div>
-            <div class="bar-marker purple" style="left:60%;"></div>
-            <div class="bar-marker teal-light" style="left:62%;"></div>
+
+        <div class="legend" aria-hidden="true">
+          <div class="legend-item"><span class="legend-swatch" style="background:var(--teal);"></span> Your score</div>
+          <div class="legend-item"><span class="legend-line" style="background:var(--charcoal);"></span> All-participant average (N=47)</div>
+        </div>
+
+        <div class="commentary">
+          <p><strong>What this means:</strong> Acme is ahead of average in Customer Experience and Strategy &amp; Leadership, strong foundations to build on. Technology &amp; Data and People &amp; Talent are the two areas furthest below average, and likely where effort would have the most impact.</p>
+        </div>
+      </section>
+
+      <section aria-labelledby="pro-heading" class="tier-section">
+        <div class="tier-header">
+          <h2 id="pro-heading">Pro report</h2>
+          <span class="tier-badge pro">Pro</span>
+        </div>
+        <p class="tier-desc">Everything in Standard, plus comparison to companies in your sector and of your size, so you know who you're really being compared to.</p>
+
+        <div class="bars">
+          <div class="bar-row">
+            <div class="bar-label-row"><span class="bar-label">Technology &amp; data</span><span class="bar-values">You: 2.6 · Manufacturing: 2.8 · 51-200 employees: 3.0</span></div>
+            <div class="bar-track">
+              <div class="bar-fill" style="width:52%;"></div>
+              <div class="bar-marker purple" style="left:56%;" aria-hidden="true"></div>
+              <div class="bar-marker teal-light" style="left:60%;" aria-hidden="true"></div>
+            </div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label-row"><span class="bar-label">People &amp; talent</span><span class="bar-values">You: 2.9 · Manufacturing: 3.0 · 51-200 employees: 3.1</span></div>
+            <div class="bar-track">
+              <div class="bar-fill" style="width:58%;"></div>
+              <div class="bar-marker purple" style="left:60%;" aria-hidden="true"></div>
+              <div class="bar-marker teal-light" style="left:62%;" aria-hidden="true"></div>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="legend">
-        <div class="legend-item"><span class="legend-swatch" style="background:var(--teal);"></span> Your score</div>
-        <div class="legend-item"><span class="legend-line" style="background:var(--purple);"></span> Manufacturing sector average (N=9)</div>
-        <div class="legend-item"><span class="legend-line" style="background:var(--teal-light-1);"></span> 51&ndash;200 employees average (N=14)</div>
-      </div>
+        <div class="legend" aria-hidden="true">
+          <div class="legend-item"><span class="legend-swatch" style="background:var(--teal);"></span> Your score</div>
+          <div class="legend-item"><span class="legend-line" style="background:var(--purple);"></span> Manufacturing sector average (N=9)</div>
+          <div class="legend-item"><span class="legend-line" style="background:var(--teal-light-1);"></span> 51-200 employees average (N=14)</div>
+        </div>
 
-      <div class="commentary">
-        <p><strong>What this means:</strong> Acme's Technology &amp; Data score looks low against the full sample, but it's much closer to other manufacturers — this is a sector-wide pattern, not just an Acme issue. People &amp; Talent follows a similar pattern: close to peers, but with room to grow versus larger companies in the size band.</p>
-      </div>
+        <div class="commentary">
+          <p><strong>What this means:</strong> Acme's Technology &amp; Data score looks low against the full sample, but it's much closer to other manufacturers. This is a sector-wide pattern, not just an Acme issue. People &amp; Talent follows a similar pattern: close to peers, but with room to grow versus larger companies in the size band.</p>
+        </div>
+      </section>
+
+      <section aria-labelledby="premium-heading" class="tier-section">
+        <div class="tier-header">
+          <h2 id="premium-heading">Premium report</h2>
+          <span class="tier-badge premium">Premium</span>
+        </div>
+        <p class="tier-desc">Everything in Pro, plus access to the underlying anonymized dataset for your own custom comparisons, and tailored recommendations.</p>
+
+        <table>
+          <thead>
+            <tr><th scope="col">Comparison group</th><th scope="col">N</th><th scope="col">Avg. Technology &amp; Data score</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>All participants</td><td>47</td><td>3.1</td></tr>
+            <tr><td>Manufacturing sector</td><td>9</td><td>2.8</td></tr>
+            <tr><td>51-200 employees</td><td>14</td><td>3.0</td></tr>
+            <tr><td class="highlight">Manufacturing + 51-200 employees</td><td class="highlight">6</td><td class="highlight">2.7</td></tr>
+          </tbody>
+        </table>
+
+        <ol class="rec-list" style="list-style:none;padding:0;margin:0;">
+          <li class="rec">
+            <div class="rec-icon" aria-hidden="true">1</div>
+            <div>
+              <h3>Start with a data inventory</h3>
+              <p>Technology &amp; Data is Acme's lowest-scoring area (2.6/5). Companies at a similar stage typically begin by mapping where customer and operations data currently lives, before investing in new tools.</p>
+            </div>
+          </li>
+          <li class="rec">
+            <div class="rec-icon" aria-hidden="true">2</div>
+            <div>
+              <h3>Build a lightweight digital skills routine</h3>
+              <p>Peer companies that scored higher in People &amp; Talent (3.0-3.1) commonly run short, regular digital-skills sessions rather than one-off training events.</p>
+            </div>
+          </li>
+          <li class="rec">
+            <div class="rec-icon" aria-hidden="true">3</div>
+            <div>
+              <h3>Use Customer Experience as an internal example</h3>
+              <p>Acme scores well above average here (4.1/5). The practices behind this strength may be a useful internal reference point for improving other areas.</p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <a class="back-link" href="pricing.html">&larr; Back to pricing</a>
     </div>
+  </main>
 
-    <!-- PREMIUM -->
-    <div class="tier-section">
-      <div class="tier-header">
-        <h2>Premium report</h2>
-        <span class="tier-badge premium">Premium</span>
-      </div>
-      <p class="tier-desc">Everything in Pro, plus access to the underlying anonymized dataset for your own custom comparisons, and tailored recommendations.</p>
-
-      <table>
-        <thead>
-          <tr><th>Comparison group</th><th>N</th><th>Avg. Technology &amp; Data score</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>All participants</td><td>47</td><td>3.1</td></tr>
-          <tr><td>Manufacturing sector</td><td>9</td><td>2.8</td></tr>
-          <tr><td>51&ndash;200 employees</td><td>14</td><td>3.0</td></tr>
-          <tr><td class="highlight">Manufacturing + 51&ndash;200 employees</td><td class="highlight">6</td><td class="highlight">2.7</td></tr>
-        </tbody>
-      </table>
-
-      <div class="rec-list">
-        <div class="rec">
-          <div class="rec-icon">1</div>
-          <div>
-            <h3>Start with a data inventory</h3>
-            <p>Technology &amp; Data is Acme's lowest-scoring area (2.6/5). Companies at a similar stage typically begin by mapping where customer and operations data currently lives, before investing in new tools.</p>
-          </div>
-        </div>
-        <div class="rec">
-          <div class="rec-icon">2</div>
-          <div>
-            <h3>Build a lightweight digital skills routine</h3>
-            <p>Peer companies that scored higher in People &amp; Talent (3.0&ndash;3.1) commonly run short, regular digital-skills sessions rather than one-off training events.</p>
-          </div>
-        </div>
-        <div class="rec">
-          <div class="rec-icon">3</div>
-          <div>
-            <h3>Use Customer Experience as an internal example</h3>
-            <p>Acme scores well above average here (4.1/5). The practices behind this strength may be a useful internal reference point for improving other areas.</p>
-          </div>
-        </div>
-      </div>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>Collective Research is an independent research initiative. Your data is never shared individually, only used in aggregate, anonymized form for benchmarking. &nbsp;·&nbsp; <a href="privacy.html" style="color: var(--gray-faint);">Privacy policy</a></p>
     </div>
-
-    <a class="back-link" href="pricing.html">&larr; Back to pricing</a>
-  </div>
-
-  <div class="footer">
-    <p>Collective Research is an independent research initiative. Your data is never shared individually — only used in aggregate, anonymized form for benchmarking.</p>
-  </div>
+  </footer>
 
 </div>
 </body>
