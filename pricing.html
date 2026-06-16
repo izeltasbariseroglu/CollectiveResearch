@@ -24,38 +24,64 @@
   body { margin:0; font-family:'Inter',Helvetica,Arial,sans-serif; color:var(--charcoal); background:#fff; -webkit-font-smoothing:antialiased; }
   .page { max-width: 880px; margin: 0 auto; }
 
+  .site-header {
+    position: sticky; top: 0; z-index: 100;
+    background: #fff; border-bottom: 1px solid var(--border);
+    transition: box-shadow .3s ease;
+  }
+  .site-header.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,0.07); }
+  nav.nav {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 20px 32px; transition: padding .3s ease;
+  }
+  .site-header.scrolled nav.nav { padding: 12px 32px; }
+  .nav-brand-link { display: flex; align-items: center; gap: 14px; text-decoration: none; color: inherit; }
+  .nav-logo { width: 36px; height: 36px; flex-shrink: 0; transition: width .3s ease, height .3s ease; }
+  .site-header.scrolled .nav-logo { width: 26px; height: 26px; }
+  .nav-brand-text { display: flex; flex-direction: column; gap: 3px; }
+  .nav-brand-name { font-size: 18px; font-weight: 500; line-height: 1; transition: font-size .3s ease; }
+  .site-header.scrolled .nav-brand-name { font-size: 15px; }
+  .nav-tagline {
+    font-size: 11px; color: var(--gray-faint); font-style: italic; line-height: 1;
+    max-height: 16px; opacity: 1; overflow: hidden;
+    transition: opacity .25s ease, max-height .3s ease;
+  }
+  .site-header.scrolled .nav-tagline { opacity: 0; max-height: 0; }
+  .nav-links { display: flex; align-items: center; gap: 4px; }
+  .nav-links a {
+    font-size: 13px; color: var(--gray-text); text-decoration: none;
+    padding: 6px 12px; border-radius: 6px; position: relative;
+    transition: color .15s ease, background .15s ease;
+  }
+  .nav-links a:hover { color: var(--charcoal); background: #FAF9F6; }
+  .nav-links a[aria-current="page"] { color: var(--charcoal); font-weight: 500; background: #FAF9F6; }
+  .nav-links a[aria-current="page"]::after {
+    content: ''; position: absolute; bottom: 3px; left: 12px; right: 12px;
+    height: 2px; background: var(--teal); border-radius: 1px;
+  }
+  .site-footer { border-top: 1px solid var(--border); }
+  .footer-inner { padding: 28px 32px; text-align: center; }
+  .footer-inner p { font-size: 12px; color: var(--gray-faint); line-height: 1.6; margin: 0; }
   .skip-link {
-    position: absolute; top: -40px; left: 0;
-    background: var(--teal); color: #fff; padding: 8px 16px;
-    font-size: 13px; text-decoration: none;
+    position: absolute; top: -40px; left: 0; background: var(--teal); color: #fff;
+    padding: 8px 16px; font-size: 13px; text-decoration: none;
     border-radius: 0 0 var(--radius) 0; z-index: 200; transition: top .2s ease;
   }
   .skip-link:focus { top: 0; }
-
-  .site-header { border-bottom: 1px solid var(--border); }
-  nav.nav { display:flex; align-items:center; justify-content:space-between; padding:24px 32px; }
-  .nav-brand { display:flex; align-items:center; gap:12px; }
-  .nav-brand-name { font-size:16px; font-weight:500; }
-  .nav-links { display:flex; align-items:center; gap:24px; }
-  .nav-links a { font-size:13px; color:var(--gray-text); text-decoration:none; transition: color .15s ease; }
-  .nav-links a:hover { color: var(--teal); }
+  @media (max-width: 640px) {
+    nav.nav, .footer-inner { padding-left: 20px; padding-right: 20px; }
+    .nav-tagline { display: none; }
+    .nav-links a { padding: 6px 8px; font-size: 12px; }
+  }
 
   .content { padding: 56px 32px; }
   h1 { font-size: 30px; font-weight: 500; margin: 0 0 12px; text-align:center; }
   .lede { font-size: 15px; color: var(--gray-text); line-height: 1.7; max-width: 560px; margin: 0 auto 48px; text-align:center; }
-
-  .tiers { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 48px; }
-  .tier {
-    border: 1px solid var(--border); border-radius: var(--radius);
-    padding: 24px; display: flex; flex-direction: column;
-  }
+  .tiers { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 48px; }
+  .tier { border: 1px solid var(--border); border-radius: var(--radius); padding: 24px; display: flex; flex-direction: column; }
   .tier.featured { border-color: var(--teal); box-shadow: 0 6px 24px rgba(29,158,117,0.08); }
   .tier-name { font-size: 13px; font-weight: 500; color: var(--teal); text-transform: uppercase; letter-spacing: 0.04em; margin: 0 0 8px; }
-  .tier-badge {
-    display: inline-block; font-size: 11px; font-weight: 500;
-    color: #fff; background: var(--teal); border-radius: 999px;
-    padding: 3px 10px; margin-bottom: 10px; letter-spacing: 0.03em;
-  }
+  .tier-badge { display: inline-block; font-size: 11px; font-weight: 500; color: #fff; background: var(--teal); border-radius: 999px; padding: 3px 10px; margin-bottom: 10px; letter-spacing: 0.03em; }
   .tier-price { font-size: 28px; font-weight: 500; margin: 0 0 4px; }
   .tier-price span { font-size: 13px; font-weight: 400; color: var(--gray-faint); }
   .tier-desc { font-size: 13px; color: var(--gray-text); margin: 0 0 16px; line-height: 1.6; }
@@ -63,67 +89,38 @@
   .tier li { font-size: 13px; color: var(--gray-text); line-height: 1.7; margin-bottom: 6px; }
   .tier-cta {
     display: block; width: 100%; font-family: inherit; font-size: 13px; font-weight: 500;
-    padding: 10px 16px; border-radius: var(--radius); cursor: pointer;
-    text-align: center; text-decoration: none;
-    border: 1px solid var(--border); background: #fff; color: var(--gray-text);
-    transition: background .15s ease, border-color .15s ease, color .15s ease;
-    margin-top: auto;
+    padding: 10px 16px; border-radius: var(--radius); cursor: pointer; text-align: center;
+    text-decoration: none; border: 1px solid var(--border); background: #fff; color: var(--gray-text);
+    transition: background .15s ease, border-color .15s ease, color .15s ease; margin-top: auto;
   }
   .tier-cta:hover { background: var(--bg-soft); border-color: var(--teal); color: var(--teal); }
-  .tier.featured .tier-cta {
-    background: var(--teal); color: #fff; border-color: var(--teal);
-  }
+  .tier.featured .tier-cta { background: var(--teal); color: #fff; border-color: var(--teal); }
   .tier.featured .tier-cta:hover { background: #178a64; }
-
-  .discount-box {
-    background: var(--bg-soft); border: 1px solid var(--border); border-radius: var(--radius);
-    padding: 28px; margin-bottom: 40px;
-  }
+  .discount-box { background: var(--bg-soft); border: 1px solid var(--border); border-radius: var(--radius); padding: 28px; margin-bottom: 40px; }
   .discount-box h2 { font-size: 16px; font-weight: 500; margin: 0 0 16px; }
   .discount-row { display: flex; gap: 16px; align-items: flex-start; margin-bottom: 14px; }
   .discount-row:last-child { margin-bottom: 0; }
-  .discount-pill {
-    flex-shrink: 0; font-size: 13px; font-weight: 500; color: #fff; background: var(--teal);
-    border-radius: 999px; padding: 4px 12px; white-space: nowrap;
-  }
+  .discount-pill { flex-shrink: 0; font-size: 13px; font-weight: 500; color: #fff; background: var(--teal); border-radius: 999px; padding: 4px 12px; white-space: nowrap; }
   .discount-row p { font-size: 13px; color: var(--gray-text); margin: 0; line-height: 1.7; }
-
-  .archive {
-    border: 1px solid var(--border); border-radius: var(--radius);
-    padding: 24px; margin-bottom: 40px;
-    display: flex; justify-content: space-between; align-items: center; gap: 16px;
-  }
+  .archive { border: 1px solid var(--border); border-radius: var(--radius); padding: 24px; margin-bottom: 40px; display: flex; justify-content: space-between; align-items: center; gap: 16px; }
   .archive h2 { font-size: 15px; font-weight: 500; margin: 0 0 6px; }
   .archive p { font-size: 13px; color: var(--gray-text); margin: 0; line-height: 1.7; max-width: 480px; }
   .archive-price { font-size: 22px; font-weight: 500; flex-shrink: 0; }
   .archive-price span { font-size: 12px; font-weight: 400; color: var(--gray-faint); display: block; }
-
-  .note {
-    background: var(--bg-soft); border: 1px solid var(--border); border-radius: var(--radius);
-    padding: 16px 18px; font-size: 13px; color: var(--gray-text); line-height: 1.7;
-  }
+  .note { background: var(--bg-soft); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px 18px; font-size: 13px; color: var(--gray-text); line-height: 1.7; }
   .back-link { display:inline-block; margin-top:24px; font-size:13px; color:var(--teal); text-decoration:none; font-weight:500; }
   .back-link:hover { text-decoration: underline; }
-
-  .site-footer { border-top: 1px solid var(--border); }
-  .footer-inner { padding: 28px 32px; text-align: center; }
-  .footer-inner p { font-size: 12px; color: var(--gray-faint); line-height: 1.6; margin: 0; }
-
-  @media (max-width: 640px) {
-    nav.nav, .content, .footer-inner { padding-left: 20px; padding-right: 20px; }
-    .tiers { grid-template-columns: 1fr; }
-    .archive { flex-direction: column; align-items: flex-start; }
-  }
+  @media (max-width: 640px) { .content { padding-left: 20px; padding-right: 20px; } .tiers { grid-template-columns: 1fr; } .archive { flex-direction: column; align-items: flex-start; } }
 </style>
 </head>
 <body>
 <a class="skip-link" href="#main-content">Skip to main content</a>
 <div class="page">
 
-  <header class="site-header">
+  <header class="site-header" id="site-header">
     <nav class="nav" aria-label="Main navigation">
-      <div class="nav-brand">
-        <svg width="24" height="24" viewBox="0 0 56 56" aria-hidden="true" focusable="false">
+      <a class="nav-brand-link" href="index.html">
+        <svg class="nav-logo" viewBox="0 0 56 56" aria-hidden="true" focusable="false">
           <polygon points="24,11 36.4,19.98 31.64,34.52 16.36,34.52 11.64,19.98" fill="none" stroke="#1D9E75" stroke-width="2" stroke-linejoin="round" opacity="0.45"/>
           <line x1="24" y1="11" x2="24" y2="24" stroke="#AFA9EC" stroke-width="2" opacity="0.7"/>
           <line x1="36.4" y1="19.98" x2="24" y2="24" stroke="#AFA9EC" stroke-width="2" opacity="0.7"/>
@@ -138,12 +135,17 @@
           <circle cx="11.64" cy="19.98" r="4" fill="#9FE1CB"/>
           <circle cx="24" cy="24" r="3.5" fill="#7F77DD"/>
         </svg>
-        <span class="nav-brand-name">Collective Research</span>
-      </div>
+        <div class="nav-brand-text">
+          <span class="nav-brand-name">Collective Research</span>
+          <span class="nav-tagline">Shared strength. Sharper insight. Smarter strategy.</span>
+        </div>
+      </a>
       <div class="nav-links">
-        <a href="how-it-works.html">How it works</a>
-        <a href="privacy.html">Privacy</a>
         <a href="index.html">Home</a>
+        <a href="how-it-works.html">How it works</a>
+        <a href="pricing.html" aria-current="page">Pricing</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="support.html">Support</a>
       </div>
     </nav>
   </header>
@@ -151,10 +153,23 @@
   <main id="main-content">
     <div class="content">
       <h1>Reports &amp; pricing</h1>
-      <p class="lede">Your Digital Maturity Snapshot is included for every participant, right after the survey. The reports below are the more detailed benchmark reports, available once a study closes. <a href="sample-report.html" style="color: var(--teal); font-weight: 500;">See a sample report &rarr;</a></p>
+      <p class="lede">Every participant receives a free Digital Maturity Snapshot the moment they complete the survey. The reports below go further, with peer benchmarking by sector, size, and more. <a href="sample-report.html" style="color: var(--teal); font-weight: 500;">See a sample report &rarr;</a></p>
 
       <section aria-label="Report tiers">
         <div class="tiers">
+          <div class="tier tier-free">
+            <div class="tier-name" style="color: var(--charcoal);">Free</div>
+            <div class="tier-price">$0<span> always</span></div>
+            <p class="tier-desc">Included for every participant, no purchase required.</p>
+            <ul>
+              <li>Complete the survey (10&ndash;15 minutes)</li>
+              <li>Receive your Digital Maturity Snapshot immediately</li>
+              <li>Scores across all dimensions we measure</li>
+              <li>Plain-language summary of your strengths and gaps</li>
+              <li>No credit card, no sales call, no obligation</li>
+            </ul>
+            <a href="index.html#notify-form" class="tier-cta" style="background: var(--charcoal); color: #fff; border-color: var(--charcoal);">Get notified at launch</a>
+          </div>
           <div class="tier">
             <div class="tier-name">Standard</div>
             <div class="tier-price">$399</div>
@@ -166,7 +181,6 @@
             </ul>
             <a href="index.html#notify-form" class="tier-cta">Join the study to purchase</a>
           </div>
-
           <div class="tier featured">
             <div class="tier-badge">Most popular</div>
             <div class="tier-name">Pro</div>
@@ -180,7 +194,6 @@
             </ul>
             <a href="index.html#notify-form" class="tier-cta">Join the study to purchase</a>
           </div>
-
           <div class="tier">
             <div class="tier-name">Premium</div>
             <div class="tier-price">$999</div>
@@ -197,14 +210,8 @@
 
       <section class="discount-box" aria-label="Participant discounts">
         <h2>Discounts for participants</h2>
-        <div class="discount-row">
-          <div class="discount-pill">-30%</div>
-          <p>Anyone who completes the survey gets 30% off any report tier above, for the study they took part in.</p>
-        </div>
-        <div class="discount-row">
-          <div class="discount-pill">-10% more</div>
-          <p>If more than 5 people from your organization complete the survey (e.g. across different departments), you get an additional 10% off, up to 40% total.</p>
-        </div>
+        <div class="discount-row"><div class="discount-pill">-30%</div><p>Anyone who completes the survey gets 30% off any report tier above, for the study they took part in.</p></div>
+        <div class="discount-row"><div class="discount-pill">-10% more</div><p>If more than 5 people from your organization complete the survey (e.g. across different departments), you get an additional 10% off, up to 40% total.</p></div>
       </section>
 
       <section class="archive" aria-label="Past study reports">
@@ -232,7 +239,14 @@
       <p>Collective Research is an independent research initiative. Your data is never shared individually, only used in aggregate, anonymized form for benchmarking. &nbsp;·&nbsp; <a href="privacy.html" style="color: var(--gray-faint);">Privacy policy</a></p>
     </div>
   </footer>
-
 </div>
+<script>
+  (function() {
+    var header = document.getElementById('site-header');
+    window.addEventListener('scroll', function () {
+      header.classList.toggle('scrolled', window.scrollY > 24);
+    }, { passive: true });
+  })();
+</script>
 </body>
 </html>
