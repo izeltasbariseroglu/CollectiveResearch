@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How it works — Collective Research</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --teal: #1D9E75;
+    --teal-light-1: #5DCAA5;
+    --teal-light-2: #9FE1CB;
+    --purple: #7F77DD;
+    --purple-light: #AFA9EC;
+    --charcoal: #2C2C2A;
+    --gray-text: #6B6A65;
+    --gray-faint: #9C9A92;
+    --border: #E7E5DE;
+    --bg-soft: #FAF9F6;
+    --radius: 10px;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: 'Inter', Helvetica, Arial, sans-serif;
+    color: var(--charcoal);
+    background: #FFFFFF;
+    -webkit-font-smoothing: antialiased;
+  }
+  .page { max-width: 760px; margin: 0 auto; }
+
+  .nav {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 24px 32px; border-bottom: 1px solid var(--border);
+  }
+  .nav-brand { display: flex; align-items: center; gap: 12px; }
+  .nav-brand-name { font-size: 16px; font-weight: 500; }
+  .nav a { font-size: 13px; color: var(--gray-text); text-decoration: none; }
+  .nav a:hover { color: var(--teal); }
+
+  .content { padding: 56px 32px; }
+  h1 { font-size: 30px; font-weight: 500; line-height: 1.3; margin: 0 0 12px; }
+  .lede { font-size: 15px; color: var(--gray-text); line-height: 1.7; max-width: 560px; margin: 0 0 48px; }
+
+  section { margin-bottom: 48px; }
+  h2 { font-size: 18px; font-weight: 500; margin: 0 0 12px; }
+  p { font-size: 14px; line-height: 1.75; color: var(--gray-text); margin: 0 0 12px; }
+  .eyebrow {
+    font-size: 12px; letter-spacing: 0.06em; color: var(--teal);
+    text-transform: uppercase; margin: 0 0 8px; font-weight: 500;
+  }
+
+  /* Timeline */
+  .timeline { border-left: 2px solid var(--border); padding-left: 24px; display: flex; flex-direction: column; gap: 24px; }
+  .timeline-item { position: relative; }
+  .timeline-item::before {
+    content: ''; position: absolute; left: -29px; top: 4px;
+    width: 10px; height: 10px; border-radius: 50%; background: var(--teal);
+  }
+  .timeline-item h3 { font-size: 14px; font-weight: 500; margin: 0 0 4px; }
+  .timeline-item p { margin: 0; }
+
+  /* Cards */
+  .cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+  .card {
+    border: 1px solid var(--border); border-radius: var(--radius);
+    padding: 20px; background: var(--bg-soft);
+  }
+  .card h3 { font-size: 14px; font-weight: 500; margin: 0 0 8px; }
+  .card p { margin: 0; font-size: 13px; }
+
+  .back-link {
+    display: inline-block; margin-top: 8px; font-size: 13px;
+    color: var(--teal); text-decoration: none; font-weight: 500;
+  }
+  .back-link:hover { text-decoration: underline; }
+
+  .footer {
+    padding: 28px 32px; text-align: center; border-top: 1px solid var(--border);
+  }
+  .footer p { font-size: 12px; color: var(--gray-faint); line-height: 1.6; margin: 0; }
+
+  @media (max-width: 640px) {
+    .nav, .content, .footer { padding-left: 20px; padding-right: 20px; }
+    .cards { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="nav">
+    <div class="nav-brand">
+      <svg width="24" height="24" viewBox="0 0 56 56" aria-hidden="true">
+        <polygon points="24,11 36.4,19.98 31.64,34.52 16.36,34.52 11.64,19.98" fill="none" stroke="#1D9E75" stroke-width="2" stroke-linejoin="round" opacity="0.45"/>
+        <line x1="24" y1="11" x2="24" y2="24" stroke="#AFA9EC" stroke-width="2" opacity="0.7"/>
+        <line x1="36.4" y1="19.98" x2="24" y2="24" stroke="#AFA9EC" stroke-width="2" opacity="0.7"/>
+        <line x1="31.64" y1="34.52" x2="24" y2="24" stroke="#AFA9EC" stroke-width="2" opacity="0.7"/>
+        <line x1="16.36" y1="34.52" x2="24" y2="24" stroke="#AFA9EC" stroke-width="2" opacity="0.7"/>
+        <line x1="11.64" y1="19.98" x2="24" y2="24" stroke="#AFA9EC" stroke-width="2" opacity="0.7"/>
+        <line x1="31.64" y1="34.52" x2="43" y2="46" stroke="#2C2C2A" stroke-width="5" stroke-linecap="round"/>
+        <circle cx="24" cy="11" r="4" fill="#1D9E75"/>
+        <circle cx="36.4" cy="19.98" r="4" fill="#5DCAA5"/>
+        <circle cx="31.64" cy="34.52" r="4" fill="#1D9E75"/>
+        <circle cx="16.36" cy="34.52" r="4" fill="#9FE1CB"/>
+        <circle cx="11.64" cy="19.98" r="4" fill="#9FE1CB"/>
+        <circle cx="24" cy="24" r="3.5" fill="#7F77DD"/>
+      </svg>
+      <span class="nav-brand-name">Collective Research</span>
+    </div>
+    <div class="nav-links" style="display:flex; align-items:center; gap:24px;">
+      <a href="pricing.html">Pricing</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="index.html">Back to home</a>
+    </div>
+  </div>
+
+  <div class="content">
+    <h1>How it works</h1>
+    <p class="lede">Collective Research runs transparent, collaborative benchmark studies. Here's exactly what that means — how a study runs, what you get in return for taking part, and how your data is handled.</p>
+
+    <section>
+      <p class="eyebrow">Our vision</p>
+      <h2>An honest picture, for every company</h2>
+      <p>We believe every company — not just those with large consulting budgets — deserves a clear, honest view of where it stands in its digital journey, measured against real peers rather than guesswork or generic industry claims.</p>
+    </section>
+
+    <section>
+      <p class="eyebrow">Our mission</p>
+      <h2>Built together, useful for everyone</h2>
+      <p>Each study works the same way: companies contribute a small amount of information about themselves, and in return receive a personalized summary of their own results. As more companies take part, everyone's picture gets richer — including yours.</p>
+    </section>
+
+    <section>
+      <p class="eyebrow">The process</p>
+      <h2>How a study runs, step by step</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>1. Early access</h3>
+          <p>You sign up to be notified. This costs nothing and doesn't commit you to anything.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>2. Launch</h3>
+          <p>Once enough companies have signed up, we announce a launch: how many companies are already on board, and a clear survey window (around 30 days).</p>
+        </div>
+        <div class="timeline-item">
+          <h3>3. Survey window (~30 days)</h3>
+          <p>You complete a confidential 10–15 minute survey about your organization. Immediately afterwards, you receive your own Digital Maturity Snapshot — a summary of your results.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>4. Full report (~45 days from launch)</h3>
+          <p>Once the survey window closes, we compile the complete peer-benchmarked report from all participants and make it available to you.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <p class="eyebrow">What you get</p>
+      <h2>Free, immediate, and growing over time</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Your Snapshot</h3>
+          <p>Included for every participant, right after the survey: your own scores across the key dimensions we measure.</p>
+        </div>
+        <div class="card">
+          <h3>The Benchmark Report</h3>
+          <p>A more detailed report comparing you to similar companies by sector and size, available to participants at a reduced price once the study closes. Reports are delivered once payment is received.</p>
+        </div>
+        <div class="card">
+          <h3>Past studies</h3>
+          <p>As Collective Research runs more studies on different topics, anonymized findings from earlier studies become available to browse.</p>
+        </div>
+        <div class="card">
+          <h3>A say in what's next</h3>
+          <p>Participants help shape future surveys — this is version one, and feedback genuinely changes what we ask and how we report it.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <p class="eyebrow">Data &amp; privacy</p>
+      <h2>What we collect, and what we don't</h2>
+      <p>We don't need personal information to run these studies — organizational, operational information about your company is enough. Your individual responses are never shared with anyone else, including other participants. Only anonymized, aggregated data is used to build benchmarks and reports.</p>
+    </section>
+
+    <section>
+      <p class="eyebrow">Methodology</p>
+      <h2>Built on established research, openly improved</h2>
+      <p>Our surveys are built from established, widely studied frameworks for digital maturity — not invented from scratch. Methodology is reviewed by independent academic and industry advisors, and each study is treated as a version: feedback from participants directly shapes the next one.</p>
+    </section>
+
+    <section>
+      <p class="eyebrow">Who's involved</p>
+      <h2>Companies, advisors, and independent experts</h2>
+      <p>Most participants are companies taking part in a study. Alongside them, academic researchers help review our methodology, and independent consultants are sometimes available if a company wants support in an area highlighted by their results — this is a connection we help make, not an endorsement or certification of any individual or firm.</p>
+    </section>
+
+    <a class="back-link" href="index.html">&larr; Back to home</a>
+  </div>
+
+  <div class="footer">
+    <p>Collective Research is an independent research initiative. Your data is never shared individually — only used in aggregate, anonymized form for benchmarking.</p>
+  </div>
+
+</div>
+</body>
+</html>
