@@ -11,6 +11,15 @@ window.I18n = function() {
     'it': 'Italiano'
   };
   this.rtlLanguages = ['ar', 'he', 'fa'];
+  this.htmlTranslationKeys = new Set([
+    'homepage.ctaNote',
+    'pricing.noteText',
+    'privacy.section1Item1',
+    'privacy.section1Item2',
+    'privacy.section5Text',
+    'privacy.section6Text',
+    'privacy.section8Text'
+  ]);
   
   this.init = function(translations) {
     this.strings = translations;
@@ -25,7 +34,13 @@ window.I18n = function() {
     elements.forEach(el => {
       const key = el.getAttribute('data-i18n');
       const value = this.getString(key, lang);
-      if (value) el.textContent = value;
+      if (value) {
+        if (this.htmlTranslationKeys.has(key)) {
+          el.innerHTML = value;
+        } else {
+          el.textContent = value;
+        }
+      }
     });
     const placeholders = document.querySelectorAll('[data-i18n-placeholder]');
     placeholders.forEach(el => {
