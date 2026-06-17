@@ -37,12 +37,46 @@ body {
   color: var(--charcoal);
   background: #fff;
   -webkit-font-smoothing: antialiased;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* ── Typography ─────────────────────────────── */
+h1 {
+  font-size: 42px;
+  font-weight: 500;
+  line-height: 1.2;
+  margin: 0 0 20px;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.3;
+  margin: 0 0 16px;
+  letter-spacing: -0.01em;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.3;
+  margin: 0 0 12px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.7;
+  margin: 0 0 16px;
+  color: var(--gray-text);
 }
 
 /* ── Page wrapper ───────────────────────────── */
 .page {
   max-width: var(--page-width);
   margin: 0 auto;
+  padding: 0 32px;
 }
 
 /* ── Skip link ──────────────────────────────── */
@@ -116,6 +150,237 @@ nav.nav {
   height: 3px; background: var(--teal); border-radius: 2px;
 }
 
+/* ── Buttons ─────────────────────────────────── */
+button,
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: inherit;
+  border-radius: var(--radius);
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all .15s ease;
+}
+
+button.primary,
+.button.primary {
+  background: var(--teal);
+  color: #fff;
+}
+
+button.primary:hover,
+.button.primary:hover {
+  background: #178a64;
+  transform: translateY(-1px);
+}
+
+button.primary:active,
+.button.primary:active {
+  transform: scale(0.98);
+}
+
+button.secondary,
+.button.secondary {
+  background: transparent;
+  color: var(--charcoal);
+  border: 1px solid var(--border);
+}
+
+button.secondary:hover,
+.button.secondary:hover {
+  background: var(--bg-soft);
+  border-color: var(--charcoal);
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none !important;
+}
+
+/* ── Forms ─────────────────────────────────── */
+input[type="email"],
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 15px;
+  font-family: inherit;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: #fff;
+  color: var(--charcoal);
+  transition: border-color .15s ease, box-shadow .15s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--teal);
+  box-shadow: 0 0 0 3px rgba(29, 158, 117, 0.2);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--gray-faint);
+}
+
+.form-container {
+  max-width: 540px;
+  margin: 0 auto;
+}
+
+.form-field {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--charcoal);
+  margin-bottom: 8px;
+}
+
+.error-message {
+  color: #E53E3E;
+  font-size: 13px;
+  margin-top: 6px;
+  min-height: 18px;
+}
+
+.note {
+  font-size: 13px;
+  color: var(--gray-faint);
+  margin-top: 12px;
+  text-align: center;
+}
+
+.note a {
+  color: var(--teal);
+  text-decoration: none;
+}
+
+.note a:hover {
+  text-decoration: underline;
+}
+
+/* ── Steps Component ───────────────────────────── */
+.steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+  margin: 40px 0;
+}
+
+.step {
+  text-align: center;
+  padding: 24px;
+}
+
+.step-num {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--teal);
+  color: #fff;
+  font-size: 24px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+}
+
+.step p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--gray-text);
+}
+
+/* ── Quote ─────────────────────────────────── */
+.quote {
+  font-size: 18px;
+  font-style: italic;
+  color: var(--gray-text);
+  max-width: 680px;
+  margin: 32px auto;
+  line-height: 1.6;
+}
+
+/* ── Modal ─────────────────────────────────── */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1001;
+}
+
+.modal-content {
+  position: relative;
+  background: #fff;
+  border-radius: var(--radius);
+  padding: 32px;
+  max-width: 480px;
+  width: 100%;
+  z-index: 1002;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.modal-sub {
+  font-size: 15px;
+  color: var(--gray-text);
+  margin-bottom: 24px;
+}
+
+.modal-buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.modal-buttons button {
+  flex: 1;
+}
+
+/* ── Animations ───────────────────────────────── */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade {
+  animation: fadeIn 0.6s ease forwards;
+  opacity: 0;
+}
+
 /* ── Footer ─────────────────────────────────── */
 .site-footer { border-top: 1px solid var(--border); }
 .footer-inner { padding: 28px 32px; text-align: center; }
@@ -125,13 +390,41 @@ nav.nav {
 
 /* ── Mobile ─────────────────────────────────── */
 @media (max-width: 640px) {
+  .page {
+    padding: 0 20px;
+  }
+  
+  h1 {
+    font-size: 32px;
+  }
+  
+  h2 {
+    font-size: 24px;
+  }
+  
+  .steps {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  
   nav.nav, .footer-inner { padding-left: 20px; padding-right: 20px; }
   .nav-tagline { display: none; }
   .nav-links a { padding: 6px 8px; font-size: 12px; }
+  
+  .modal-content {
+    padding: 24px;
+  }
+  
+  .modal-buttons {
+    flex-direction: column;
+  }
 }
 
 /* ── Tablet ─────────────────────────────────── */
 @media (min-width: 641px) and (max-width: 1024px) {
+  .page {
+    padding: 0 24px;
+  }
   nav.nav, .footer-inner { padding-left: 24px; padding-right: 24px; }
 }
 
