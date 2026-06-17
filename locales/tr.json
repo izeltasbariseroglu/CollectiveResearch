@@ -362,21 +362,21 @@
         "text44": "Collective Research bağımsız bir araştırma girişimidir. Verileriniz asla bireysel olarak paylaşılmaz — yalnızca kıyaslama amacıyla toplu ve anonimleştirilmiş formatta kullanılır."
     },
     "privacyPage": {
-        "text1": "Last updated: June 2026",
-        "text2": "We don't need, and don't ask for, personal information to run our studies. The information we collect falls into two categories:",
-        "text3": "Your own survey responses are used to generate your personal Digital Maturity Snapshot and, later, your Benchmark Report. Beyond that, your individual responses are combined with everyone else's, anonymized, and aggregated to build the overall benchmark. No individual company's answers are ever shown to, or identifiable by, anyone else.",
-        "text4": "Your own results are visible only to you.",
-        "text5": "Aggregated, anonymized statistics (covering many companies) appear in benchmark reports and may be shared publicly or sold as research findings.",
-        "text6": "We do not sell or share your individual responses, contact details, or company-identifiable data with any third party.",
-        "text7": "Data is stored on servers located within the European Union. Access is limited to those operating Collective Research, and reasonable technical safeguards (encryption in transit, access controls) are used to protect it.",
-        "text8": "Contact details (for early access updates) are kept until you ask us to remove them, or until the related study concludes, whichever is sooner. Survey responses are kept for as long as needed to generate your report and contribute to aggregate benchmarks; once anonymized and aggregated, individual responses are not retained in identifiable form.",
-        "text9": "As Collective Research develops, this policy may be updated. We'll note the date of the latest update at the top of this page."
+        "text1": "Son güncelleme: Haziran 2026",
+        "text2": "Araştırmalarımızı yürütmek amacıyla kişisel verilere ihtiyaç duymamakta ve bu yönde bir talepte bulunmamaktayız. Elde ettiğimiz veriler temel olarak iki kategori altında sınıflandırılmaktadır:",
+        "text3": "Kendi anket yanıtlarınız, öncelikle kişisel Dijital Olgunluk Profilinizi (Snapshot) ve sonrasında Kıyaslama Raporunuzu oluşturmak amacıyla kullanılmaktadır. Bunun ötesinde, bireysel yanıtlarınız diğer tüm katılımcıların verileriyle birleştirilmekte, anonimleştirilmekte ve genel kıyaslama modelini oluşturmak üzere konsolide edilmektedir. Hiçbir kurumun bireysel yanıtları başka bir tarafla paylaşılmamakta ve tanımlanabilir bir formatta sunulmamaktadır.",
+        "text4": "Bireysel sonuçlarınız yalnızca sizin erişiminize açıktır.",
+        "text5": "Konsolide edilmiş ve anonimleştirilmiş istatistiksel veriler (geniş bir kurum yelpazesini kapsayacak şekilde) kıyaslama raporlarında yer almakta olup; kamuoyuyla paylaşılabilir veya araştırma bulguları olarak ticari amaçla sunulabilir.",
+        "text6": "Bireysel yanıtlarınızı, iletişim bilgilerinizi veya kurumunuzu tanımlayıcı nitelikteki hiçbir veriyi üçüncü şahıslarla paylaşmamakta veya satmamaktayız.",
+        "text7": "Veriler, Avrupa Birliği sınırları içerisinde yer alan sunucularda muhafaza edilmektedir. Veri erişimi, yalnızca Collective Research operasyonlarını yürüten yetkililerle sınırlandırılmış olup; verilerin korunması amacıyla makul ve güncel teknik güvenlik önlemleri (veri iletiminde şifreleme, katı erişim kontrolleri) uygulanmaktadır.",
+        "text8": "Erken erişim bilgilendirmeleri için toplanan iletişim bilgileri, silinmesini talep ettiğiniz tarihe veya ilgili araştırmanın tamamlanmasına kadar (hangisi daha önce gerçekleşirse) saklanmaktadır. Anket yanıtları ise raporunuzun oluşturulması ve genel kıyaslama modellerine katkı sağlaması için gereken süre boyunca muhafaza edilir; anonimleştirilip konsolide edildikten sonra, bireysel yanıtlar hiçbir şekilde tanımlanabilir bir formatta tutulmaz.",
+        "text9": "Collective Research faaliyet alanını ve hizmetlerini geliştirdikçe, bu gizlilik politikası güncellenebilir. En güncel revizyon tarihi, her zaman bu sayfanın en üst kısmında belirtilecektir."
     },
     "termsPage": {},
     "cookiePage": {},
     "cookiesPage": {},
     "notFound": {
-        "text1": "Page not found",
-        "text2": "We couldn't find what you're looking for."
+        "text1": "Sayfa bulunamadı",
+        "text2": "Aradığınız içeriğe şu anda ulaşılamamaktadır."
     }
 }

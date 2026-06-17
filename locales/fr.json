@@ -360,5 +360,23 @@
         "text42": "Faire de l'Expérience Client une référence interne",
         "text43": "Acme surperforme la moyenne sur cette dimension (8.2/10). Les pratiques qui sous-tendent cette réussite peuvent constituer un cas d'usage interne pertinent pour optimiser les autres pôles.",
         "text44": "Collective Research est une initiative de recherche indépendante. Vos données ne sont jamais partagées individuellement — elles sont exclusivement exploitées sous forme agrégée et anonymisée à des fins de benchmarking."
+    },
+    "privacyPage": {
+        "text1": "Dernière mise à jour : Juin 2026",
+        "text2": "Nous ne requérons ni ne sollicitons aucune donnée à caractère personnel pour la réalisation de nos études. Les informations que nous collectons s'articulent autour de deux catégories :",
+        "text3": "Vos réponses à l'enquête sont exploitées afin de générer votre Bilan de Maturité Numérique personnalisé et, par la suite, votre Rapport de Benchmarking. Au-delà de cet usage, vos réponses individuelles sont consolidées avec celles de l'ensemble des participants, anonymisées et agrégées pour constituer le référentiel global. Les réponses d'une entreprise donnée ne sont en aucun cas exposées ni identifiables par des tiers.",
+        "text4": "Vos résultats spécifiques demeurent strictement confidentiels et ne sont accessibles que par vous.",
+        "text5": "Les statistiques agrégées et anonymisées (portant sur un large panel d'entreprises) figurent au sein des rapports de benchmarking et sont susceptibles d'être publiées ou commercialisées en tant que résultats d'études.",
+        "text6": "Nous ne cédons ni ne partageons vos réponses individuelles, vos coordonnées ou toute donnée susceptible d'identifier votre entreprise avec des tiers.",
+        "text7": "Les données sont hébergées sur des serveurs situés au sein de l'Union européenne. Leur accès est strictement restreint aux collaborateurs de Collective Research, et des mesures de sécurité techniques appropriées (chiffrement des transferts, contrôles d'accès) sont mises en œuvre pour en garantir la protection.",
+        "text8": "Vos coordonnées (utilisées pour les notifications en accès anticipé) sont conservées jusqu'à ce que vous formuliez une demande de suppression, ou jusqu'à la clôture de l'étude concernée, selon la première échéance. Les réponses à l'enquête sont conservées pour la durée nécessaire à la génération de votre rapport et à leur intégration aux benchmarks agrégés ; une fois la procédure d'anonymisation et d'agrégation achevée, les réponses individuelles ne sont plus conservées sous une forme identifiable.",
+        "text9": "Dans le cadre du développement de Collective Research, la présente politique est susceptible d'évoluer. La date de la dernière mise à jour figurera systématiquement en haut de cette page."
+    },
+    "termsPage": {},
+    "cookiePage": {},
+    "cookiesPage": {},
+    "notFound": {
+        "text1": "Page introuvable",
+        "text2": "La ressource que vous recherchez est introuvable."
     }
 }

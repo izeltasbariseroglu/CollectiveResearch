@@ -362,21 +362,21 @@
         "text44": "Collective Research ist eine unabhängige Forschungsinitiative. Ihre Daten werden niemals individuell weitergegeben – die Nutzung erfolgt ausschließlich in aggregierter und anonymisierter Form für tiefgreifendes Benchmarking."
     },
     "privacyPage": {
-        "text1": "Last updated: June 2026",
-        "text2": "We don't need, and don't ask for, personal information to run our studies. The information we collect falls into two categories:",
-        "text3": "Your own survey responses are used to generate your personal Digital Maturity Snapshot and, later, your Benchmark Report. Beyond that, your individual responses are combined with everyone else's, anonymized, and aggregated to build the overall benchmark. No individual company's answers are ever shown to, or identifiable by, anyone else.",
-        "text4": "Your own results are visible only to you.",
-        "text5": "Aggregated, anonymized statistics (covering many companies) appear in benchmark reports and may be shared publicly or sold as research findings.",
-        "text6": "We do not sell or share your individual responses, contact details, or company-identifiable data with any third party.",
-        "text7": "Data is stored on servers located within the European Union. Access is limited to those operating Collective Research, and reasonable technical safeguards (encryption in transit, access controls) are used to protect it.",
-        "text8": "Contact details (for early access updates) are kept until you ask us to remove them, or until the related study concludes, whichever is sooner. Survey responses are kept for as long as needed to generate your report and contribute to aggregate benchmarks; once anonymized and aggregated, individual responses are not retained in identifiable form.",
-        "text9": "As Collective Research develops, this policy may be updated. We'll note the date of the latest update at the top of this page."
+        "text1": "Letzte Aktualisierung: Juni 2026",
+        "text2": "Für die Durchführung unserer Studien erheben wir keine personenbezogenen Daten. Die von uns erfassten Informationen gliedern sich in zwei Kernkategorien:",
+        "text3": "Ihre spezifischen Evaluationsdaten dienen der Generierung Ihres individuellen Digital Maturity Snapshots und im weiteren Verlauf der Erstellung Ihres Benchmark-Reports. Darüber hinaus werden Ihre Antworten mit dem Gesamtpanel konsolidiert, vollständig anonymisiert und aggregiert, um den Gesamt-Benchmark zu modellieren. Zu keinem Zeitpunkt sind einzelne Unternehmensprofile für Dritte einsehbar oder rückverfolgbar.",
+        "text4": "Ihre individuellen Auswertungsergebnisse sind exklusiv für Sie zugänglich.",
+        "text5": "Aggregierte und anonymisierte statistische Daten (basierend auf der breiten Masse der Teilnehmer) fließen in Benchmark-Reports ein und können publiziert oder als Marktforschungsergebnisse vertrieben werden.",
+        "text6": "Wir garantieren, dass Ihre individuellen Antworten, Kontaktdaten oder unternehmensidentifizierenden Metriken unter keinen Umständen an Dritte veräußert oder weitergegeben werden.",
+        "text7": "Sämtliche Daten werden auf Servern innerhalb der Europäischen Union gehostet. Der Zugriff ist strikt auf das autorisierte Personal von Collective Research limitiert. Wir implementieren modernste technische Sicherheitsmaßnahmen (End-to-End-Verschlüsselung, restriktive Zugriffskontrollen), um höchste Datensicherheit zu gewährleisten.",
+        "text8": "Kontaktdaten (für Early-Access-Kommunikation) werden bis zu Ihrem aktiven Widerruf oder bis zum Abschluss der jeweiligen Studie aufbewahrt – je nachdem, welches Ereignis früher eintritt. Evaluationsdaten werden solange vorgehalten, wie sie zur Generierung Ihres Reports und zur Validierung der aggregierten Benchmarks erforderlich sind. Nach erfolgter Anonymisierung und Aggregation werden individuelle Datensätze unwiderruflich aus dem identifizierbaren Format gelöscht.",
+        "text9": "Im Zuge der konzeptionellen Weiterentwicklung von Collective Research behalten wir uns Anpassungen dieser Richtlinie vor. Das Datum der letzten inhaltlichen Änderung wird stets prominent am Anfang dieses Dokuments ausgewiesen."
     },
     "termsPage": {},
     "cookiePage": {},
     "cookiesPage": {},
     "notFound": {
-        "text1": "Page not found",
-        "text2": "We couldn't find what you're looking for."
+        "text1": "Ressource nicht gefunden",
+        "text2": "Die von Ihnen angeforderte Seite konnte in unserem System nicht lokalisiert werden."
     }
 }
