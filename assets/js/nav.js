@@ -81,11 +81,11 @@
   function initializeI18n() {
     if (typeof window.i18n === 'undefined') return;
     Promise.all([
-      fetch('en.json').then(function(r){ return r.json(); }).catch(function(){ return {}; }),
-      fetch('tr.json').then(function(r){ return r.json(); }).catch(function(){ return {}; }),
-      fetch('de.json').then(function(r){ return r.json(); }).catch(function(){ return {}; }),
-      fetch('fr.json').then(function(r){ return r.json(); }).catch(function(){ return {}; }),
-      fetch('it.json').then(function(r){ return r.json(); }).catch(function(){ return {}; })
+      fetch('locales/en.json').then(function(r){ return r.json(); }).catch(function(){ return {}; }),
+      fetch('locales/tr.json').then(function(r){ return r.json(); }).catch(function(){ return {}; }),
+      fetch('locales/de.json').then(function(r){ return r.json(); }).catch(function(){ return {}; }),
+      fetch('locales/fr.json').then(function(r){ return r.json(); }).catch(function(){ return {}; }),
+      fetch('locales/it.json').then(function(r){ return r.json(); }).catch(function(){ return {}; })
     ]).then(function(results) {
       window.i18n.init({
         en: results[0],
@@ -111,7 +111,7 @@
     initializeI18n();
   } else {
     var i18nScript = document.createElement('script');
-    i18nScript.src = 'i18n.js';
+    i18nScript.src = 'assets/js/i18n.js';
     i18nScript.onload = initializeI18n;
     document.head.appendChild(i18nScript);
   }
