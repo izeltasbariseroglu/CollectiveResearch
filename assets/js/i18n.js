@@ -11,18 +11,6 @@ window.I18n = function() {
     'it': 'Italiano'
   };
   this.rtlLanguages = ['ar', 'he', 'fa'];
-  this.htmlTranslationKeys = new Set([
-    'homepage.ctaNote',
-    'pricing.noteText',
-    'privacy.section1Item1',
-    'privacy.section1Item2',
-    'privacy.section5Text',
-    'privacy.section6Text',
-    'privacy.section8Text',
-    'form.consent',
-    'form.consentModal'
-  ]);
-  
   this.init = function(translations) {
     this.strings = translations;
     let saved = 'en';
@@ -42,7 +30,7 @@ window.I18n = function() {
       const key = el.getAttribute('data-i18n');
       const value = this.getString(key, lang);
       if (value) {
-        if (this.htmlTranslationKeys.has(key)) {
+        if (value.includes('<') && value.includes('>')) {
           el.innerHTML = value;
         } else {
           el.textContent = value;

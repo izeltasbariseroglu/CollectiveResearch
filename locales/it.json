@@ -19,7 +19,7 @@
         "languageLabel": "Lingua",
         "support": "Supporto",
         "terms": "Termini di servizio",
-        "cookie": "Cookie policy"
+        "cookie": "Informativa sui cookie"
     },
     "homepage": {
         "heroTitle": "Come si posiziona la maturità digitale della vostra organizzazione rispetto al benchmark di settore?",
@@ -164,7 +164,7 @@
         "archiveTitle": "Archivio Report Storici",
         "archiveDesc": "Alla chiusura dello studio, il report consolidato è acquistabile da qualsiasi entità, indipendentemente dalla partecipazione alla rilevazione. Include macro-trend e benchmark globali, escludendo posizionamenti aziendali specifici.",
         "archivePrice": "$299",
-        "archivePricePer": "per report",
+        "archivePricePer": "per ciascun report",
         "noteText": "Le tariffe indicate si intendono al netto degli oneri fiscali applicabili (es. IVA). In ottemperanza alle normative giurisdizionali, le imposte verranno calcolate al checkout o gestite tramite reverse charge, previa conferma prima della transazione.<br><br>La partecipazione all'assessment è a titolo gratuito e l'Istantanea di Maturità Digitale rimane acquisita. L'erogazione dei report Standard, Pro e Premium è subordinata alla ricezione del pagamento.<br><br>Il pricing riflette le condizioni applicabili al primo studio e potrebbe subire revisioni preliminari al lancio. Le agevolazioni per i partecipanti sono garantite sui report dello studio di pertinenza.",
         "text1": "L'Istantanea di Maturità Digitale è inclusa per tutti i partecipanti a completamento dell'assessment. I report dettagliati di seguito includono benchmark granulari per settore e dimensione. <a href=\"sample-report.html\" style=\"color: var(--teal); font-weight: 500;\">Visualizza un estratto del report →</a>",
         "text2": "sempre",
@@ -192,10 +192,10 @@
         "text24": "Qualora più di 5 risorse della medesima organizzazione completino l'assessment, si applica un'ulteriore riduzione del 10%, fino a un massimale del 40%.",
         "text25": "Archivio Report Storici",
         "text26": "Alla chiusura dello studio, il report consolidato è acquistabile da chiunque, indipendentemente dalla partecipazione. Include macro-trend e benchmark globali, escludendo posizionamenti aziendali specifici.",
-        "text27": "per report"
+        "text27": "per ciascun report"
     },
     "privacy": {
-        "pageTitle": "Privacy policy",
+        "pageTitle": "Informativa sulla privacy",
         "lastUpdated": "Ultimo aggiornamento: Giugno 2026 - Draft per accesso anticipato",
         "section1Title": "1. Dati oggetto di raccolta",
         "section1Text": "Gli studi non prevedono la rilevazione di dati personali. Le informazioni acquisite si articolano in due macro-categorie:",
@@ -310,7 +310,7 @@
         "section1Title": "1. Condizioni Generali"
     },
     "cookie": {
-        "title": "Cookie Policy",
+        "title": "Informativa sui cookie",
         "intro": "Ultimo aggiornamento: Giugno 2026",
         "section1Text": "I cookie sono file di testo archiviati sul dispositivo dell'utente dai server del sito web. Ogni cookie è univoco per il browser web in uso, al fine di ottimizzare l'esperienza di navigazione e l'erogazione del servizio.",
         "section1Title": "1. Definizione di Cookie"
