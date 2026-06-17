@@ -1,109 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Pricing - Collective Research</title>
-  <meta property="og:title" content="Pricing - Collective Research">
-  <meta property="og:image" content="https://collectiveresearch.net/og-image.svg">
-  <link rel="icon" href="https://collectiveresearch.net/favicon.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
-  <link href="styles.css" rel="stylesheet">
-  <script src="i18n.js"></script>
-  <style>
-    .pricing-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin: 48px 0; align-items: stretch; }
-    .tier-card { display: flex; flex-direction: column; border: 1px solid var(--border); border-radius: var(--radius); padding: 32px 24px; background: white; transition: all .2s ease; }
-    .tier-card:hover { border-color: var(--teal); transform: translateY(-4px); box-shadow: 0 8px 24px rgba(29, 158, 117, 0.1); }
-    .tier-card.featured { border-color: var(--teal); background: linear-gradient(135deg, rgba(29, 158, 117, 0.05) 0%, rgba(159, 225, 203, 0.05) 100%); }
-    .tier-name { font-size: 18px; font-weight: 600; margin-bottom: 8px; }
-    .tier-price { font-size: 32px; font-weight: 600; color: var(--teal); margin-bottom: 8px; }
-    .tier-desc { font-size: 14px; color: var(--gray-text); margin-bottom: 24px; }
-    .tier-features { list-style: none; margin: 0; padding: 0; }
-    .tier-features li { padding: 8px 0; border-bottom: 1px solid var(--border); font-size: 14px; }
-    .tier-features li:last-child { border-bottom: none; }
-    @media (max-width: 1024px) { .pricing-grid { grid-template-columns: repeat(2, 1fr); } }
-    @media (max-width: 640px) { .pricing-grid { grid-template-columns: 1fr; } }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pricing — Collective Research</title>
+<meta name="description" content="Your Digital Maturity Snapshot is free for every participant. See what's included in the Standard, Pro and Premium benchmark reports, and how participant discounts work.">
+<meta property="og:title" content="Reports & Pricing — Collective Research">
+<meta property="og:description" content="Free snapshot for every participant. Detailed benchmark reports available from $399, with up to 40% off for participants.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://collectiveresearch.net/pricing.html">
+<meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://collectiveresearch.net/pricing.html">
+<link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+
+  .content { padding: 56px 32px; }
+  h1 { font-size: 30px; font-weight: 500; margin: 0 0 12px; text-align: center; }
+  .lede { font-size: 15px; color: var(--gray-text); line-height: 1.7; max-width: 600px; margin: 0 auto 48px; text-align: center; }
+  .tiers { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 48px; }
+  .tier { border: 1px solid var(--border); border-radius: var(--radius); padding: 24px; display: flex; flex-direction: column; }
+  .tier.featured { border-color: var(--teal); box-shadow: 0 6px 24px rgba(29,158,117,0.08); }
+  .tier-name { font-size: 13px; font-weight: 500; color: var(--teal); text-transform: uppercase; letter-spacing: 0.04em; margin: 0 0 8px; }
+  .tier-badge { display: inline-block; font-size: 11px; font-weight: 500; color: #fff; background: var(--teal); border-radius: 999px; padding: 3px 10px; margin-bottom: 10px; letter-spacing: 0.03em; }
+  .tier-price { font-size: 26px; font-weight: 500; margin: 0 0 4px; }
+  .tier-price span { font-size: 12px; font-weight: 400; color: var(--gray-faint); }
+  .tier-desc { font-size: 13px; color: var(--gray-text); margin: 0 0 16px; line-height: 1.6; }
+  .tier ul { margin: 0 0 20px; padding-left: 18px; flex-grow: 1; }
+  .tier li { font-size: 12px; color: var(--gray-text); line-height: 1.7; margin-bottom: 6px; }
+  .tier-cta { display: block; width: 100%; font-family: inherit; font-size: 13px; font-weight: 500; padding: 10px 16px; border-radius: var(--radius); cursor: pointer; text-align: center; text-decoration: none; border: 1px solid var(--border); background: #fff; color: var(--gray-text); transition: background .15s ease, border-color .15s ease, color .15s ease; margin-top: auto; }
+  .tier-cta:hover { background: var(--bg-soft); border-color: var(--teal); color: var(--teal); }
+  .tier.featured .tier-cta { background: var(--teal); color: #fff; border-color: var(--teal); }
+  .tier.featured .tier-cta:hover { background: #178a64; }
+  .discount-box { background: var(--bg-soft); border: 1px solid var(--border); border-radius: var(--radius); padding: 28px; margin-bottom: 40px; }
+  .discount-box h2 { font-size: 16px; font-weight: 500; margin: 0 0 16px; }
+  .discount-row { display: flex; gap: 16px; align-items: flex-start; margin-bottom: 14px; }
+  .discount-row:last-child { margin-bottom: 0; }
+  .discount-pill { flex-shrink: 0; font-size: 13px; font-weight: 500; color: #fff; background: var(--teal); border-radius: 999px; padding: 4px 12px; white-space: nowrap; }
+  .discount-row p { font-size: 13px; color: var(--gray-text); margin: 0; line-height: 1.7; }
+  .archive { border: 1px solid var(--border); border-radius: var(--radius); padding: 24px; margin-bottom: 40px; display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+  .archive h2 { font-size: 15px; font-weight: 500; margin: 0 0 6px; }
+  .archive p { font-size: 13px; color: var(--gray-text); margin: 0; line-height: 1.7; max-width: 480px; }
+  .archive-price { font-size: 22px; font-weight: 500; flex-shrink: 0; }
+  .archive-price span { font-size: 12px; font-weight: 400; color: var(--gray-faint); display: block; }
+  .note { background: var(--bg-soft); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px 18px; font-size: 13px; color: var(--gray-text); line-height: 1.7; }
+  .back-link { display: inline-block; margin-top: 24px; font-size: 13px; color: var(--teal); text-decoration: none; font-weight: 500; }
+  .back-link:hover { text-decoration: underline; }
+  @media (max-width: 640px) { .content { padding-left: 20px; padding-right: 20px; } .tiers { grid-template-columns: 1fr; } .archive { flex-direction: column; align-items: flex-start; } }
+
+</style>
 </head>
 <body>
-  <main role="main">
-    <div class="page">
-      <h1 data-i18n="pricing.pageTitle">Reports and pricing</h1>
-      <p class="lede" data-i18n="pricing.pageDesc">Your Digital Maturity Snapshot is included free for all participants right after the survey. The reports below are the more detailed benchmark reports available when a study ends.</p>
-
-      <div class="pricing-grid">
-        <div class="tier-card">
-          <div class="tier-name" data-i18n="pricing.standardName">Standard</div>
-          <div class="tier-price" data-i18n="pricing.standardPrice">$399</div>
-          <p class="tier-desc" data-i18n="pricing.standardDesc">Your results compared to the overall average.</p>
-          <ul class="tier-features">
-            <li data-i18n="pricing.standardFeature1">Your Digital Maturity Snapshot</li>
-            <li data-i18n="pricing.standardFeature2">Comparison to the average of all participants in each measured dimension</li>
-            <li data-i18n="pricing.standardFeature3">Clearly written summary of where you're leading and where you're lagging</li>
-          </ul>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<div class="page">
+  <main id="main-content">
+    <div class="content">
+      <h1 data-i18n="pricing.pageTitle">Reports &amp; pricing</h1>
+      <p class="lede">Every participant receives a free Digital Maturity Snapshot the moment they complete the survey. The reports below go further, with peer benchmarking by sector, size, and more. <a href="sample-report.html" style="color: var(--teal); font-weight: 500;">See a sample report &rarr;</a></p>
+      <section aria-label="Report tiers">
+        <div class="tiers">
+          <div class="tier">
+            <div class="tier-name" style="color: var(--charcoal);">Free</div>
+            <div class="tier-price">$0<span> always</span></div>
+            <p class="tier-desc">Included for every participant, no purchase required.</p>
+            <ul>
+              <li>Complete the survey (10&ndash;15 minutes)</li>
+              <li>Receive your Digital Maturity Snapshot immediately</li>
+              <li>Scores across all dimensions we measure</li>
+              <li>Plain-language summary of your strengths and gaps</li>
+              <li>No credit card, no sales call, no obligation</li>
+            </ul>
+            <a href="index.html#notify-form" class="tier-cta" style="background: var(--charcoal); color: #fff; border-color: var(--charcoal);">Get notified at launch</a>
+          </div>
+          <div class="tier">
+            <div class="tier-name" data-i18n="pricing.standardName">Standard</div>
+            <div class="tier-price">$399</div>
+            <p class="tier-desc">Your results against the overall average.</p>
+            <ul>
+              <li>Your Digital Maturity Snapshot</li>
+              <li>Comparison to the all-participant average across every dimension</li>
+              <li>Plain-language summary of where you're ahead and where you're behind</li>
+            </ul>
+            <a href="index.html#notify-form" class="tier-cta">Join the study to purchase</a>
+          </div>
+          <div class="tier featured">
+            <div class="tier-badge">Most popular</div>
+            <div class="tier-name" data-i18n="pricing.proName">Pro</div>
+            <div class="tier-price">$699</div>
+            <p class="tier-desc">Everything in Standard, segmented to your context.</p>
+            <ul>
+              <li>Everything in Standard</li>
+              <li>Comparison segmented by industry sector</li>
+              <li>Comparison segmented by company size</li>
+              <li>Sample sizes shown for every comparison group</li>
+            </ul>
+            <a href="index.html#notify-form" class="tier-cta">Join the study to purchase</a>
+          </div>
+          <div class="tier">
+            <div class="tier-name" data-i18n="pricing.premiumName">Premium</div>
+            <div class="tier-price">$999</div>
+            <p class="tier-desc">Everything in Pro, plus the data and tailored guidance.</p>
+            <ul>
+              <li>Everything in Pro</li>
+              <li>Access to the anonymized dataset for custom cuts</li>
+              <li>Tailored recommendations based on your specific results</li>
+            </ul>
+            <a href="index.html#notify-form" class="tier-cta">Join the study to purchase</a>
+          </div>
         </div>
-
-        <div class="tier-card featured">
-          <div class="tier-name" data-i18n="pricing.proName">Pro</div>
-          <div class="tier-price" data-i18n="pricing.proPrice">$699</div>
-          <p class="tier-desc" data-i18n="pricing.proDesc">Everything in Standard, segmented by your context.</p>
-          <ul class="tier-features">
-            <li data-i18n="pricing.proFeature1">Everything in Standard</li>
-            <li data-i18n="pricing.proFeature2">Industry sector segmented comparisons</li>
-            <li data-i18n="pricing.proFeature3">Company size segmented comparisons</li>
-            <li data-i18n="pricing.proFeature4">Sample sizes for each comparison group</li>
-          </ul>
-        </div>
-
-        <div class="tier-card">
-          <div class="tier-name" data-i18n="pricing.premiumName">Premium</div>
-          <div class="tier-price" data-i18n="pricing.premiumPrice">$999</div>
-          <p class="tier-desc" data-i18n="pricing.premiumDesc">Everything in Pro, plus the underlying data and tailored guidance.</p>
-          <ul class="tier-features">
-            <li data-i18n="pricing.premiumFeature1">Everything in Pro</li>
-            <li data-i18n="pricing.premiumFeature2">Access to the anonymized dataset for your own custom comparisons</li>
-            <li data-i18n="pricing.premiumFeature3">A set of tailored recommendations based on your specific results</li>
-          </ul>
-        </div>
-
-        <div class="tier-card">
-          <div class="tier-name" data-i18n="pricing.archiveTitle">Past studies</div>
-          <div class="tier-price" data-i18n="pricing.archivePrice">$299</div>
-          <p class="tier-desc" data-i18n="pricing.archiveDesc">When a study ends, an anonymized report with findings is available for purchase by everyone, even if you didn't participate this round.</p>
-          <ul class="tier-features">
-            <li>Overall results and trends</li>
-            <li>No company-specific comparisons</li>
-            <li data-i18n="pricing.archivePricePer">per report</li>
-          </ul>
-        </div>
+      </section>
+      <section class="discount-box" aria-label="Participant discounts">
+        <h2>Discounts for participants</h2>
+        <div class="discount-row"><div class="discount-pill">-30%</div><p>Anyone who completes the survey gets 30% off any report tier above, for the study they took part in.</p></div>
+        <div class="discount-row"><div class="discount-pill">-10% more</div><p>If more than 5 people from your organization complete the survey, you get an additional 10% off, up to 40% total.</p></div>
+      </section>
+      <section class="archive" aria-label="Past study reports">
+        <div><h2>Past study reports</h2><p>Once a study closes, an anonymized findings report becomes available for anyone to purchase, even if you didn't take part in that round. It covers overall results and trends, without any company-specific comparison.</p></div>
+        <div class="archive-price">$299<span>per report</span></div>
+      </section>
+      <div class="note" role="note" data-i18n="pricing.noteText">
+        All prices shown are exclusive of any applicable taxes (e.g. VAT or sales tax). Depending on your location and organization type, tax may be added at checkout or handled via self-assessment on your end, and this will be confirmed before any payment is taken.<br><br>
+        Taking part in the survey is free, and your Digital Maturity Snapshot is yours either way. The Standard, Pro and Premium reports above are delivered once payment is received. Participant discounts apply to reports from the study you took part in, and are confirmed once that study's report is ready.
       </div>
-
-      <section>
-        <h2 data-i18n="pricing.discountTitle">Discounts for participants</h2>
-        <div style="display:grid; gap:24px; margin:24px 0;">
-          <div style="border-left: 4px solid var(--teal); padding-left: 16px;">
-            <strong data-i18n="pricing.discount30">30% discount</strong>
-            <p data-i18n="pricing.discount30Desc">Anyone who fills out the survey gets a 30% discount on any report tier for the study they participated in.</p>
-          </div>
-          <div style="border-left: 4px solid var(--teal); padding-left: 16px;">
-            <strong data-i18n="pricing.discount40">Plus 10% more</strong>
-            <p data-i18n="pricing.discount40Desc">If 5 or more people from your company fill out the survey, you get an additional 10% discount, up to 40% total.</p>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <h2 data-i18n="pricing.archiveTitle">Reports from past studies</h2>
-        <p data-i18n="pricing.archiveDesc">When a study ends, an anonymized report with findings is available for purchase by everyone, even if you didn't participate this round. It includes overall results and trends, without company-specific comparisons.</p>
-      </section>
-
-      <section>
-        <p class="section-eyebrow" data-i18n="common.appName">Collective Research</p>
-        <p class="note" data-i18n="pricing.noteText">All prices shown are before applicable taxes (VAT, etc.). Depending on your location and organization type, tax may be added at checkout or handled by you directly, which will be confirmed before payment. Participation in the survey is free and your Digital Maturity Snapshot is yours either way. The Standard, Pro, and Premium reports above are delivered after payment is received, discounts apply, but reports are not sent before payment. Prices reflect our current plans for the first study and may be refined before launch. Participant discounts apply to reports from the study you participated in and will be confirmed when that study's report is ready.</p>
-      </section>
+      <a class="back-link" href="index.html">&larr; Back to home</a>
     </div>
   </main>
-  <script src="nav.js"></script>
+</div>
+<script src="nav.js"></script>
+
 </body>
 </html>

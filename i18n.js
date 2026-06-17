@@ -35,7 +35,7 @@ window.I18n = function() {
       const key = el.getAttribute('data-i18n');
       const value = this.getString(key, lang);
       if (value) {
-        if (this.htmlTranslationKeys.has(key)) {
+        if (/<[a-z][\s\S]*>/i.test(value)) {
           el.innerHTML = value;
         } else {
           el.textContent = value;
