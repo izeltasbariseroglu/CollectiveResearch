@@ -105,31 +105,66 @@ window.I18n = function() {
     return value;
   };
   
-  this.setupLanguageSwitcher = function() {
-    const nav = document.querySelector('nav.nav');
-    if (!nav) return;
-    
-    let existing = nav.querySelector('.language-switcher');
-    if (existing) existing.remove();
-    
-    const switcher = document.createElement('div');
-    switcher.className = 'language-switcher';
-    
-    this.supportedLanguages.forEach(lang => {
-      const btn = document.createElement('button');
-      btn.className = 'lang-btn';
-      if (lang === this.currentLang) btn.classList.add('active');
-      btn.setAttribute('data-lang', lang);
-      btn.textContent = lang.toUpperCase();
-      btn.setAttribute('aria-label', 'Switch to ' + this.languageNames[lang]);
-      btn.addEventListener('click', () => this.switchLanguage(lang));
-      switcher.appendChild(btn);
-    });
-    
-    nav.appendChild(switcher);
-  };
-  
-  this.updateHrefLang = function() {
+      this.setupLanguageSwitcher = function() {
+      const nav = document.querySelector('nav.nav');
+      if (!nav) return;
+      
+      let existing = nav.querySelector('.language-switcher');
+      if (existing) existing.remove();
+      
+      const switcher = document.createElement('div');
+      switcher.className = 'language-switcher custom-select';
+      
+      const currentFlag = this.getFlagUrl(this.currentLang);
+      
+      const selectedDisplay = document.createElement('div');
+      selectedDisplay.className = 'select-selected';
+      selectedDisplay.innerHTML = <img src=" + currentFlag + " class="flag-icon" alt="flag"> <span class="lang-text"> + this.currentLang.toUpperCase() + </span>;
+      
+      const optionsContainer = document.createElement('div');
+      optionsContainer.className = 'select-items select-hide';
+      
+      this.supportedLanguages.forEach(lang => {
+        const option = document.createElement('div');
+        option.className = 'lang-option';
+        if (lang === this.currentLang) option.classList.add('active');
+        option.innerHTML = <img src=" + this.getFlagUrl(lang) + " class="flag-icon" alt="flag"> <span> + this.languageNames[lang] + </span>;
+        option.addEventListener('click', () => {
+          this.switchLanguage(lang);
+        });
+        optionsContainer.appendChild(option);
+      });
+      
+      selectedDisplay.addEventListener('click', function(e) {
+        e.stopPropagation();
+        optionsContainer.classList.toggle('select-hide');
+        this.classList.toggle('select-arrow-active');
+      });
+      
+      document.addEventListener('click', function(e) {
+        if (!switcher.contains(e.target)) {
+          optionsContainer.classList.add('select-hide');
+          selectedDisplay.classList.remove('select-arrow-active');
+        }
+      });
+      
+      switcher.appendChild(selectedDisplay);
+      switcher.appendChild(optionsContainer);
+      nav.appendChild(switcher);
+    };
+
+    this.getFlagUrl = function(lang) {
+      const map = {
+        'en': 'gb',
+        'tr': 'tr',
+        'de': 'de',
+        'fr': 'fr',
+        'it': 'it'
+      };
+      return 'https://flagcdn.com/w20/' + map[lang] + '.png';
+    };
+
+    this.updateHrefLang = function() {
     let existing = document.querySelectorAll('link[rel="alternate"][hreflang]');
     existing.forEach(el => el.remove());
     
@@ -169,4 +204,5 @@ window.I18n = function() {
 
 // Initialize global instance
 window.i18n = new window.I18n();
+
 

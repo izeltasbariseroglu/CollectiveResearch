@@ -57,11 +57,13 @@
     + '</nav></header>';
 
   // Footer HTML
-  var footer = '<footer class="site-footer">'
+    var footer = '<footer class="site-footer">'
     + '<div class="footer-inner">'
     + '<p><span data-i18n="common.privacyFooter">Collective Research is an independent research initiative. '
     + 'Your data is never shared individually, only used in aggregate, anonymized form for benchmarking.</span>'
-    + ' &nbsp;&middot;&nbsp; <a href="privacy.html" data-i18n="nav.privacy">Privacy policy</a></p>'
+    + ' &nbsp;&middot;&nbsp; <a href="privacy.html" data-i18n="nav.privacy">Privacy policy</a>'
+    + ' &nbsp;&middot;&nbsp; <a href="terms.html" data-i18n="nav.terms">Terms of service</a>'
+    + ' &nbsp;&middot;&nbsp; <a href="cookie.html" data-i18n="nav.cookie">Cookie policy</a></p>'
     + '</div></footer>';
 
   // Inject into .page
@@ -130,4 +132,5 @@
   }, { passive: true });
 
 })();
+
 

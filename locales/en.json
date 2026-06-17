@@ -10,16 +10,24 @@
     "nav":  {
                 "home":  "Home",
                 "howItWorks":  "How it works",
-                "form": {"consent": "I agree to the <a href=\"privacy.html\" style=\"color:var(--teal)\">Privacy Policy</a> and <a href=\"terms.html\" style=\"color:var(--teal)\">Terms of Service</a>.", "consentModal": "I consent to CollectiveResearch processing my data to send relevant updates in accordance with the <a href=\"privacy.html\" style=\"color:var(--teal)\">Privacy Policy</a>." }, "pricing":  "Pricing",
+                "form":  {
+                             "consent":  "I agree to the \u003ca href=\"privacy.html\" style=\"color:var(--teal)\"\u003ePrivacy Policy\u003c/a\u003e and \u003ca href=\"terms.html\" style=\"color:var(--teal)\"\u003eTerms of Service\u003c/a\u003e.",
+                             "consentModal":  "I consent to CollectiveResearch processing my data to send relevant updates in accordance with the \u003ca href=\"privacy.html\" style=\"color:var(--teal)\"\u003ePrivacy Policy\u003c/a\u003e."
+                         },
+                "pricing":  "Pricing",
                 "privacy":  "Privacy",
                 "languageLabel":  "Language",
-                "support":  "Support"
+                "support":  "Support",
+                "terms":  "Terms of service",
+                "cookie":  "Cookie policy"
             },
     "homepage":  {
                      "heroTitle":  "How does your company\u0027s digital maturity compare to your industry?",
                      "heroSubtitle":  "Collective Research is running a confidential benchmark study on digital transformation. Take a short survey about your organization and get your own Digital Maturity Snapshot in return, and as more companies join, a fuller picture of how you compare to your industry.",
                      "step1Title":  "Take a 10-minute confidential survey",
-                     "whatIsTitle": "What is Digital Maturity?", "whatIsDesc": "It's a measure of your organization's readiness across 5 dimensions: Technology, People, Strategy, Processes, and Customer Experience. Knowing where you stand helps you prioritize investments.", "step1Desc":  "Take a 10-minute confidential survey about your tools, processes and team readiness.",
+                     "whatIsTitle":  "What is Digital Maturity?",
+                     "whatIsDesc":  "It\u0027s a measure of your organization\u0027s readiness across 5 dimensions: Technology, People, Strategy, Processes, and Customer Experience. Knowing where you stand helps you prioritize investments.",
+                     "step1Desc":  "Take a 10-minute confidential survey about your tools, processes and team readiness.",
                      "step2Title":  "Get your own Digital Maturity Snapshot",
                      "step2Desc":  "Get your own Digital Maturity Snapshot - a personalized summary of your results.",
                      "step3Title":  "See how you compare to peers",
@@ -28,9 +36,7 @@
                      "ctaLabel":  "Be the first to know when the survey launches - leave your email and we\u0027ll notify you.",
                      "ctaPlaceholder":  "you@company.com",
                      "ctaButton":  "Notify me",
-                     "ctaNote":  "Be the first to know when the survey launches. \u003ca href=\"how-it-works.html\"\u003eSee how it works →\u003c/a\u003e",
-                     "whatIsTitle":  "What is Digital Maturity?",
-                     "whatIsDesc":  "It\u0027s a measure of your organization\u0027s readiness across 5 dimensions: Technology, People, Strategy, Processes, and Customer Experience. Knowing where you stand helps you prioritize investments."
+                     "ctaNote":  "Be the first to know when the survey launches. \u003ca href=\"how-it-works.html\"\u003eSee how it works →\u003c/a\u003e"
                  },
     "modal":  {
                   "title":  "One last thing",
@@ -90,7 +96,10 @@
                        "peopleTitle":  "Companies, advisors, and independent experts",
                        "peopleText":  "Most participants are companies taking part in a study. Alongside them, academic researchers help review our methodology, and independent consultants are sometimes available if a company wants support in an area highlighted by their results - this is a connection we help make, not an endorsement or certification of any individual or firm."
                    },
-    "form": {"consent": "I agree to the <a href=\"privacy.html\" style=\"color:var(--teal)\">Privacy Policy</a> and <a href=\"terms.html\" style=\"color:var(--teal)\">Terms of Service</a>.", "consentModal": "I consent to CollectiveResearch processing my data to send relevant updates in accordance with the <a href=\"privacy.html\" style=\"color:var(--teal)\">Privacy Policy</a>." }, "pricing":  {
+    "form":  {
+
+             },
+    "pricing":  {
                     "pageTitle":  "Reports \u0026 pricing",
                     "pageDesc":  "Your Digital Maturity Snapshot is included for every participant, right after the survey. The reports below are the more detailed benchmark reports, available once a study closes.",
                     "standardName":  "Standard",
@@ -188,8 +197,16 @@
                        "sending":  "Sending...",
                        "joining":  "Joining..."
                    },
-    "form":  {
-
-             }
+    "terms":  {
+                  "title":  "Terms of Service",
+                  "intro":  "Last updated: June 2026",
+                  "section1Text":  "By accessing this Website, you are agreeing to be bound by these Website Terms and Conditions of Use and agree that you are responsible for the agreement with any applicable local laws.",
+                  "section1Title":  "1. Terms"
+              },
+    "cookie":  {
+                   "title":  "Cookie Policy",
+                   "intro":  "Last updated: June 2026",
+                   "section1Text":  "Cookies are simple text files that are stored on your computer or mobile device by a website\u0027s server. Each cookie is unique to your web browser.",
+                   "section1Title":  "1. What are cookies?"
+               }
 }
-

@@ -163,14 +163,6 @@ nav.nav {
 @media (max-width: 640px) {
   .cards { grid-template-columns: 1fr; }
   .steps, .tiers { grid-template-columns: 1fr; }
-  .language-switcher {
-    margin-left: 8px;
-    padding-left: 8px;
-  }
-  .lang-btn {
-    font-size: 10px;
-    padding: 3px 6px;
-  }
 }
 
 
@@ -594,6 +586,7 @@ body.dark-mode .theme-toggle:hover { color: #fff; }
     table { font-size: 12px; }
     th, td { padding: 8px 6px; }
   }
+
 
 
 
