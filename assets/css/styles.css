@@ -234,7 +234,7 @@ nav.nav {
   .content { padding: 56px 32px; }
   h1 { font-size: 30px; font-weight: 500; margin: 0 0 12px; text-align: center; }
   .lede { font-size: 15px; color: var(--gray-text); line-height: 1.7; max-width: 600px; margin: 0 auto 48px; text-align: center; }
-  .tiers { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 48px; }
+  .tiers { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-bottom: 48px; }
   .tier { border: 1px solid var(--border); border-radius: var(--radius); padding: 24px; display: flex; flex-direction: column; }
   .tier.featured { border-color: var(--teal); box-shadow: 0 6px 24px rgba(29,158,117,0.08); }
   .tier-name { font-size: 13px; font-weight: 500; color: var(--teal); text-transform: uppercase; letter-spacing: 0.04em; margin: 0 0 8px; }
