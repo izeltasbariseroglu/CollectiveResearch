@@ -25,6 +25,10 @@
 }
 
 /* ── Reset & Base ───────────────────────────── */
+html {
+  scroll-behavior: smooth;
+}
+
 *, *::before, *::after { box-sizing: border-box; }
 
 body {
@@ -108,8 +112,8 @@ nav.nav {
 }
 .nav-links a[aria-current="page"]::after {
   content: ''; position: absolute;
-  bottom: 3px; left: 12px; right: 12px;
-  height: 2px; background: var(--teal); border-radius: 1px;
+  bottom: 2px; left: 12px; right: 12px;
+  height: 3px; background: var(--teal); border-radius: 2px;
 }
 
 /* ── Footer ─────────────────────────────────── */
@@ -137,4 +141,33 @@ input[type="text"]:invalid:not(:placeholder-shown),
 textarea:invalid:not(:placeholder-shown) {
   border-color: #E53E3E !important;
   background-color: #FFF5F5;
+}
+
+/* Enhanced focus indicators */
+input:focus,
+textarea:focus,
+button:focus,
+a:focus {
+  outline: none;
+}
+
+input:focus-visible,
+textarea:focus-visible {
+  border-color: var(--teal) !important;
+  box-shadow: 0 0 0 3px rgba(29, 158, 117, 0.2) !important;
+}
+
+button:focus-visible {
+  outline: 2px solid var(--teal);
+  outline-offset: 2px;
+}
+
+a:focus-visible {
+  outline: 2px dashed var(--teal);
+  outline-offset: 3px;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
 }

@@ -14,7 +14,7 @@
     { href: 'support.html',      label: 'Support' },
   ];
 
-  var LOGO = '<svg class="nav-logo" viewBox="0 0 56 56" aria-hidden="true" focusable="false">'
+  var LOGO = '<svg class="nav-logo" viewBox="0 0 56 56" aria-label="Collective Research logo" focusable="false">'
     + '<polygon points="24,11 36.4,19.98 31.64,34.52 16.36,34.52 11.64,19.98" fill="none" stroke="#1D9E75" stroke-width="2" stroke-linejoin="round" opacity="0.45"/>'
     + '<line x1="24" y1="11" x2="24" y2="24" stroke="#AFA9EC" stroke-width="2" opacity="0.7"/>'
     + '<line x1="36.4" y1="19.98" x2="24" y2="24" stroke="#AFA9EC" stroke-width="2" opacity="0.7"/>'
@@ -93,5 +93,19 @@
     var h = document.getElementById('site-header');
     if (h) h.classList.toggle('scrolled', window.scrollY > 24);
   }, { passive: true });
+
+  // Track navigation clicks
+  if (typeof gtag !== 'undefined') {
+    var navLinks = document.querySelectorAll('nav.nav a[href]');
+    navLinks.forEach(function(link) {
+      link.addEventListener('click', function() {
+        gtag('event', 'page_link_click', {
+          'link_text': link.textContent.trim(),
+          'link_url': link.href,
+          'link_location': 'main_navigation'
+        });
+      });
+    });
+  }
 
 })();

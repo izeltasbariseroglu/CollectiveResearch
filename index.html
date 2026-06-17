@@ -14,10 +14,25 @@
 <meta property="og:image:type" content="image/svg+xml">
 <meta name="twitter:card" content="summary">
 <link rel="canonical" href="https://collectiveresearch.net/">
+<link rel="preload" href="styles.css" as="style">
+<link rel="preload" href="nav.js" as="script">
+<link rel="dns-prefetch" href="https://fonts.googleapis.com">
+<link rel="dns-prefetch" href="https://www.googletagmanager.com">
 <link rel="stylesheet" href="styles.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<!-- Google Analytics 4 (Replace G-XXXXXXXXXX with your Measurement ID) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX', {
+    'anonymize_ip': true,
+    'allow_google_signals': false
+  });
+</script>
 <style>
 
   /* Hero */
@@ -184,7 +199,15 @@
     overlay.classList.remove('open'); 
     overlay.setAttribute('aria-hidden','true'); 
     document.body.style.overflow=''; 
-    if (previousActiveElement) previousActiveElement.focus();
+    // Reset modal form
+    formView.style.display = 'block';
+    successView.style.display = 'none';
+    // Return focus to CTA email
+    if (previousActiveElement === document.getElementById('notify-form').querySelector('button')) {
+      document.getElementById('cta-email').focus();
+    } else if (previousActiveElement) {
+      previousActiveElement.focus();
+    }
   }
   ctaForm.addEventListener('submit', function(e) {
     e.preventDefault();
@@ -231,6 +254,7 @@
     e.preventDefault();
     var email = document.getElementById('cta-email').value.trim();
     var errorDiv = document.getElementById('modal-email-error');
+    var submitBtn = this.querySelector('.primary');
     errorDiv.textContent = '';
     
     // Recheck email in case user changed it
@@ -245,12 +269,29 @@
       return;
     }
     
-    formView.style.display='none'; 
-    successView.style.display='block'; 
-    detailsForm.reset();
+    // Loading state
+    submitBtn.disabled = true;
+    var originalText = submitBtn.textContent;
+    submitBtn.textContent = 'Joining...';
     
-    // Auto-close modal after 3 seconds
-    setTimeout(closeModal, 3000);
+    // Track form submission
+    if (typeof gtag !== 'undefined') {
+      gtag('event', 'form_submission', {
+        'form_name': 'early_access_signup',
+        'form_location': 'modal'
+      });
+    }
+    
+    setTimeout(function() {
+      formView.style.display='none'; 
+      successView.style.display='block'; 
+      detailsForm.reset();
+      submitBtn.disabled = false;
+      submitBtn.textContent = originalText;
+      
+      // Auto-close modal after 3 seconds
+      setTimeout(closeModal, 3000);
+    }, 600);
   });
   document.getElementById('modal-close').addEventListener('click', closeModal);
 </script>

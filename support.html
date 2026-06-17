@@ -299,6 +299,15 @@
       btn.setAttribute('aria-expanded', 'true');
       document.getElementById(btn.getAttribute('aria-controls')).classList.add('open');
       
+      // Track FAQ open
+      if (typeof gtag !== 'undefined') {
+        var faqText = btn.textContent.trim().split('\n')[0];
+        gtag('event', 'faq_opened', {
+          'faq_question': faqText.substring(0, 50),
+          'faq_id': btn.id
+        });
+      }
+      
       // Smooth scroll to FAQ item
       var bodyRect = document.body.getBoundingClientRect();
       var elemRect = btn.getBoundingClientRect();
@@ -327,6 +336,7 @@
     var message = document.getElementById('contact-message').value.trim();
     var emailError = document.getElementById('contact-email-error');
     var messageError = document.getElementById('contact-message-error');
+    var submitBtn = this.querySelector('.form-submit');
     
     emailError.textContent = '';
     messageError.textContent = '';
@@ -350,17 +360,34 @@
     
     if (hasError) return;
     
-    // TODO: POST to n8n webhook when ready
-    document.getElementById('contact-form').reset();
-    document.getElementById('contact-form-wrap').style.display = 'none';
-    document.getElementById('contact-success').style.display = 'block';
+    // Loading state
+    submitBtn.disabled = true;
+    var originalText = submitBtn.textContent;
+    submitBtn.textContent = 'Sending...';
     
-    // Auto-reset form after 4 seconds
+    // Track form submission
+    if (typeof gtag !== 'undefined') {
+      gtag('event', 'form_submission', {
+        'form_name': 'contact_form',
+        'form_location': 'support_page'
+      });
+    }
+    
+    // TODO: POST to n8n webhook when ready
+    // Simulate network delay
     setTimeout(function() {
-      document.getElementById('contact-form-wrap').style.display = 'block';
-      document.getElementById('contact-success').style.display = 'none';
       document.getElementById('contact-form').reset();
-    }, 4000);
+      document.getElementById('contact-form-wrap').style.display = 'none';
+      document.getElementById('contact-success').style.display = 'block';
+      
+      // Auto-reset form after 4 seconds
+      setTimeout(function() {
+        document.getElementById('contact-form-wrap').style.display = 'block';
+        document.getElementById('contact-success').style.display = 'none';
+        submitBtn.disabled = false;
+        submitBtn.textContent = originalText;
+      }, 4000);
+    }, 800);
   });
 </script>
 </body>
