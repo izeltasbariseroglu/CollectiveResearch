@@ -87,7 +87,7 @@ nav.nav {
 
 .nav-tagline {
   font-size: 11px; color: var(--gray-faint); font-style: italic; line-height: 1;
-  max-height: 16px; opacity: 1; overflow: hidden;
+  opacity: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
   transition: opacity .25s ease, max-height .3s ease;
 }
 .site-header.scrolled .nav-tagline { opacity: 0; max-height: 0; }
@@ -475,4 +475,5 @@ body.dark-mode .step:hover, body.dark-mode .tier:hover {
 .theme-toggle:hover { color: var(--charcoal); transform: rotate(15deg); }
 body.dark-mode .theme-toggle { color: #BDBBB3; }
 body.dark-mode .theme-toggle:hover { color: #fff; }
+
 

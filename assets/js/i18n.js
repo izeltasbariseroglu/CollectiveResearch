@@ -18,7 +18,9 @@ window.I18n = function() {
     'privacy.section1Item2',
     'privacy.section5Text',
     'privacy.section6Text',
-    'privacy.section8Text'
+    'privacy.section8Text',
+    'form.consent',
+    'form.consentModal'
   ]);
   
   this.init = function(translations) {
@@ -167,3 +169,4 @@ window.I18n = function() {
 
 // Initialize global instance
 window.i18n = new window.I18n();
+
