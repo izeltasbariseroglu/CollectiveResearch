@@ -108,4 +108,15 @@
     });
   }
 
+  // ── i18n Initialization ───────────────────────────
+  // Load and initialize multi-language support
+  if (typeof window.i18n !== 'undefined') {
+    Promise.all([
+      fetch('en.json').then(r => r.json()).catch(() => ({})),
+      fetch('tr.json').then(r => r.json()).catch(() => ({}))
+    ]).then(([en, tr]) => {
+      window.i18n.init({ en, tr });
+    }).catch(err => console.warn('i18n loading error:', err));
+  }
+
 })();

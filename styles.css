@@ -460,3 +460,51 @@ textarea:focus,
 select:focus {
   outline: none;
 }
+
+/* ── Language Switcher ───────────────────────────── */
+.language-switcher {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.lang-btn {
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--gray-text);
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all .15s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.lang-btn:hover {
+  border-color: var(--teal);
+  color: var(--teal);
+}
+
+.lang-btn.active {
+  background: var(--teal);
+  color: #fff;
+  border-color: var(--teal);
+  font-weight: 700;
+}
+
+.lang-btn.active:hover {
+  background: #178a64;
+}
+
+/* Mobile language switcher */
+@media (max-width: 640px) {
+  .language-switcher {
+    gap: 2px;
+  }
+  .lang-btn {
+    padding: 4px 8px;
+    font-size: 11px;
+  }
+}

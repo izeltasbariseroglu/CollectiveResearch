@@ -33,6 +33,7 @@
     'allow_google_signals': false
   });
 </script>
+<script src="i18n.js"></script>
 <style>
 
   /* Hero */
@@ -102,7 +103,7 @@
     <section class="hero" aria-labelledby="hero-heading">
       <div>
         <h1 id="hero-heading" class="fade" style="animation-delay:0.1s;">How does your company's digital maturity compare to your industry?</h1>
-        <p class="fade" style="animation-delay:0.25s;">Collective Research is running a confidential study on digital transformation. Take a short survey about your organization and get your own Digital Maturity Snapshot in return, and as more companies join, a fuller picture of how you compare to your industry.</p>
+        <p class="fade" style="animation-delay:0.25s;" data-i18n="homepage.heroSubtitle">Collective Research is running a confidential study on digital transformation. Take a short survey about your organization and get your own Digital Maturity Snapshot in return, and as more companies join, a fuller picture of how you compare to your industry.</p>
         <a href="#notify-form" class="hero-cta-btn fade" style="animation-delay:0.35s;">Get notified at launch</a>
       </div>
       <div class="hero-art fade" style="animation-delay:0.4s;" aria-hidden="true">
@@ -137,8 +138,8 @@
       </blockquote>
       <form class="cta-form fade" id="notify-form" style="animation-delay:0.35s;" novalidate>
         <label for="cta-email">Work email address</label>
-        <input type="email" id="cta-email" name="email" placeholder="you@company.com" autocomplete="email" required aria-required="true" aria-describedby="cta-email-error">
-        <button type="submit">Notify me</button>
+        <input type="email" id="cta-email" name="email" placeholder="you@company.com" data-i18n-placeholder="homepage.ctaPlaceholder" autocomplete="email" required aria-required="true" aria-describedby="cta-email-error">
+        <button type="submit" data-i18n="modal.submitButton">Notify me</button>
       </form>
       <div id="cta-email-error" role="alert" aria-live="polite" style="font-size: 13px; color: #E53E3E; margin-top: 8px; min-height: 18px;"></div>
       <p class="cta-note">Be the first to know when the survey launches. <a href="how-it-works.html" style="color: var(--teal); text-decoration: none;">See how it works &rarr;</a></p>
@@ -148,7 +149,7 @@
       <div class="modal">
         <div id="modal-form-view">
           <h2 id="modal-title">One last thing</h2>
-          <p class="modal-sub">A couple of quick details so we can tailor updates to you. This takes 30 seconds.</p>
+          <p class="modal-sub" data-i18n="modal.subtitle">A couple of quick details so we can tailor updates to you. This takes 30 seconds.</p>
           <form id="details-form" novalidate>
             <div class="field">
               <fieldset style="border:none;padding:0;margin:0;">
@@ -160,12 +161,12 @@
                 </div>
               </fieldset>
             </div>
-            <div class="field"><label for="org-name">Organization name</label><input type="text" id="org-name" name="organization" placeholder="e.g. Acme Manufacturing" autocomplete="organization"></div>
-            <div class="field"><label for="org-sector">Sector / industry</label><input type="text" id="org-sector" name="sector" placeholder="e.g. Manufacturing, Retail, Logistics..."></div>
+            <div class="field"><label for="org-name" data-i18n="modal.orgNameLabel">Organization name</label><input type="text" id="org-name" name="organization" data-i18n-placeholder="modal.orgNamePlaceholder" placeholder="e.g. Acme Manufacturing" autocomplete="organization"></div>
+            <div class="field"><label for="org-sector" data-i18n="modal.sectorLabel">Sector / industry</label><input type="text" id="org-sector" name="sector" data-i18n-placeholder="modal.sectorPlaceholder" placeholder="e.g. Manufacturing, Retail, Logistics..."></div>
             <div id="modal-email-error" role="alert" aria-live="polite" style="font-size: 12px; color: #E53E3E; margin-bottom: 12px; min-height: 16px;"></div>
             <div class="modal-actions">
-              <button type="button" class="secondary" id="modal-cancel">Cancel</button>
-              <button type="submit" class="primary">Join the list</button>
+              <button type="button" class="secondary" id="modal-cancel" data-i18n="modal.cancelButton">Cancel</button>
+              <button type="submit" class="primary" data-i18n="modal.submitButton">Join the list</button>
             </div>
           </form>
         </div>
@@ -173,7 +174,7 @@
           <div class="check" aria-hidden="true">&#10003;</div>
           <h2>You're on the list</h2>
           <p class="modal-sub">Thanks, we'll email you as soon as the survey launches.</p>
-          <div class="modal-actions"><button type="button" class="primary" id="modal-close">Done</button></div>
+          <div class="modal-actions"><button type="button" class="primary" id="modal-close" data-i18n="modal.doneButton">Done</button></div>
         </div>
       </div>
     </div>
