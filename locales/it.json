@@ -362,21 +362,21 @@
         "text44": "Collective Research è un'iniziativa di ricerca indipendente. I vostri dati non vengono mai condivisi singolarmente, bensì utilizzati esclusivamente in forma aggregata e anonimizzata a fini di benchmarking."
     },
     "privacyPage": {
-        "text1": "Last updated: June 2026",
-        "text2": "We don't need, and don't ask for, personal information to run our studies. The information we collect falls into two categories:",
-        "text3": "Your own survey responses are used to generate your personal Digital Maturity Snapshot and, later, your Benchmark Report. Beyond that, your individual responses are combined with everyone else's, anonymized, and aggregated to build the overall benchmark. No individual company's answers are ever shown to, or identifiable by, anyone else.",
-        "text4": "Your own results are visible only to you.",
-        "text5": "Aggregated, anonymized statistics (covering many companies) appear in benchmark reports and may be shared publicly or sold as research findings.",
-        "text6": "We do not sell or share your individual responses, contact details, or company-identifiable data with any third party.",
-        "text7": "Data is stored on servers located within the European Union. Access is limited to those operating Collective Research, and reasonable technical safeguards (encryption in transit, access controls) are used to protect it.",
-        "text8": "Contact details (for early access updates) are kept until you ask us to remove them, or until the related study concludes, whichever is sooner. Survey responses are kept for as long as needed to generate your report and contribute to aggregate benchmarks; once anonymized and aggregated, individual responses are not retained in identifiable form.",
-        "text9": "As Collective Research develops, this policy may be updated. We'll note the date of the latest update at the top of this page."
+        "text1": "Ultimo aggiornamento: Giugno 2026",
+        "text2": "Non necessitiamo di dati personali, né ne richiediamo, per la conduzione dei nostri studi. Le informazioni raccolte si articolano in due categorie principali:",
+        "text3": "Le risposte al questionario vengono impiegate per elaborare la vostra Istantanea di Maturità Digitale e, in una fase successiva, il Report di Benchmark. Oltre a tale finalità, le singole risposte vengono aggregate a quelle dell'intero campione e sottoposte a un rigoroso processo di anonimizzazione per costruire il benchmark complessivo. Le risposte specifiche di un'azienda non vengono in alcun caso divulgate né rese identificabili a terzi.",
+        "text4": "I vostri risultati specifici rimangono visibili e accessibili esclusivamente a voi.",
+        "text5": "Le statistiche in forma aggregata e anonimizzata (rappresentative di un'ampia pluralità di aziende) confluiscono nei report di benchmark e potranno essere oggetto di pubblicazione o commercializzazione come evidenze di ricerca.",
+        "text6": "Escludiamo categoricamente la vendita o la condivisione con terze parti delle singole risposte, dei dati di contatto o di qualsiasi informazione riconducibile all'identità della vostra organizzazione.",
+        "text7": "I dati sono archiviati su server localizzati all'interno dell'Unione Europea. L'accesso è strettamente limitato al personale operativo di Collective Research e sono implementate adeguate misure tecniche di salvaguardia (inclusa la crittografia in transito e i rigorosi controlli di accesso) a tutela delle informazioni.",
+        "text8": "I dati di contatto (relativi agli aggiornamenti per l'accesso anticipato) vengono conservati fino a esplicita richiesta di cancellazione o fino alla conclusione dello studio di riferimento, a seconda dell'evento che si verifichi per primo. Le risposte al questionario vengono conservate per il tempo strettamente necessario a generare il report e a contribuire ai benchmark aggregati; una volta completato il processo di anonimizzazione e aggregazione, le risposte individuali non vengono più trattenute in forma identificabile.",
+        "text9": "In linea con la progressiva evoluzione di Collective Research, la presente policy potrà essere soggetta ad aggiornamenti. La data dell'ultima revisione sarà tempestivamente indicata nella sezione superiore di questa pagina."
     },
     "termsPage": {},
     "cookiePage": {},
     "cookiesPage": {},
     "notFound": {
-        "text1": "Page not found",
-        "text2": "We couldn't find what you're looking for."
+        "text1": "Pagina non trovata",
+        "text2": "Non siamo riusciti a individuare la risorsa richiesta."
     }
 }
