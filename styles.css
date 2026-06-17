@@ -54,7 +54,7 @@ body {
   border-radius: 0 0 var(--radius) 0;
   z-index: 200; transition: top .2s ease;
 }
-.skip-link:focus { top: 0; }
+.skip-link:focus { top: 0; outline: 2px solid #fff; outline-offset: -2px; font-weight: 600; }
 
 /* ── Header / Nav ───────────────────────────── */
 .site-header {
@@ -157,6 +157,12 @@ textarea:focus-visible {
   box-shadow: 0 0 0 3px rgba(29, 158, 117, 0.2) !important;
 }
 
+input::placeholder,
+textarea::placeholder {
+  color: var(--gray-faint);
+  opacity: 1;
+}
+
 button:focus-visible {
   outline: 2px solid var(--teal);
   outline-offset: 2px;
@@ -170,4 +176,287 @@ a:focus-visible {
 button:disabled {
   opacity: 0.6;
   cursor: not-allowed;
+}
+
+/* ── Label Styling ───────────────────────────── */
+label {
+  display: block;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--charcoal);
+  margin-bottom: 6px;
+  cursor: pointer;
+}
+
+label[required]::after {
+  content: ' *';
+  color: #E53E3E;
+}
+
+.form-field {
+  margin-bottom: 20px;
+}
+.form-field:last-of-type {
+  margin-bottom: 24px;
+}
+
+/* ── Footer ───────────────────────────────────── */
+.footer {
+  padding: 36px 32px;
+  text-align: center;
+  border-top: 1px solid var(--border);
+  background: var(--bg-soft);
+  margin-top: 56px;
+}
+.footer p {
+  font-size: 12px;
+  color: var(--gray-faint);
+  line-height: 1.6;
+  margin: 0 0 8px;
+}
+.footer p:last-child { margin-bottom: 0; }
+.footer a {
+  color: var(--teal);
+  text-decoration: none;
+  font-weight: 500;
+}
+.footer a:hover { text-decoration: underline; }
+
+/* ── Main Content Wrapper ──────────────────────── */
+main {
+  min-height: calc(100vh - 400px);
+}
+
+/* ── Button Consistency ──────────────────────────── */
+button {
+  transition: all .15s ease;
+}
+
+button:not(:disabled):active {
+  transform: scale(0.98);
+}
+
+button[type="submit"]:not(:disabled) {
+  cursor: pointer;
+}
+
+button[type="submit"]:not(:disabled):hover {
+  transform: translateY(-1px);
+}
+
+/* Modal buttons */
+.modal-actions button {
+  transition: background .15s ease, border-color .15s ease;
+}
+
+.modal-actions button.primary:active {
+  transform: scale(0.98);
+}
+
+/* ── Alert & Live Regions ────────────────────────── */
+[role="alert"] {
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 12px;
+  line-height: 1.5;
+  animation: slideIn .2s ease;
+}
+
+[role="alert"][aria-live="assertive"] {
+  background: #FFF5F5;
+  border: 1px solid #FEC7D7;
+  color: #E53E3E;
+}
+
+[role="alert"][aria-live="polite"] {
+  color: #E53E3E;
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateY(-4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.form-success {
+  animation: slideIn .3s ease;
+}
+
+.modal-success {
+  animation: fadeInUp .3s ease;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Radio Button & Checkbox Styling ──────────────── */
+input[type="radio"],
+input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  cursor: pointer;
+  accent-color: var(--teal);
+  vertical-align: middle;
+}
+
+.role-option input[type="radio"] {
+  margin-right: 8px;
+}
+
+/* Better focus for radio/checkbox */
+input[type="radio"]:focus-visible,
+input[type="checkbox"]:focus-visible {
+  outline: 2px solid var(--teal);
+  outline-offset: 2px;
+}
+
+/* ── Textarea Specific ──────────────────────────── */
+textarea {
+  resize: vertical;
+  min-height: 100px;
+  font-family: inherit;
+  line-height: 1.5;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+/* Prevent textarea shrinking below min-height */
+textarea[style*="height"] {
+  min-height: 100px !important;
+}
+
+/* ── Link Styling Consistency ────────────────────── */
+a {
+  color: var(--teal);
+  text-decoration: none;
+  transition: opacity .15s ease, text-decoration .15s ease;
+}
+
+a:not(.nav-links a):not(.back-link):not(.tier-cta):hover {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+
+a:not(.nav-links a):not(.back-link):not(.tier-cta):active {
+  opacity: 0.8;
+}
+
+/* Prevent link underline on buttons */
+a.back-link,
+a.tier-cta {
+  text-decoration: none !important;
+}
+
+a.back-link:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 2px;
+}
+
+/* ── Section Spacing ─────────────────────────── */
+section {
+  margin-bottom: 48px;
+}
+
+section:last-of-type {
+  margin-bottom: 32px;
+}
+
+section > h2 {
+  margin-top: 0;
+}
+
+/* Visual hierarchy for eyebrow/label text */
+.eyebrow,
+.section-eyebrow {
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* ── Text Readability ────────────────────────── */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+p {
+  line-height: 1.75;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+}
+
+/* Better line length for readability */
+.content {
+  line-height: 1.7;
+}
+
+/* List readability */
+li {
+  line-height: 1.75;
+}
+
+ul, ol {
+  margin: 0 0 16px;
+  padding-left: 24px;
+}
+
+li + li {
+  margin-top: 6px;
+}
+
+/* ── Visual Dividers ──────────────────────────── */
+hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 48px 0;
+}
+
+/* Card-like sections with subtle borders */
+.card,
+.tier,
+.rec {
+  border: 1px solid var(--border);
+  background: #fff;
+  border-radius: var(--radius);
+}
+
+/* Prevent double borders on nested elements */
+.card > :first-child {
+  margin-top: 0;
+}
+
+.card > :last-child {
+  margin-bottom: 0;
+}
+
+/* ── Input Transitions ──────────────────────────── */
+input,
+textarea,
+select {
+  transition: border-color .15s ease, box-shadow .15s ease, background-color .15s ease;
+}
+
+/* Focus visible ring spacing */
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  border-color: var(--teal) !important;
+  box-shadow: 0 0 0 3px rgba(29, 158, 117, 0.2) !important;
+  border-radius: var(--radius);
+}
+
+/* Remove default outline */
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
 }
