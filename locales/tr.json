@@ -5,7 +5,9 @@
         "privacyFooter": "Collective Research bağımsız bir araştırma girişimidir. Verileriniz asla bireysel olarak paylaşılmaz - yalnızca kıyaslama amacıyla toplu ve anonimleştirilmiş formatta kullanılır.",
         "loading": "Yükleniyor...",
         "sending": "Gönderiliyor...",
-        "joining": "Katılım sağlanıyor..."
+        "joining": "Katılım sağlanıyor...",
+        "backToHome": "<- Anasayfaya Dön",
+        "backToPricing": "<- Fiyatlandırmaya Dön"
     },
     "nav": {
         "home": "Ana Sayfa",
@@ -36,7 +38,8 @@
         "ctaLabel": "Anket yayınlandığında ilk sizin haberiniz olsun - e-posta adresinizi bırakın, sizi bilgilendirelim.",
         "ctaPlaceholder": "adiniz@sirketiniz.com",
         "ctaButton": "Beni Bilgilendir",
-        "ctaNote": "Anket yayına alındığında ilk öğrenen siz olun. <a href=\"how-it-works.html\">Sistemin nasıl çalıştığını inceleyin →</a>"
+        "ctaNote": "Anket yayına alındığında ilk öğrenen siz olun. <a href=\"how-it-works.html\">Sistemin nasıl çalıştığını inceleyin →</a>",
+        "emailPlaceholder": "adiniz@sirketiniz.com"
     },
     "modal": {
         "title": "Son bir detay",
@@ -55,7 +58,12 @@
         "successMessage": "Teşekkür ederiz. Anket yayınlandığında sizi e-posta ile bilgilendireceğiz.",
         "doneButton": "Tamamlandı",
         "emailRequired": "E-posta adresi zorunludur",
-        "emailInvalid": "Lütfen geçerli bir e-posta adresi girin"
+        "emailInvalid": "Lütfen geçerli bir e-posta adresi girin",
+        "roleLegend": "Kayıt rolüm...",
+        "roleCompany": "Araştırmaya katılmak isteyen bir şirket",
+        "orgName": "Kurum adı",
+        "sector": "Sektör / Endüstri",
+        "successText": "Teşekkürler, anket yayına girdiğinde size e-posta göndereceğiz."
     },
     "howItWorks": {
         "pageTitle": "Nasıl Çalışır?",
@@ -192,7 +200,12 @@
         "text24": "Kurumunuzdan 5'ten fazla kişinin anketi tamamlaması durumunda, toplamda %40'a varan ek %10 indirim elde edersiniz.",
         "text25": "Geçmiş Çalışma Raporları",
         "text26": "Bir araştırma tamamlandığında, anonimleştirilmiş bulgu raporu, söz konusu çalışmaya katılmamış olsa dahi herkesin satın alımına açılır. Bu rapor, şirkete özel herhangi bir karşılaştırma içermeden genel sonuçları ve trendleri kapsar.",
-        "text27": "rapor başına"
+        "text27": "rapor başına",
+        "freeName": "Ücretsiz",
+        "getNotified": "Beni Bilgilendir",
+        "joinWaitlist": "Bekleme Listesine Katıl",
+        "mostPopular": "En Popüler",
+        "tenPercentMore": "-10% daha fazla"
     },
     "privacy": {
         "pageTitle": "Gizlilik Politikası",

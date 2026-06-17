@@ -5,7 +5,9 @@
         "privacyFooter": "Collective Research è un'iniziativa di ricerca indipendente. I vostri dati non vengono mai condivisi singolarmente, bensì utilizzati esclusivamente in forma aggregata e anonimizzata a fini di benchmarking.",
         "loading": "Caricamento in corso...",
         "sending": "Invio in corso...",
-        "joining": "Iscrizione in corso..."
+        "joining": "Iscrizione in corso...",
+        "backToHome": "<- Torna alla home",
+        "backToPricing": "<- Torna ai prezzi"
     },
     "nav": {
         "home": "Home",
@@ -36,7 +38,8 @@
         "ctaLabel": "Siate i primi a ricevere notifica dell'avvio dello studio - inserite la vostra email e vi contatteremo.",
         "ctaPlaceholder": "nome@azienda.it",
         "ctaButton": "Richiedi notifica",
-        "ctaNote": "Ricevete in anteprima l'accesso allo studio. <a href=\"how-it-works.html\">Scoprite la nostra metodologia →</a>"
+        "ctaNote": "Ricevete in anteprima l'accesso allo studio. <a href=\"how-it-works.html\">Scoprite la nostra metodologia →</a>",
+        "emailPlaceholder": "tu@azienda.it"
     },
     "modal": {
         "title": "Un'ultima precisazione",
@@ -55,7 +58,12 @@
         "successMessage": "Grazie - riceverete un'email all'avvio dello studio.",
         "doneButton": "Chiudi",
         "emailRequired": "L'indirizzo email è obbligatorio",
-        "emailInvalid": "Inserire un indirizzo email valido"
+        "emailInvalid": "Inserire un indirizzo email valido",
+        "roleLegend": "Mi iscrivo come...",
+        "roleCompany": "Un'azienda interessata",
+        "orgName": "Nome dell'organizzazione",
+        "sector": "Settore / Industria",
+        "successText": "Grazie, ti invieremo un'e-mail non appena il sondaggio sarà lanciato."
     },
     "howItWorks": {
         "pageTitle": "La nostra metodologia",
@@ -192,7 +200,12 @@
         "text24": "Qualora più di 5 risorse della medesima organizzazione completino l'assessment, si applica un'ulteriore riduzione del 10%, fino a un massimale del 40%.",
         "text25": "Archivio Report Storici",
         "text26": "Alla chiusura dello studio, il report consolidato è acquistabile da chiunque, indipendentemente dalla partecipazione. Include macro-trend e benchmark globali, escludendo posizionamenti aziendali specifici.",
-        "text27": "per ciascun report"
+        "text27": "per ciascun report",
+        "freeName": "Gratuito",
+        "getNotified": "Avvisami al lancio",
+        "joinWaitlist": "Unisciti alla lista d'attesa",
+        "mostPopular": "Il più popolare",
+        "tenPercentMore": "-10% in più"
     },
     "privacy": {
         "pageTitle": "Informativa sulla privacy",

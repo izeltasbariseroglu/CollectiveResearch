@@ -5,7 +5,9 @@
         "privacyFooter": "Collective Research est une initiative de recherche indépendante. Vos données ne sont jamais partagées de manière individuelle ; elles sont exclusivement exploitées sous forme agrégée et anonymisée à des fins de benchmarking.",
         "loading": "Chargement en cours...",
         "sending": "Envoi en cours...",
-        "joining": "Inscription en cours..."
+        "joining": "Inscription en cours...",
+        "backToHome": "<- Retour à l'accueil",
+        "backToPricing": "<- Retour aux tarifs"
     },
     "nav": {
         "home": "Accueil",
@@ -36,7 +38,8 @@
         "ctaLabel": "Indiquez votre adresse e-mail pour être informé en priorité du lancement de l'enquête.",
         "ctaPlaceholder": "vous@entreprise.fr",
         "ctaButton": "M'avertir",
-        "ctaNote": "Soyez informé en priorité du lancement de l'enquête. <a href=\"how-it-works.html\">Découvrir le fonctionnement →</a>"
+        "ctaNote": "Soyez informé en priorité du lancement de l'enquête. <a href=\"how-it-works.html\">Découvrir le fonctionnement →</a>",
+        "emailPlaceholder": "vous@entreprise.fr"
     },
     "modal": {
         "title": "Une dernière étape",
@@ -55,7 +58,12 @@
         "successMessage": "Merci ! Nous vous contacterons dès le lancement de l'enquête.",
         "doneButton": "Terminer",
         "emailRequired": "L'adresse e-mail est requise",
-        "emailInvalid": "Veuillez saisir une adresse e-mail valide"
+        "emailInvalid": "Veuillez saisir une adresse e-mail valide",
+        "roleLegend": "Je m'inscris en tant que...",
+        "roleCompany": "Une entreprise intéressée",
+        "orgName": "Nom de l'organisation",
+        "sector": "Secteur / Industrie",
+        "successText": "Merci, nous vous enverrons un e-mail dès le lancement de l'enquête."
     },
     "howItWorks": {
         "pageTitle": "Fonctionnement",
@@ -192,7 +200,12 @@
         "text24": "Si plus de 5 collaborateurs de votre organisation répondent à l'enquête, vous obtenez 10 % de remise additionnelle, soit jusqu'à 40 % au total.",
         "text25": "Rapports des études antérieures",
         "text26": "À la clôture d'une étude, un rapport de synthèse anonymisé devient accessible à l'achat pour tous, même si vous n'avez pas participé à cette session. Il couvre les résultats globaux et les grandes tendances, sans aucune comparaison spécifique par entreprise.",
-        "text27": "par rapport"
+        "text27": "par rapport",
+        "freeName": "Gratuit",
+        "getNotified": "Tenez-moi informé",
+        "joinWaitlist": "Rejoindre la liste d'attente",
+        "mostPopular": "Le plus populaire",
+        "tenPercentMore": "-10% de plus"
     },
     "privacy": {
         "pageTitle": "Politique de confidentialité",

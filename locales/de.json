@@ -5,7 +5,9 @@
         "privacyFooter": "Collective Research ist eine unabhängige Forschungsinitiative. Ihre Daten werden niemals individuell weitergegeben – die Nutzung erfolgt ausschließlich in aggregierter und anonymisierter Form für Benchmarking-Zwecke.",
         "loading": "Ladevorgang...",
         "sending": "Wird gesendet...",
-        "joining": "Anmeldung läuft..."
+        "joining": "Anmeldung läuft...",
+        "backToHome": "<- Zurück zur Startseite",
+        "backToPricing": "<- Zurück zur Preisgestaltung"
     },
     "nav": {
         "home": "Startseite",
@@ -36,7 +38,8 @@
         "ctaLabel": "Registrieren Sie sich, um als Erstes vom Start der Studie zu erfahren – wir benachrichtigen Sie umgehend.",
         "ctaPlaceholder": "ihre.email@unternehmen.de",
         "ctaButton": "Benachrichtigen Sie mich",
-        "ctaNote": "Gehören Sie zu den Ersten, die vom Start der Studie erfahren. <a href=\"how-it-works.html\">Details zur Methodik →</a>"
+        "ctaNote": "Gehören Sie zu den Ersten, die vom Start der Studie erfahren. <a href=\"how-it-works.html\">Details zur Methodik →</a>",
+        "emailPlaceholder": "sie@unternehmen.de"
     },
     "modal": {
         "title": "Eine kurze Ergänzung",
@@ -55,7 +58,12 @@
         "successMessage": "Vielen Dank – wir werden Sie umgehend informieren, sobald die Evaluation beginnt.",
         "doneButton": "Abschließen",
         "emailRequired": "E-Mail-Adresse ist erforderlich",
-        "emailInvalid": "Bitte geben Sie eine gültige E-Mail-Adresse ein"
+        "emailInvalid": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+        "roleLegend": "Ich melde mich an als...",
+        "roleCompany": "Ein interessiertes Unternehmen",
+        "orgName": "Name der Organisation",
+        "sector": "Branche / Industrie",
+        "successText": "Danke, wir informieren Sie per E-Mail, sobald die Umfrage startet."
     },
     "howItWorks": {
         "pageTitle": "Methodik und Ablauf",
@@ -192,7 +200,12 @@
         "text24": "Sollten mehr als fünf Repräsentanten Ihres Unternehmens teilnehmen, gewähren wir einen kumulierten Rabatt von insgesamt bis zu 40 %.",
         "text25": "Archivierte Studienreports",
         "text26": "Nach offiziellem Abschluss einer Studie steht ein anonymisierter Ergebnisbericht zum Erwerb zur Verfügung – auch für Nicht-Teilnehmer. Dieser umfasst makroökonomische Ergebnisse und übergreifende Markttrends, exklusive der unternehmensspezifischen Benchmark-Vergleiche.",
-        "text27": "pro Report"
+        "text27": "pro Report",
+        "freeName": "Kostenlos",
+        "getNotified": "Benachrichtigen Sie mich",
+        "joinWaitlist": "Auf die Warteliste",
+        "mostPopular": "Am beliebtesten",
+        "tenPercentMore": "-10% mehr"
     },
     "privacy": {
         "pageTitle": "Datenschutzbestimmungen",

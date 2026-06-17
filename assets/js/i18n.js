@@ -80,11 +80,14 @@ window.I18n = function() {
     lang = lang || this.currentLang;
     const keys = key.split('.');
     let value = this.strings[lang] || {};
+    let fallbackValue = this.strings['en'] || {};
     for (let k of keys) {
-      value = value[k];
-      if (!value) return '[' + key + ']';
+      value = value ? value[k] : undefined;
+      fallbackValue = fallbackValue ? fallbackValue[k] : undefined;
     }
-    return value;
+    if (value) return value;
+    if (fallbackValue) return fallbackValue;
+    return '[' + key + ']';
   };
   
       this.setupLanguageSwitcher = function() {
