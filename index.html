@@ -101,7 +101,24 @@
                 <input type="checkbox" required name="consent_modal" style="flex-shrink: 0; margin-top: 2px; accent-color: var(--teal); width: auto;">
                 <span data-i18n="nav.form.consentModal">I consent to CollectiveResearch processing my data to send relevant updates in accordance with the <a href="privacy.html" style="color:var(--teal)">Privacy Policy</a>.</span>
               </label>
+              </div>
+            <div class="modal-actions">
+              <button type="button" class="secondary" id="modal-cancel" data-i18n="modal.cancelButton">Cancel</button>
+              <button type="submit" class="primary" data-i18n="modal.submitButton">Join the list</button>
             </div>
+          </form>
+        </div>
+        <div id="modal-success-view" class="modal-success" style="display:none;">
+          <div class="check" aria-hidden="true">&#10003;</div>
+          <h2 data-i18n="modal.successTitle">You're on the list</h2>
+          <p class="modal-sub" data-i18n="modal.successText">Thanks, we'll email you as soon as the survey launches.</p>
+            <div class="modal-actions"><button type="button" class="primary" id="modal-close" data-i18n="modal.doneButton">Done</button></div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+<script src="assets/js/nav.js" defer></script>
 <script>
   var ctaForm = document.getElementById('notify-form');
   var overlay = document.getElementById('modal-overlay');
