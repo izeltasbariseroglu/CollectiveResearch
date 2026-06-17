@@ -12,8 +12,8 @@
   <link href="styles.css" rel="stylesheet">
   <script src="i18n.js"></script>
   <style>
-    .pricing-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin: 48px 0; }
-    .tier-card { border: 1px solid var(--border); border-radius: var(--radius); padding: 32px 24px; background: white; transition: all .2s ease; }
+    .pricing-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin: 48px 0; align-items: stretch; }
+    .tier-card { display: flex; flex-direction: column; border: 1px solid var(--border); border-radius: var(--radius); padding: 32px 24px; background: white; transition: all .2s ease; }
     .tier-card:hover { border-color: var(--teal); transform: translateY(-4px); box-shadow: 0 8px 24px rgba(29, 158, 117, 0.1); }
     .tier-card.featured { border-color: var(--teal); background: linear-gradient(135deg, rgba(29, 158, 117, 0.05) 0%, rgba(159, 225, 203, 0.05) 100%); }
     .tier-name { font-size: 18px; font-weight: 600; margin-bottom: 8px; }

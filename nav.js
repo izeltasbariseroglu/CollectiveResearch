@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
         </svg>
         <div class="nav-brand-text">
           <div class="nav-brand-name">Collective Research</div>
-          <div class="nav-tagline">Building better benchmarks, together</div>
+          <div class="nav-tagline" data-i18n="common.tagline">From today to tomorrow, together.</div>
         </div>
       </a>
       <div class="nav-links">
