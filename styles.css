@@ -16,6 +16,9 @@
   --gray-faint:   #9C9A92;
   --border:       #E7E5DE;
   --bg-soft:      #FAF9F6;
+  --bg-success:   #E1F5EE;
+  --bg-secondary: #F3F1FF;
+  --bg-light:     #F1EFE8;
   --radius:       10px;
   --page-width:   880px;
   --text-width:   680px;
@@ -121,4 +124,17 @@ nav.nav {
   nav.nav, .footer-inner { padding-left: 20px; padding-right: 20px; }
   .nav-tagline { display: none; }
   .nav-links a { padding: 6px 8px; font-size: 12px; }
+}
+
+/* ── Tablet ─────────────────────────────────── */
+@media (min-width: 641px) and (max-width: 1024px) {
+  nav.nav, .footer-inner { padding-left: 24px; padding-right: 24px; }
+}
+
+/* ── Form States ───────────────────────────────── */
+input[type="email"]:invalid:not(:placeholder-shown),
+input[type="text"]:invalid:not(:placeholder-shown),
+textarea:invalid:not(:placeholder-shown) {
+  border-color: #E53E3E !important;
+  background-color: #FFF5F5;
 }

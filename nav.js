@@ -67,6 +67,27 @@
     page.insertAdjacentHTML('beforeend', footer);
   }
 
+  // Inject Organization schema
+  if (!document.querySelector('script[type="application/ld+json"]')) {
+    var schema = document.createElement('script');
+    schema.type = 'application/ld+json';
+    schema.textContent = JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Collective Research",
+      "url": "https://collectiveresearch.net",
+      "logo": "https://collectiveresearch.net/favicon.svg",
+      "description": "An independent research initiative providing confidential benchmark studies on digital transformation",
+      "sameAs": [],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Customer Service",
+        "email": "privacy@collectiveresearchs.com"
+      }
+    });
+    document.head.appendChild(schema);
+  }
+
   // Sticky scroll behaviour
   window.addEventListener('scroll', function () {
     var h = document.getElementById('site-header');

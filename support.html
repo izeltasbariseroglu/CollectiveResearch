@@ -3,12 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
 <title>Support — Collective Research</title>
 <meta name="description" content="Answers to common questions about the Collective Research benchmark study, and a way to get in touch if you need more help.">
 <meta property="og:title" content="Support — Collective Research">
 <meta property="og:description" content="Common questions answered, and a contact form if you need more help.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://collectiveresearch.net/support.html">
+<meta property="og:image" content="https://collectiveresearch.net/og-image.svg">
+<meta property="og:image:type" content="image/svg+xml">
 <meta name="twitter:card" content="summary">
 <link rel="canonical" href="https://collectiveresearch.net/support.html">
 <link rel="stylesheet" href="styles.css">
@@ -43,7 +46,7 @@
   .form-submit { font-family: inherit; font-size: 14px; font-weight: 500; padding: 12px 28px; background: var(--teal); color: #fff; border: none; border-radius: var(--radius); cursor: pointer; transition: transform .15s ease, box-shadow .15s ease, background .15s ease; }
   .form-submit:hover { transform: translateY(-1px); box-shadow: 0 6px 16px rgba(29,158,117,0.3); background: #178a64; }
   .form-success { display: none; text-align: center; padding: 20px 0; }
-  .form-success .check { width: 48px; height: 48px; border-radius: 50%; background: #E1F5EE; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; font-size: 22px; color: var(--teal); }
+  .form-success .check { width: 48px; height: 48px; border-radius: 50%; background: var(--bg-success); display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; font-size: 22px; color: var(--teal); }
   .form-success h3 { font-size: 16px; font-weight: 500; margin: 0 0 6px; }
   .form-success p { font-size: 13px; color: var(--gray-text); margin: 0; line-height: 1.7; }
   @media (max-width: 640px) { .content { padding-left: 20px; padding-right: 20px; } .contact-section { padding: 24px 20px; } }
@@ -204,9 +207,9 @@
         <p class="contact-lede">Send us a message and we'll respond within one business day.</p>
         <div id="contact-form-wrap">
           <form id="contact-form" novalidate>
-            <div class="form-field"><label for="contact-email">Your email address</label><input type="email" id="contact-email" name="email" placeholder="you@company.com" autocomplete="email" required aria-required="true"></div>
+            <div class="form-field"><label for="contact-email">Your email address</label><input type="email" id="contact-email" name="email" placeholder="you@company.com" autocomplete="email" required aria-required="true" aria-describedby="contact-email-error"><div id="contact-email-error" role="alert" aria-live="polite" style="font-size: 12px; color: #E53E3E; margin-top: 4px; min-height: 14px;"></div></div>
             <div class="form-field"><label for="contact-subject">Subject</label><input type="text" id="contact-subject" name="subject" placeholder="e.g. Question about the survey"></div>
-            <div class="form-field"><label for="contact-message">Message</label><textarea id="contact-message" name="message" placeholder="What would you like to know?" required aria-required="true"></textarea></div>
+            <div class="form-field"><label for="contact-message">Message</label><textarea id="contact-message" name="message" placeholder="What would you like to know?" required aria-required="true" aria-describedby="contact-message-error"></textarea><div id="contact-message-error" role="alert" aria-live="polite" style="font-size: 12px; color: #E53E3E; margin-top: 4px; min-height: 14px;"></div></div>
             <button type="submit" class="form-submit">Send message</button>
           </form>
         </div>
@@ -220,27 +223,144 @@
   </main>
 </div>
 <script src="nav.js"></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is this really free? What's the catch?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Taking part in the survey and receiving your Digital Maturity Snapshot is completely free, with no obligation to purchase anything. We do offer more detailed benchmark reports for a fee once a study closes, but these are entirely optional."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Who is behind Collective Research?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Collective Research is an independent research initiative, not affiliated with any consulting firm, software vendor, or industry body. Our goal is to produce honest, useful benchmark data."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How is this different from a consulting pitch or lead generation exercise?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It isn't one. We don't share your contact details or company information with any third party, including vendors, consultants, or sponsors."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will my competitors be able to see my company's answers?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Your individual responses are never visible to other participants or any third party. Only aggregated and anonymized data across many companies appears in benchmark reports."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What data do you actually collect?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For the early-access list: email address, organization name, sector, and participant type. For the survey: operational and organizational information about your company. We do not ask for personal information or financial data."
+      }
+    }
+  ]
+}
+</script>
 <script>
   var faqBtns = document.querySelectorAll('.faq-btn');
-  faqBtns.forEach(function(btn) {
+  
+  faqBtns.forEach(function(btn, index) {
+    // Click handler
     btn.addEventListener('click', function() {
-      var expanded = this.getAttribute('aria-expanded') === 'true';
-      faqBtns.forEach(function(b) {
-        b.setAttribute('aria-expanded', 'false');
-        document.getElementById(b.getAttribute('aria-controls')).classList.remove('open');
-      });
-      if (!expanded) {
-        this.setAttribute('aria-expanded', 'true');
-        document.getElementById(this.getAttribute('aria-controls')).classList.add('open');
+      toggleFaq(btn);
+    });
+    
+    // Keyboard handler (Enter/Space)
+    btn.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        toggleFaq(btn);
       }
     });
   });
+  
+  function toggleFaq(btn) {
+    var expanded = btn.getAttribute('aria-expanded') === 'true';
+    faqBtns.forEach(function(b) {
+      b.setAttribute('aria-expanded', 'false');
+      document.getElementById(b.getAttribute('aria-controls')).classList.remove('open');
+    });
+    if (!expanded) {
+      btn.setAttribute('aria-expanded', 'true');
+      document.getElementById(btn.getAttribute('aria-controls')).classList.add('open');
+      
+      // Smooth scroll to FAQ item
+      var bodyRect = document.body.getBoundingClientRect();
+      var elemRect = btn.getBoundingClientRect();
+      var offset = elemRect.top - bodyRect.top - 100;
+      window.scrollTo({ top: offset, behavior: 'smooth' });
+    }
+  }
+  
+  // Handle hash-based anchor links (#faq-btn-0, #faq-btn-1, etc)
+  if (window.location.hash) {
+    var hashBtn = document.querySelector(window.location.hash);
+    if (hashBtn && hashBtn.classList.contains('faq-btn')) {
+      setTimeout(function() { toggleFaq(hashBtn); }, 100);
+    }
+  }
+  
+  window.addEventListener('hashchange', function() {
+    var hashBtn = document.querySelector(window.location.hash);
+    if (hashBtn && hashBtn.classList.contains('faq-btn')) {
+      toggleFaq(hashBtn);
+    }
+  });
   document.getElementById('contact-form').addEventListener('submit', function(e) {
     e.preventDefault();
-    if (!document.getElementById('contact-email').value.trim() || !document.getElementById('contact-message').value.trim()) return;
+    var email = document.getElementById('contact-email').value.trim();
+    var message = document.getElementById('contact-message').value.trim();
+    var emailError = document.getElementById('contact-email-error');
+    var messageError = document.getElementById('contact-message-error');
+    
+    emailError.textContent = '';
+    messageError.textContent = '';
+    var hasError = false;
+    
+    if (!email) {
+      emailError.textContent = 'Email is required';
+      document.getElementById('contact-email').focus();
+      hasError = true;
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      emailError.textContent = 'Please enter a valid email';
+      document.getElementById('contact-email').focus();
+      hasError = true;
+    }
+    
+    if (!message) {
+      messageError.textContent = 'Message is required';
+      if (!hasError) document.getElementById('contact-message').focus();
+      hasError = true;
+    }
+    
+    if (hasError) return;
+    
     // TODO: POST to n8n webhook when ready
+    document.getElementById('contact-form').reset();
     document.getElementById('contact-form-wrap').style.display = 'none';
     document.getElementById('contact-success').style.display = 'block';
+    
+    // Auto-reset form after 4 seconds
+    setTimeout(function() {
+      document.getElementById('contact-form-wrap').style.display = 'block';
+      document.getElementById('contact-success').style.display = 'none';
+      document.getElementById('contact-form').reset();
+    }, 4000);
   });
 </script>
 </body>

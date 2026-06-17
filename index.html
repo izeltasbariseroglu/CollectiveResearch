@@ -3,12 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
 <title>Collective Research — How does your company's digital maturity compare?</title>
 <meta name="description" content="Collective Research is running a confidential benchmark study on digital transformation. Take a 10-minute survey and get a free, personalized Digital Maturity Snapshot in return.">
 <meta property="og:title" content="How does your company's digital maturity compare to your industry?">
 <meta property="og:description" content="Take a short confidential survey and get a free Digital Maturity Snapshot. See how your organization compares to peers in your sector.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://collectiveresearch.net/">
+<meta property="og:image" content="https://collectiveresearch.net/og-image.svg">
+<meta property="og:image:type" content="image/svg+xml">
 <meta name="twitter:card" content="summary">
 <link rel="canonical" href="https://collectiveresearch.net/">
 <link rel="stylesheet" href="styles.css">
@@ -57,7 +60,7 @@
   .modal-actions button.primary:hover { background: #178a64; }
   .modal-actions button.secondary:hover { background: var(--bg-soft); }
   .modal-success { text-align: center; }
-  .modal-success .check { width: 48px; height: 48px; border-radius: 50%; background: #E1F5EE; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; font-size: 22px; color: var(--teal); }
+  .modal-success .check { width: 48px; height: 48px; border-radius: 50%; background: var(--bg-success); display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; font-size: 22px; color: var(--teal); }
   @keyframes fadeInUp { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
   @keyframes drawLine { from { stroke-dashoffset: 40; } to { stroke-dashoffset: 0; } }
   @keyframes popIn { from { opacity: 0; transform: scale(0.4); } to { opacity: 1; transform: scale(1); } }
@@ -119,9 +122,10 @@
       </blockquote>
       <form class="cta-form fade" id="notify-form" style="animation-delay:0.35s;" novalidate>
         <label for="cta-email">Work email address</label>
-        <input type="email" id="cta-email" name="email" placeholder="you@company.com" autocomplete="email" required aria-required="true">
+        <input type="email" id="cta-email" name="email" placeholder="you@company.com" autocomplete="email" required aria-required="true" aria-describedby="cta-email-error">
         <button type="submit">Notify me</button>
       </form>
+      <div id="cta-email-error" role="alert" aria-live="polite" style="font-size: 13px; color: #E53E3E; margin-top: 8px; min-height: 18px;"></div>
       <p class="cta-note">Be the first to know when the survey launches. <a href="how-it-works.html" style="color: var(--teal); text-decoration: none;">See how it works &rarr;</a></p>
     </section>
 
@@ -143,6 +147,7 @@
             </div>
             <div class="field"><label for="org-name">Organization name</label><input type="text" id="org-name" name="organization" placeholder="e.g. Acme Manufacturing" autocomplete="organization"></div>
             <div class="field"><label for="org-sector">Sector / industry</label><input type="text" id="org-sector" name="sector" placeholder="e.g. Manufacturing, Retail, Logistics..."></div>
+            <div id="modal-email-error" role="alert" aria-live="polite" style="font-size: 12px; color: #E53E3E; margin-bottom: 12px; min-height: 16px;"></div>
             <div class="modal-actions">
               <button type="button" class="secondary" id="modal-cancel">Cancel</button>
               <button type="submit" class="primary">Join the list</button>
@@ -166,13 +171,87 @@
   var formView = document.getElementById('modal-form-view');
   var successView = document.getElementById('modal-success-view');
   var detailsForm = document.getElementById('details-form');
-  function openModal() { overlay.classList.add('open'); overlay.setAttribute('aria-hidden','false'); document.body.style.overflow='hidden'; }
-  function closeModal() { overlay.classList.remove('open'); overlay.setAttribute('aria-hidden','true'); document.body.style.overflow=''; }
-  ctaForm.addEventListener('submit', function(e) { e.preventDefault(); openModal(); });
+  var previousActiveElement = null;
+  function openModal() { 
+    previousActiveElement = document.activeElement;
+    overlay.classList.add('open'); 
+    overlay.setAttribute('aria-hidden','false'); 
+    document.body.style.overflow='hidden';
+    var firstInput = overlay.querySelector('input');
+    if (firstInput) firstInput.focus();
+  }
+  function closeModal() { 
+    overlay.classList.remove('open'); 
+    overlay.setAttribute('aria-hidden','true'); 
+    document.body.style.overflow=''; 
+    if (previousActiveElement) previousActiveElement.focus();
+  }
+  ctaForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+    var email = document.getElementById('cta-email').value.trim();
+    var errorDiv = document.getElementById('cta-email-error');
+    errorDiv.textContent = '';
+    
+    if (!email) {
+      errorDiv.textContent = 'Email is required';
+      document.getElementById('cta-email').focus();
+      return;
+    }
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      errorDiv.textContent = 'Please enter a valid email address';
+      document.getElementById('cta-email').focus();
+      return;
+    }
+    openModal();
+  });
   document.getElementById('modal-cancel').addEventListener('click', closeModal);
   overlay.addEventListener('click', function(e) { if(e.target===overlay) closeModal(); });
-  document.addEventListener('keydown', function(e) { if(e.key==='Escape' && overlay.classList.contains('open')) closeModal(); });
-  detailsForm.addEventListener('submit', function(e) { e.preventDefault(); formView.style.display='none'; successView.style.display='block'; });
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && overlay.classList.contains('open')) closeModal();
+    
+    if (overlay.classList.contains('open') && e.key === 'Tab') {
+      var focusableElements = overlay.querySelectorAll('input, button, [tabindex]:not([tabindex="-1"])');
+      var firstElement = focusableElements[0];
+      var lastElement = focusableElements[focusableElements.length - 1];
+      
+      if (e.shiftKey) {
+        if (document.activeElement === firstElement) {
+          e.preventDefault();
+          lastElement.focus();
+        }
+      } else {
+        if (document.activeElement === lastElement) {
+          e.preventDefault();
+          firstElement.focus();
+        }
+      }
+    }
+  });
+  detailsForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+    var email = document.getElementById('cta-email').value.trim();
+    var errorDiv = document.getElementById('modal-email-error');
+    errorDiv.textContent = '';
+    
+    // Recheck email in case user changed it
+    if (!email) {
+      errorDiv.textContent = 'Email is required';
+      document.getElementById('cta-email').focus();
+      return;
+    }
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      errorDiv.textContent = 'Please enter a valid email address';
+      document.getElementById('cta-email').focus();
+      return;
+    }
+    
+    formView.style.display='none'; 
+    successView.style.display='block'; 
+    detailsForm.reset();
+    
+    // Auto-close modal after 3 seconds
+    setTimeout(closeModal, 3000);
+  });
   document.getElementById('modal-close').addEventListener('click', closeModal);
 </script>
 </body>

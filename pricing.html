@@ -3,12 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
 <title>Pricing — Collective Research</title>
 <meta name="description" content="Your Digital Maturity Snapshot is free for every participant. See what's included in the Standard, Pro and Premium benchmark reports, and how participant discounts work.">
 <meta property="og:title" content="Reports & Pricing — Collective Research">
 <meta property="og:description" content="Free snapshot for every participant. Detailed benchmark reports available from $399, with up to 40% off for participants.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://collectiveresearch.net/pricing.html">
+<meta property="og:image" content="https://collectiveresearch.net/og-image.svg">
+<meta property="og:image:type" content="image/svg+xml">
 <meta name="twitter:card" content="summary">
 <link rel="canonical" href="https://collectiveresearch.net/pricing.html">
 <link rel="stylesheet" href="styles.css">
@@ -48,6 +51,11 @@
   .note { background: var(--bg-soft); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px 18px; font-size: 13px; color: var(--gray-text); line-height: 1.7; }
   .back-link { display: inline-block; margin-top: 24px; font-size: 13px; color: var(--teal); text-decoration: none; font-weight: 500; }
   .back-link:hover { text-decoration: underline; }
+  @media (min-width: 641px) and (max-width: 1024px) {
+    .content { padding-left: 24px; padding-right: 24px; }
+    .tiers { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+    .archive { flex-direction: column; align-items: flex-start; }
+  }
   @media (max-width: 640px) { .content { padding-left: 20px; padding-right: 20px; } .tiers { grid-template-columns: 1fr; } .archive { flex-direction: column; align-items: flex-start; } }
 
 </style>
