@@ -2,7 +2,7 @@
   "common": {
     "appName": "Collective Research",
     "tagline": "From today to tomorrow, together.",
-    "privacyFooter": "Collective Research is an independent research initiative. Your data is never shared individually — only used in aggregate, anonymized form for benchmarking.",
+    "privacyFooter": "Collective Research is an independent research initiative. Your data is never shared individually - only used in aggregate, anonymized form for benchmarking.",
     "loading": "Loading...",
     "sending": "Sending...",
     "joining": "Joining..."
@@ -18,15 +18,15 @@
 
   "homepage": {
     "heroTitle": "How does your company's digital maturity compare to your industry?",
-    "heroSubtitle": "Collective Research is running a confidential benchmark study on digital transformation. Take a short survey about your organization and get your own Digital Maturity Snapshot in return — and as more companies join, a fuller picture of how you compare to your industry.",
+    "heroSubtitle": "Collective Research is running a confidential benchmark study on digital transformation. Take a short survey about your organization and get your own Digital Maturity Snapshot in return - and as more companies join, a fuller picture of how you compare to your industry.",
     "step1Title": "Take a 10-minute confidential survey",
     "step1Desc": "Take a 10-minute confidential survey about your tools, processes and team readiness.",
     "step2Title": "Get your own Digital Maturity Snapshot",
-    "step2Desc": "Get your own Digital Maturity Snapshot — a personalized summary of your results.",
+    "step2Desc": "Get your own Digital Maturity Snapshot - a personalized summary of your results.",
     "step3Title": "See how you compare to peers",
     "step3Desc": "As more companies join, see how you compare to peers in your industry and region.",
-    "whyJoin": "No sales pitch, no consultants, no obligation. Just a clear, independent snapshot of where your organization stands — and where the opportunities are.",
-    "ctaLabel": "Be the first to know when the survey launches — leave your email and we'll notify you.",
+    "whyJoin": "No sales pitch, no consultants, no obligation. Just a clear, independent snapshot of where your organization stands - and where the opportunities are.",
+    "ctaLabel": "Be the first to know when the survey launches - leave your email and we'll notify you.",
     "ctaPlaceholder": "you@company.com",
     "ctaButton": "Notify me",
     "ctaNote": "Be the first to know when the survey launches. <a href=\"how-it-works.html\">See how it works →</a>"
@@ -46,7 +46,7 @@
     "cancelButton": "Cancel",
     "submitButton": "Join the list",
     "successTitle": "You're on the list",
-    "successMessage": "Thanks — we'll email you as soon as the survey launches.",
+    "successMessage": "Thanks - we'll email you as soon as the survey launches.",
     "doneButton": "Done",
     "emailRequired": "Email is required",
     "emailInvalid": "Please enter a valid email address"
@@ -54,13 +54,13 @@
 
   "howItWorks": {
     "pageTitle": "How it works",
-    "pageDesc": "Collective Research runs transparent, collaborative benchmark studies. Here's exactly what that means — how a study runs, what you get in return for taking part, and how your data is handled.",
+    "pageDesc": "Collective Research runs transparent, collaborative benchmark studies. Here's exactly what that means - how a study runs, what you get in return for taking part, and how your data is handled.",
     "visionEyebrow": "Our vision",
     "visionTitle": "An honest picture, for every company",
-    "visionText": "We believe every company — not just those with large consulting budgets — deserves a clear, honest view of where it stands in its digital journey, measured against real peers rather than guesswork or generic industry claims.",
+    "visionText": "We believe every company - not just those with large consulting budgets - deserves a clear, honest view of where it stands in its digital journey, measured against real peers rather than guesswork or generic industry claims.",
     "missionEyebrow": "Our mission",
     "missionTitle": "Built together, useful for everyone",
-    "missionText": "Each study works the same way: companies contribute a small amount of information about themselves, and in return receive a personalized summary of their own results. As more companies take part, everyone's picture gets richer — including yours.",
+    "missionText": "Each study works the same way: companies contribute a small amount of information about themselves, and in return receive a personalized summary of their own results. As more companies take part, everyone's picture gets richer - including yours.",
     "processEyebrow": "The process",
     "processTitle": "How a study runs, step by step",
     "timeline1Title": "1. Early access",
@@ -80,16 +80,16 @@
     "cardPast": "Past studies",
     "cardPastDesc": "As Collective Research runs more studies on different topics, anonymized findings from earlier studies become available to browse.",
     "cardVoice": "A say in what's next",
-    "cardVoiceDesc": "Participants help shape future surveys — this is version one, and feedback genuinely changes what we ask and how we report it.",
+    "cardVoiceDesc": "Participants help shape future surveys - this is version one, and feedback genuinely changes what we ask and how we report it.",
     "dataEyebrow": "Data & privacy",
     "dataTitle": "What we collect, and what we don't",
-    "dataText": "We don't need personal information to run these studies — organizational, operational information about your company is enough. Your individual responses are never shared with anyone else, including other participants. Only anonymized, aggregated data is used to build benchmarks and reports.",
+    "dataText": "We don't need personal information to run these studies - organizational, operational information about your company is enough. Your individual responses are never shared with anyone else, including other participants. Only anonymized, aggregated data is used to build benchmarks and reports.",
     "methodEyebrow": "Methodology",
     "methodTitle": "Built on established research, openly improved",
-    "methodText": "Our surveys are built from established, widely studied frameworks for digital maturity — not invented from scratch. Methodology is reviewed by independent academic and industry advisors, and each study is treated as a version: feedback from participants directly shapes the next one.",
+    "methodText": "Our surveys are built from established, widely studied frameworks for digital maturity - not invented from scratch. Methodology is reviewed by independent academic and industry advisors, and each study is treated as a version: feedback from participants directly shapes the next one.",
     "peopleEyebrow": "Who's involved",
     "peopleTitle": "Companies, advisors, and independent experts",
-    "peopleText": "Most participants are companies taking part in a study. Alongside them, academic researchers help review our methodology, and independent consultants are sometimes available if a company wants support in an area highlighted by their results — this is a connection we help make, not an endorsement or certification of any individual or firm."
+    "peopleText": "Most participants are companies taking part in a study. Alongside them, academic researchers help review our methodology, and independent consultants are sometimes available if a company wants support in an area highlighted by their results - this is a connection we help make, not an endorsement or certification of any individual or firm."
   },
 
   "pricing": {
@@ -118,23 +118,23 @@
     "discount30": "-30%",
     "discount30Desc": "Anyone who completes the survey gets 30% off any report tier above, for the study they took part in.",
     "discount40": "-10% more",
-    "discount40Desc": "If more than 5 people from your organization complete the survey (e.g. across different departments), you get an additional 10% off — up to 40% total.",
+    "discount40Desc": "If more than 5 people from your organization complete the survey (e.g. across different departments), you get an additional 10% off - up to 40% total.",
     "archiveTitle": "Past study reports",
-    "archiveDesc": "Once a study closes, an anonymized findings report becomes available for anyone to purchase — even if you didn't take part in that round. It covers overall results and trends, without any company-specific comparison.",
+    "archiveDesc": "Once a study closes, an anonymized findings report becomes available for anyone to purchase - even if you didn't take part in that round. It covers overall results and trends, without any company-specific comparison.",
     "archivePrice": "$299",
     "archivePricePer": "per report",
-    "noteText": "All prices shown are exclusive of any applicable taxes (e.g. VAT or sales tax). Depending on your location and organization type, tax may be added at checkout or handled via self-assessment on your end — this will be confirmed before any payment is taken.<br><br>Taking part in the survey is free, and your Digital Maturity Snapshot is yours either way. The Standard, Pro and Premium reports above are delivered once payment is received — discounts apply, but reports are not sent out before payment.<br><br>Prices reflect our current plans for the first study and may be refined before launch. Participant discounts apply to reports from the study you took part in, and are confirmed once that study's report is ready."
+    "noteText": "All prices shown are exclusive of any applicable taxes (e.g. VAT or sales tax). Depending on your location and organization type, tax may be added at checkout or handled via self-assessment on your end - this will be confirmed before any payment is taken.<br><br>Taking part in the survey is free, and your Digital Maturity Snapshot is yours either way. The Standard, Pro and Premium reports above are delivered once payment is received - discounts apply, but reports are not sent out before payment.<br><br>Prices reflect our current plans for the first study and may be refined before launch. Participant discounts apply to reports from the study you took part in, and are confirmed once that study's report is ready."
   },
 
   "privacy": {
     "pageTitle": "Privacy policy",
-    "lastUpdated": "Last updated: June 17, 2026 — Draft for early access",
+    "lastUpdated": "Last updated: June 17, 2026 - Draft for early access",
     "section1Title": "1. What we collect",
     "section1Text": "We don't need, and don't ask for, personal information to run our studies. The information we collect falls into two categories:",
-    "section1Item1": "<strong>Contact details:</strong> if you sign up for early access, we store your email address, the type of participant you are (company, consultant/advisor, or academic/researcher), your organization's name, and its sector — so we can send you relevant updates.",
-    "section1Item2": "<strong>Survey responses:</strong> when a study is live, the answers you give describe your organization (its tools, processes, and practices) — not you as an individual.",
+    "section1Item1": "<strong>Contact details:</strong> if you sign up for early access, we store your email address, the type of participant you are (company, consultant/advisor, or academic/researcher), your organization's name, and its sector - so we can send you relevant updates.",
+    "section1Item2": "<strong>Survey responses:</strong> when a study is live, the answers you give describe your organization (its tools, processes, and practices) - not you as an individual.",
     "section2Title": "2. How we use your data",
-    "section2Text": "Your own survey responses are used to generate your personal Digital Maturity Snapshot and, later, your Benchmark Report. Beyond that, your individual responses are combined with everyone else's, anonymized, and aggregated to build the overall benchmark — for example, \"the average score for companies of your size in your sector.\" No individual company's answers are ever shown to, or identifiable by, anyone else.",
+    "section2Text": "Your own survey responses are used to generate your personal Digital Maturity Snapshot and, later, your Benchmark Report. Beyond that, your individual responses are combined with everyone else's, anonymized, and aggregated to build the overall benchmark - for example, \"the average score for companies of your size in your sector.\" No individual company's answers are ever shown to, or identifiable by, anyone else.",
     "section3Title": "3. Who can see your data",
     "section3Item1": "Your own results are visible only to you.",
     "section3Item2": "Aggregated, anonymized statistics (covering many companies) appear in benchmark reports and may be shared publicly or sold as research findings.",
@@ -146,10 +146,10 @@
     "section6Title": "6. Your rights",
     "section6Text": "Depending on where you're based, you may have rights to access, correct, or delete the information we hold about you, and to object to or restrict certain uses of it. To exercise any of these rights, contact us at <strong>privacy@collectiveresearchs.com</strong>.",
     "section7Title": "7. Changes to this policy",
-    "section7Text": "As Collective Research develops — and particularly before our first survey opens — this policy may be updated. We'll note the date of the latest update at the top of this page.",
+    "section7Text": "As Collective Research develops - and particularly before our first survey opens - this policy may be updated. We'll note the date of the latest update at the top of this page.",
     "section8Title": "8. Contact",
     "section8Text": "Questions about this policy or how your data is handled can be sent to <strong>privacy@collectiveresearchs.com</strong>.",
-    "noteText": "This page describes our intended approach to data handling in plain terms. It is provided for transparency during early access and is not a substitute for formal legal advice — a finalized policy will be reviewed by a qualified professional before the survey opens to participants."
+    "noteText": "This page describes our intended approach to data handling in plain terms. It is provided for transparency during early access and is not a substitute for formal legal advice - a finalized policy will be reviewed by a qualified professional before the survey opens to participants."
   },
 
   "support": {
@@ -160,13 +160,13 @@
     "faq1Q": "Is this really free? What's the catch?",
     "faq1A": "Taking part in the survey and receiving your Digital Maturity Snapshot is completely free, with no obligation to purchase anything. We do offer more detailed benchmark reports for a fee once a study closes, but these are entirely optional. The free snapshot is genuinely useful on its own, and we'd rather earn your trust with it than pressure you into buying something.",
     "faq2Q": "Who is behind Collective Research?",
-    "faq2A": "Collective Research is an independent research initiative founded to bring benchmark-quality research within reach of smaller and medium-sized organizations. We're built on the principle that every company deserves a clear, honest view of where it stands — not just those with large consulting budgets.",
+    "faq2A": "Collective Research is an independent research initiative founded to bring benchmark-quality research within reach of smaller and medium-sized organizations. We're built on the principle that every company deserves a clear, honest view of where it stands - not just those with large consulting budgets.",
     "faq3Q": "How long does the survey take?",
-    "faq3A": "The Digital Maturity survey takes around 10–15 minutes to complete. It's designed to be straightforward and not require research or digging through company records — you can answer most questions based on what you know about your organization.",
+    "faq3A": "The Digital Maturity survey takes around 10–15 minutes to complete. It's designed to be straightforward and not require research or digging through company records - you can answer most questions based on what you know about your organization.",
     "faq4Q": "Will my individual answers be shared?",
     "faq4A": "No. Your individual survey responses are never shared with anyone else, including other participants. Only anonymized, aggregated statistics (\"the average for companies in your sector\" etc.) appear in reports. Your specific answers are used only to calculate your own snapshot and contribute to these aggregate benchmarks.",
     "faq5Q": "What should I do if I have feedback on the survey?",
-    "faq5A": "We'd love to hear it. Use the contact form below or email us directly. Feedback from participants genuinely shapes how we design future versions of the survey — this is version one, and we treat it that way.",
+    "faq5A": "We'd love to hear it. Use the contact form below or email us directly. Feedback from participants genuinely shapes how we design future versions of the survey - this is version one, and we treat it that way.",
     "contactEyebrow": "Get in touch",
     "contactTitle": "Still have questions?",
     "emailLabel": "Your email address",

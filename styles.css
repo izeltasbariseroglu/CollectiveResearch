@@ -1,5 +1,5 @@
 /* ═══════════════════════════════════════════════
-   Collective Research — Shared Stylesheet
+   Collective Research - Shared Stylesheet
    All pages link to this file.
    Page-specific styles stay in each HTML file.
    ═══════════════════════════════════════════════ */
@@ -506,5 +506,67 @@ select:focus {
   .lang-btn {
     padding: 4px 8px;
     font-size: 11px;
+  }
+}
+
+/* Language Switcher - 5 Languages */
+.language-switcher {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  margin-left: auto;
+  padding-right: 20px;
+}
+
+.lang-btn {
+  padding: 6px 10px;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--gray-text);
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all .15s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+}
+
+.lang-btn:hover {
+  border-color: var(--teal);
+  color: var(--teal);
+}
+
+.lang-btn.active {
+  background: var(--teal);
+  color: #fff;
+  border-color: var(--teal);
+  font-weight: 700;
+}
+
+.lang-btn.active:hover {
+  background: #178a64;
+}
+
+@media (max-width: 768px) {
+  .language-switcher {
+    gap: 2px;
+    padding-right: 12px;
+  }
+  .lang-btn {
+    padding: 4px 6px;
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 480px) {
+  .language-switcher {
+    gap: 1px;
+    padding-right: 8px;
+  }
+  .lang-btn {
+    padding: 3px 5px;
+    font-size: 8px;
   }
 }

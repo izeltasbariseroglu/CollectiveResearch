@@ -1,84 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="icon" href="https://collectiveresearch.net/favicon.svg" type="image/svg+xml">
-<title>How it works — Collective Research</title>
-<meta name="description" content="Learn how Collective Research benchmark studies work: how the survey runs, what you get in return, and how your data is handled.">
-<meta property="og:title" content="How it works — Collective Research">
-<meta property="og:description" content="A confidential 10-minute survey, a free personalized snapshot, and a growing picture of how you compare to your industry peers.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://collectiveresearch.net/how-it-works.html">
-<meta property="og:image" content="https://collectiveresearch.net/og-image.svg">
-<meta property="og:image:type" content="image/svg+xml">
-<meta name="twitter:card" content="summary">
-<link rel="canonical" href="https://collectiveresearch.net/how-it-works.html">
-<link rel="stylesheet" href="styles.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
-<style>
-
-  .content { max-width: var(--text-width); margin: 0 auto; padding: 56px 32px; }
-  h1 { font-size: 30px; font-weight: 500; line-height: 1.3; margin: 0 0 12px; }
-  .lede { font-size: 15px; color: var(--gray-text); line-height: 1.7; margin: 0 0 48px; }
-  section { margin-bottom: 48px; }
-  h2 { font-size: 18px; font-weight: 500; margin: 0 0 12px; }
-  p { font-size: 14px; line-height: 1.75; color: var(--gray-text); margin: 0 0 12px; }
-  .eyebrow { font-size: 12px; letter-spacing: 0.06em; color: var(--teal); text-transform: uppercase; margin: 0 0 8px; font-weight: 500; }
-  .timeline { border-left: 2px solid var(--border); padding-left: 24px; display: flex; flex-direction: column; gap: 24px; list-style: none; margin: 0; }
-  .timeline-item { position: relative; }
-  .timeline-item::before { content: ''; position: absolute; left: -29px; top: 6px; width: 14px; height: 14px; border-radius: 50%; background: var(--teal); border: 3px solid #fff; box-shadow: 0 0 0 2px var(--teal); }
-  .timeline-item h3 { font-size: 14px; font-weight: 500; margin: 0 0 4px; }
-  .timeline-item p { margin: 0; }
-  .cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
-  .card { border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; background: var(--bg-soft); }
-  .card h3 { font-size: 14px; font-weight: 500; margin: 0 0 8px; }
-  .card p { margin: 0; font-size: 13px; }
-  .back-link { display: inline-block; margin-top: 8px; font-size: 13px; color: var(--teal); text-decoration: none; font-weight: 500; }
-  .back-link:hover { text-decoration: underline; }
-  @media (max-width: 640px) { .content { padding-left: 20px; padding-right: 20px; } .cards { grid-template-columns: 1fr; } }
-
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>How it Works - Collective Research</title>
+  <meta property="og:title" content="How it Works - Collective Research">
+  <meta property="og:image" content="https://collectiveresearch.net/og-image.svg">
+  <link rel="icon" href="https://collectiveresearch.net/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+  <script src="i18n.js"></script>
 </head>
 <body>
-<a class="skip-link" href="#main-content">Skip to main content</a>
-<div class="page">
-  <main id="main-content">
-    <div class="content">
+  <main role="main">
+    <div class="page">
       <h1 data-i18n="howItWorks.pageTitle">How it works</h1>
-      <p class="lede" data-i18n="howItWorks.pageDesc">Collective Research runs transparent, collaborative benchmark studies. Here's exactly what that means: how a study runs, what you get in return for taking part, and how your data is handled.</p>
-      <section aria-labelledby="vision-heading"><p class="eyebrow">Our vision</p><h2 id="vision-heading" data-i18n="howItWorks.visionTitle">An honest picture, for every company</h2><p>We believe every company, not just those with large consulting budgets, deserves a clear, honest view of where it stands in its digital journey, measured against real peers rather than guesswork or generic industry claims.</p></section>
-      <section aria-labelledby="mission-heading"><p class="eyebrow">Our mission</p><h2 id="mission-heading" data-i18n="howItWorks.missionTitle">Built together, useful for everyone</h2><p>Each study works the same way: companies contribute a small amount of information about themselves, and in return receive a personalized summary of their own results. As more companies take part, everyone's picture gets richer, including yours.</p></section>
-      <section aria-labelledby="process-heading">
-        <p class="eyebrow">The process</p>
-        <h2 id="process-heading" data-i18n="howItWorks.processTitle">How a study runs, step by step</h2>
-        <ol class="timeline">
-          <li class="timeline-item"><h3>1. Early access</h3><p>You sign up to be notified. This costs nothing and doesn't commit you to anything.</p></li>
-          <li class="timeline-item"><h3>2. Launch</h3><p>Once enough companies have signed up, we announce a launch: how many companies are already on board, and a clear survey window (around 30 days).</p></li>
-          <li class="timeline-item"><h3>3. Survey window (~30 days)</h3><p>You complete a confidential 10-15 minute survey about your organization. Immediately afterwards, you receive your own Digital Maturity Snapshot, a summary of your results.</p></li>
-          <li class="timeline-item"><h3>4. Full report (~45 days from launch)</h3><p>Once the survey window closes, we compile the complete peer-benchmarked report from all participants and make it available to you.</p></li>
-        </ol>
+      <p class="lede" data-i18n="howItWorks.pageDesc">Collective Research runs transparent, collaborative benchmark studies. Here is exactly what that means, how a study runs, what you get in return for your participation, and how your data is treated.</p>
+
+      <section>
+        <p class="section-eyebrow" data-i18n="howItWorks.visionEyebrow">Our vision</p>
+        <h2 id="vision-heading" data-i18n="howItWorks.visionTitle">An honest picture, for every company</h2>
+        <p data-i18n="howItWorks.visionText">We believe every company deserves a clear, honest look at where it stands in its digital transformation journey, measured against real industry peers, not hunches or generic industry claims.</p>
       </section>
-      <section aria-labelledby="whatyouget-heading">
-        <p class="eyebrow">What you get</p>
-        <h2 id="whatyouget-heading">Free, immediate, and growing over time</h2>
-        <div class="cards">
-          <div class="card"><h3>Your Snapshot</h3><p>Included for every participant, right after the survey: your own scores across the key dimensions we measure.</p></div>
-          <div class="card"><h3>The Benchmark Report</h3><p>A more detailed report comparing you to similar companies by sector and size, available to participants at a reduced price once the study closes.</p></div>
-          <div class="card"><h3>Past studies</h3><p>As Collective Research runs more studies on different topics, anonymized findings from earlier studies become available to browse.</p></div>
-          <div class="card"><h3>A say in what's next</h3><p>Participants help shape future surveys. This is version one, and feedback genuinely changes what we ask and how we report it.</p></div>
+
+      <section>
+        <p class="section-eyebrow" data-i18n="howItWorks.missionEyebrow">Our mission</p>
+        <h2 id="mission-heading" data-i18n="howItWorks.missionTitle">Built together, useful for everyone</h2>
+        <p data-i18n="howItWorks.missionText">Every study works the same way: companies provide a small amount of information about themselves and receive in return a personalized summary of their own results. The more companies participate, the fuller the picture becomes for everyone, including you.</p>
+      </section>
+
+      <section>
+        <p class="section-eyebrow" data-i18n="howItWorks.processEyebrow">The process</p>
+        <h2 id="process-heading" data-i18n="howItWorks.processTitle">How a study runs, step by step</h2>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3 data-i18n="howItWorks.timeline1Title">1. Early access</h3>
+              <p data-i18n="howItWorks.timeline1Desc">You sign up to be notified. It's free and commits you to nothing.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3 data-i18n="howItWorks.timeline2Title">2. Launch</h3>
+              <p data-i18n="howItWorks.timeline2Desc">Once enough companies have signed up, we announce a launch: how many are already on board and a clear survey window (roughly 30 days).</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3 data-i18n="howItWorks.timeline3Title">3. Survey period (roughly 30 days)</h3>
+              <p data-i18n="howItWorks.timeline3Desc">You fill out a confidential 10- to 15-minute survey about your company. Right after, you get your personal Digital Maturity Snapshot, a summary of your results.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3 data-i18n="howItWorks.timeline4Title">4. Full report (roughly 45 days post-launch)</h3>
+              <p data-i18n="howItWorks.timeline4Desc">After the survey closes, we compile the full, peer-compared report of all participants and make it available to you.</p>
+            </div>
+          </div>
         </div>
       </section>
-      <section aria-labelledby="privacy-heading"><p class="eyebrow">Data &amp; privacy</p><h2 id="privacy-heading">What we collect, and what we don't</h2><p>We don't need personal information to run these studies. Organizational, operational information about your company is enough. Your individual responses are never shared with anyone else, including other participants. Only anonymized, aggregated data is used to build benchmarks and reports.</p></section>
-      <section aria-labelledby="methodology-heading"><p class="eyebrow">Methodology</p><h2 id="methodology-heading">Built on established research, openly improved</h2><p>Our surveys are built from established, widely studied frameworks for digital maturity, not invented from scratch. Methodology is reviewed by independent academic and industry advisors, and each study is treated as a version: feedback from participants directly shapes the next one.</p></section>
-      <section aria-labelledby="who-heading"><p class="eyebrow">Who's involved</p><h2 id="who-heading">Companies, advisors, and independent experts</h2><p>Most participants are companies taking part in a study. Alongside them, academic researchers help review our methodology, and independent consultants are sometimes available if a company wants support in an area highlighted by their results. This is a connection we help make, not an endorsement or certification of any individual or firm.</p></section>
-      <a class="back-link" href="index.html">&larr; Back to home</a>
+
+      <section>
+        <p class="section-eyebrow" data-i18n="howItWorks.youGetEyebrow">What you get</p>
+        <h2 data-i18n="howItWorks.youGetTitle">Free, immediate and growing over time</h2>
+        <div class="cards">
+          <div class="card">
+            <h3 data-i18n="howItWorks.cardSnapshot">Your Snapshot</h3>
+            <p data-i18n="howItWorks.cardSnapshotDesc">For every participant right after the survey: your own scores in all measured dimensions.</p>
+          </div>
+          <div class="card">
+            <h3 data-i18n="howItWorks.cardBenchmark">The Benchmark report</h3>
+            <p data-i18n="howItWorks.cardBenchmarkDesc">A more detailed report comparing you to similar companies by sector and size, made available to participants at a discount when the study ends.</p>
+          </div>
+          <div class="card">
+            <h3 data-i18n="howItWorks.cardPast">Past studies</h3>
+            <p data-i18n="howItWorks.cardPastDesc">As Collective Research runs other studies on different topics, anonymized findings from past studies become available to explore.</p>
+          </div>
+          <div class="card">
+            <h3 data-i18n="howItWorks.cardVoice">A voice on what comes</h3>
+            <p data-i18n="howItWorks.cardVoiceDesc">Participants help shape future surveys, this is version one and feedback really does change what we ask and how we report.</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <p class="section-eyebrow" data-i18n="howItWorks.dataEyebrow">Data and privacy</p>
+        <h2 data-i18n="howItWorks.dataTitle">What we collect and what we don't</h2>
+        <p data-i18n="howItWorks.dataText">We don't need personal information to run these studies and we don't ask for it. Information about your organization and its operations is enough. Your individual answers are never shared with anyone else, not with other participants. Only anonymized, aggregated data is used to build benchmarks and reports.</p>
+      </section>
+
+      <section>
+        <p class="section-eyebrow" data-i18n="howItWorks.methodEyebrow">Methodology</p>
+        <h2 data-i18n="howItWorks.methodTitle">Based on established research, openly improved</h2>
+        <p data-i18n="howItWorks.methodText">Our surveys are based on established, widely-studied frameworks for digital maturity, not made up from scratch. Methodology is reviewed by independent academics and industry consultants, and every study is treated as a version: feedback from participants shapes the next one directly.</p>
+      </section>
+
+      <section>
+        <p class="section-eyebrow" data-i18n="howItWorks.peopleEyebrow">Who's involved</p>
+        <h2 data-i18n="howItWorks.peopleTitle">Companies, consultants and independent experts</h2>
+        <p data-i18n="howItWorks.peopleText">Most participants are companies taking part in a study. Alongside them, academic researchers help review our methodology and independent consultants are sometimes available if a company wants support in an area its results highlight, that's a connection we help make, not the endorsement or certification of any one person or firm.</p>
+      </section>
     </div>
   </main>
-</div>
-<script src="nav.js"></script>
-
+  <script src="nav.js"></script>
 </body>
 </html>

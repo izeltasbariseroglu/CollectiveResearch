@@ -1,102 +1,81 @@
-/* ═══════════════════════════════════════════════
-   Collective Research — Shared Nav & Footer
-   Injects header and footer into every page.
-   To update nav/footer: edit only this file.
-   ═══════════════════════════════════════════════ */
+// Inject header and footer HTML
+document.addEventListener('DOMContentLoaded', function() {
+  const navHTML = `<header>
+    <nav class="nav">
+      <a href="index.html" class="logo">Collective Research</a>
+      <ul>
+        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+        <li><a href="how-it-works.html" data-i18n="nav.howItWorks">How it works</a></li>
+        <li><a href="pricing.html" data-i18n="nav.pricing">Pricing</a></li>
+        <li><a href="privacy.html" data-i18n="nav.privacy">Privacy</a></li>
+      </ul>
+    </nav>
+  </header>`;
 
-(function () {
+  const footerHTML = `<footer>
+    <div class="footer-content">
+      <p><strong>Collective Research</strong> is an independent research initiative.</p>
+      <p data-i18n="common.privacyFooter">Your data is never shared individually, only in aggregated, anonymized form for benchmarking purposes.</p>
+      <ul>
+        <li><a href="privacy.html" data-i18n="nav.privacy">Privacy</a></li>
+        <li><a href="support.html">Support</a></li>
+        <li><a href="mailto:hello@collectiveresearchs.com">Contact</a></li>
+      </ul>
+    </div>
+  </footer>`;
 
-  var PAGES = [
-    { href: 'index.html',        label: 'Home' },
-    { href: 'how-it-works.html', label: 'How it works' },
-    { href: 'pricing.html',      label: 'Pricing' },
-    { href: 'privacy.html',      label: 'Privacy' },
-    { href: 'support.html',      label: 'Support' },
-  ];
-
-  var LOGO = '<svg class="nav-logo" viewBox="0 0 56 56" aria-label="Collective Research logo" focusable="false">'
-    + '<polygon points="24,11 36.4,19.98 31.64,34.52 16.36,34.52 11.64,19.98" fill="none" stroke="#1D9E75" stroke-width="2" stroke-linejoin="round" opacity="0.45"/>'
-    + '<line x1="24" y1="11" x2="24" y2="24" stroke="#AFA9EC" stroke-width="2" opacity="0.7"/>'
-    + '<line x1="36.4" y1="19.98" x2="24" y2="24" stroke="#AFA9EC" stroke-width="2" opacity="0.7"/>'
-    + '<line x1="31.64" y1="34.52" x2="24" y2="24" stroke="#AFA9EC" stroke-width="2" opacity="0.7"/>'
-    + '<line x1="16.36" y1="34.52" x2="24" y2="24" stroke="#AFA9EC" stroke-width="2" opacity="0.7"/>'
-    + '<line x1="11.64" y1="19.98" x2="24" y2="24" stroke="#AFA9EC" stroke-width="2" opacity="0.7"/>'
-    + '<line x1="31.64" y1="34.52" x2="43" y2="46" stroke="#2C2C2A" stroke-width="5" stroke-linecap="round"/>'
-    + '<circle cx="24" cy="11" r="4" fill="#1D9E75"/>'
-    + '<circle cx="36.4" cy="19.98" r="4" fill="#5DCAA5"/>'
-    + '<circle cx="31.64" cy="34.52" r="4" fill="#1D9E75"/>'
-    + '<circle cx="16.36" cy="34.52" r="4" fill="#9FE1CB"/>'
-    + '<circle cx="11.64" cy="19.98" r="4" fill="#9FE1CB"/>'
-    + '<circle cx="24" cy="24" r="3.5" fill="#7F77DD"/>'
-    + '</svg>';
-
-  // Detect current page
-  var current = window.location.pathname.split('/').pop() || 'index.html';
-  if (current === '' || current === '/') current = 'index.html';
-
-  // Build nav links
-  var links = PAGES.map(function (p) {
-    var active = (p.href === current) ? ' aria-current="page"' : '';
-    return '<a href="' + p.href + '"' + active + '>' + p.label + '</a>';
-  }).join('');
-
-  // Header HTML
-  var header = '<header class="site-header" id="site-header">'
-    + '<nav class="nav" aria-label="Main navigation">'
-    + '<a class="nav-brand-link" href="index.html">'
-    + LOGO
-    + '<div class="nav-brand-text">'
-    + '<span class="nav-brand-name">Collective Research</span>'
-    + '<span class="nav-tagline">Shared strength. Sharper insight. Smarter strategy.</span>'
-    + '</div></a>'
-    + '<div class="nav-links">' + links + '</div>'
-    + '</nav></header>';
-
-  // Footer HTML
-  var footer = '<footer class="site-footer">'
-    + '<div class="footer-inner">'
-    + '<p>Collective Research is an independent research initiative. '
-    + 'Your data is never shared individually, only used in aggregate, anonymized form for benchmarking.'
-    + ' &nbsp;&middot;&nbsp; <a href="privacy.html">Privacy policy</a></p>'
-    + '</div></footer>';
-
-  // Inject into .page
-  var page = document.querySelector('.page');
-  if (page) {
-    page.insertAdjacentHTML('afterbegin', header);
-    page.insertAdjacentHTML('beforeend', footer);
+  if (!document.querySelector('header')) {
+    document.body.insertAdjacentHTML('afterbegin', navHTML);
+  }
+  if (!document.querySelector('footer')) {
+    document.body.insertAdjacentHTML('beforeend', footerHTML);
   }
 
-  // Inject Organization schema
-  if (!document.querySelector('script[type="application/ld+json"]')) {
-    var schema = document.createElement('script');
-    schema.type = 'application/ld+json';
-    schema.textContent = JSON.stringify({
+  // Detect active page and highlight nav
+  const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+  document.querySelectorAll('nav.nav a').forEach(link => {
+    const href = link.getAttribute('href');
+    if (href === currentPage || (currentPage === '' && href === 'index.html')) {
+      link.setAttribute('aria-current', 'page');
+      link.classList.add('active');
+    }
+  });
+
+  // Sticky nav on scroll
+  const nav = document.querySelector('header');
+  if (nav) {
+    let lastScrollY = 0;
+    window.addEventListener('scroll', function() {
+      const scrollY = window.scrollY;
+      nav.classList.toggle('scrolled', scrollY > 50);
+      lastScrollY = scrollY;
+    }, { passive: true });
+  }
+
+  // Organization Schema.org
+  if (document.querySelector('script[type="application/ld+json"]') === null) {
+    const schema = {
       "@context": "https://schema.org",
       "@type": "Organization",
       "name": "Collective Research",
       "url": "https://collectiveresearch.net",
       "logo": "https://collectiveresearch.net/favicon.svg",
-      "description": "An independent research initiative providing confidential benchmark studies on digital transformation",
-      "sameAs": [],
       "contactPoint": {
         "@type": "ContactPoint",
         "contactType": "Customer Service",
-        "email": "privacy@collectiveresearchs.com"
-      }
-    });
-    document.head.appendChild(schema);
+        "email": "hello@collectiveresearchs.com"
+      },
+      "sameAs": []
+    };
+    const script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.textContent = JSON.stringify(schema);
+    document.head.appendChild(script);
   }
 
-  // Sticky scroll behaviour
-  window.addEventListener('scroll', function () {
-    var h = document.getElementById('site-header');
-    if (h) h.classList.toggle('scrolled', window.scrollY > 24);
-  }, { passive: true });
-
-  // Track navigation clicks
+  // GA4 nav tracking
   if (typeof gtag !== 'undefined') {
-    var navLinks = document.querySelectorAll('nav.nav a[href]');
+    const navLinks = document.querySelectorAll('nav.nav a[href]');
     navLinks.forEach(function(link) {
       link.addEventListener('click', function() {
         gtag('event', 'page_link_click', {
@@ -108,15 +87,28 @@
     });
   }
 
-  // ── i18n Initialization ───────────────────────────
-  // Load and initialize multi-language support
+  // Load all translations and initialize i18n
   if (typeof window.i18n !== 'undefined') {
     Promise.all([
       fetch('en.json').then(r => r.json()).catch(() => ({})),
-      fetch('tr.json').then(r => r.json()).catch(() => ({}))
-    ]).then(([en, tr]) => {
-      window.i18n.init({ en, tr });
+      fetch('tr.json').then(r => r.json()).catch(() => ({})),
+      fetch('de.json').then(r => r.json()).catch(() => ({})),
+      fetch('fr.json').then(r => r.json()).catch(() => ({})),
+      fetch('it.json').then(r => r.json()).catch(() => ({}))
+    ]).then(([en, tr, de, fr, it]) => {
+      window.i18n.init({ en, tr, de, fr, it });
     }).catch(err => console.warn('i18n loading error:', err));
   }
+});
 
-})();
+// Smooth scroll behavior
+document.addEventListener('click', function(e) {
+  if (e.target.getAttribute('href')?.startsWith('#')) {
+    e.preventDefault();
+    const id = e.target.getAttribute('href').slice(1);
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+});

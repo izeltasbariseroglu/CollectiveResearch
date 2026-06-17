@@ -2,7 +2,7 @@
   "common": {
     "appName": "Collective Research",
     "tagline": "Bugünden yarına, birlikte.",
-    "privacyFooter": "Collective Research bağımsız bir araştırma girişimidir. Verileriniz asla bireysel olarak paylaşılmaz — yalnızca toplu, anonimleştirilmiş biçimde kıyaslama için kullanılır.",
+    "privacyFooter": "Collective Research bağımsız bir araştırma girişimidir. Verileriniz asla bireysel olarak paylaşılmaz - yalnızca toplu, anonimleştirilmiş biçimde kıyaslama için kullanılır.",
     "loading": "Yükleniyor...",
     "sending": "Gönderiliyor...",
     "joining": "Katılıyor..."
@@ -18,11 +18,11 @@
 
   "homepage": {
     "heroTitle": "Şirketinizin dijital olgunluğu sektörünüze kıyasla nasıl?",
-    "heroSubtitle": "Collective Research, dijital dönüşüm konusunda gizli bir kıyaslama çalışması başlatıyor. Kuruluşunuz hakkında kısa bir anket doldurun ve karşılığında kişiselleştirilmiş bir Dijital Olgunluk Özeti alın — ve daha fazla şirket katıldıkça, sektörünüzdeki emsallerinize kıyasla daha tam bir resim görün.",
+    "heroSubtitle": "Collective Research, dijital dönüşüm konusunda gizli bir kıyaslama çalışması başlatıyor. Kuruluşunuz hakkında kısa bir anket doldurun ve karşılığında kişiselleştirilmiş bir Dijital Olgunluk Özeti alın - ve daha fazla şirket katıldıkça, sektörünüzdeki emsallerinize kıyasla daha tam bir resim görün.",
     "step1Title": "10 dakikalık gizli bir anket doldurun",
     "step1Desc": "Araçlarınız, süreçleriniz ve ekip hazırlığınız hakkında 10 dakikalık gizli bir anket doldurun.",
     "step2Title": "Kendi Dijital Olgunluk Özetinizi alın",
-    "step2Desc": "Kendi Dijital Olgunluk Özetinizi alın — sonuçlarınızın kişiselleştirilmiş bir özeti.",
+    "step2Desc": "Kendi Dijital Olgunluk Özetinizi alın - sonuçlarınızın kişiselleştirilmiş bir özeti.",
     "step3Title": "Emsal şirketlerle nasıl kıyaslandığınızı görün",
     "step3Desc": "Daha fazla şirket katıldıkça, sektörünüzdeki ve bölgenizdeki emsal şirketlerle nasıl kıyaslandığınızı görün.",
     "whyJoin": "Satış konuşması yok, danışman yok, zorunluluk yok. Sadece kuruluşunuzun nerede durduğuna ve fırsatların nerede olduğuna dair açık, bağımsız bir özet.",
@@ -46,7 +46,7 @@
     "cancelButton": "İptal Et",
     "submitButton": "Listeye Katıl",
     "successTitle": "Listedesiniz",
-    "successMessage": "Teşekkürler — anket başladığında sizi haberdar edeceğiz.",
+    "successMessage": "Teşekkürler - anket başladığında sizi haberdar edeceğiz.",
     "doneButton": "Bitti",
     "emailRequired": "E-posta gerekli",
     "emailInvalid": "Lütfen geçerli bir e-posta adresi girin"
@@ -54,13 +54,13 @@
 
   "howItWorks": {
     "pageTitle": "Nasıl Çalışır",
-    "pageDesc": "Collective Research, şeffaf, işbirlikçi kıyaslama çalışmaları yürütür. İşte bunun tam olarak ne anlama geldiği — bir çalışma nasıl yürütülür, katılmanız karşılığında ne alırsınız ve verileriniz nasıl işlenir.",
+    "pageDesc": "Collective Research, şeffaf, işbirlikçi kıyaslama çalışmaları yürütür. İşte bunun tam olarak ne anlama geldiği - bir çalışma nasıl yürütülür, katılmanız karşılığında ne alırsınız ve verileriniz nasıl işlenir.",
     "visionEyebrow": "Vizyonumuz",
     "visionTitle": "Her şirket için dürüst bir resim",
-    "visionText": "İnanıyoruz ki her şirket — sadece büyük danışmanlık bütçeleri olanlar değil — dijital yolculuğundaki yerini, tahmine dayalı ya da genel endüstri iddialarından ziyade gerçek emsallere karşı ölçülen açık, dürüst bir görüşe layık.",
+    "visionText": "İnanıyoruz ki her şirket - sadece büyük danışmanlık bütçeleri olanlar değil - dijital yolculuğundaki yerini, tahmine dayalı ya da genel endüstri iddialarından ziyade gerçek emsallere karşı ölçülen açık, dürüst bir görüşe layık.",
     "missionEyebrow": "Misyonumuz",
     "missionTitle": "Birlikte inşa edildi, herkes için yararlı",
-    "missionText": "Her çalışma aynı şekilde çalışır: şirketler kendileri hakkında az miktarda bilgi sağlar ve karşılığında kendi sonuçlarının kişiselleştirilmiş bir özetini alırlar. Daha fazla şirket katıldıkça, herkesin resmi daha zengin hale gelir — sizin de dahil.",
+    "missionText": "Her çalışma aynı şekilde çalışır: şirketler kendileri hakkında az miktarda bilgi sağlar ve karşılığında kendi sonuçlarının kişiselleştirilmiş bir özetini alırlar. Daha fazla şirket katıldıkça, herkesin resmi daha zengin hale gelir - sizin de dahil.",
     "processEyebrow": "İşlem",
     "processTitle": "Bir çalışma adım adım nasıl yürütülür",
     "timeline1Title": "1. Erken Erişim",
@@ -80,16 +80,16 @@
     "cardPast": "Önceki Çalışmalar",
     "cardPastDesc": "Collective Research farklı konularda daha fazla çalışma yürüttükçe, önceki çalışmaların anonimleştirilmiş bulguları tarama için kullanılabilir hale gelir.",
     "cardVoice": "Sonraki Adımda Söz",
-    "cardVoiceDesc": "Katılımcılar gelecek anketleri şekillendirmeye yardımcı olurlar — bu sürüm birdir ve geri bildirim gerçekten ne sorduğumuzu ve nasıl raporladığımızı değiştirir.",
+    "cardVoiceDesc": "Katılımcılar gelecek anketleri şekillendirmeye yardımcı olurlar - bu sürüm birdir ve geri bildirim gerçekten ne sorduğumuzu ve nasıl raporladığımızı değiştirir.",
     "dataEyebrow": "Veri ve Gizlilik",
     "dataTitle": "Ne toplarız ve ne toplamayız",
-    "dataText": "Bu çalışmaları yürütmek için kişisel bilgilere ihtiyacımız yoktur — kuruluşunuzla ilgili operasyonel bilgiler yeterlidir. Bireysel yanıtlarınız asla başka herkese, diğer katılımcılar da dahil olmak üzere paylaşılmaz. Kıyaslamalar ve raporlar oluşturmak için yalnızca anonimleştirilmiş, toplu veri kullanılır.",
+    "dataText": "Bu çalışmaları yürütmek için kişisel bilgilere ihtiyacımız yoktur - kuruluşunuzla ilgili operasyonel bilgiler yeterlidir. Bireysel yanıtlarınız asla başka herkese, diğer katılımcılar da dahil olmak üzere paylaşılmaz. Kıyaslamalar ve raporlar oluşturmak için yalnızca anonimleştirilmiş, toplu veri kullanılır.",
     "methodEyebrow": "Metodoloji",
     "methodTitle": "Yerleşik araştırmaya dayalı, açıkça geliştirildi",
     "methodText": "Anketlerimiz, sıfırdan icat edilmemiş, dijital olgunluk için geniş çapta incelenen yerleşik çerçevelere dayanır. Metodoloji, bağımsız akademik ve endüstri danışmanları tarafından gözden geçirilir ve her çalışma bir sürüm olarak kabul edilir: katılımcılardan gelen geri bildirim doğrudan bir sonrakini şekillendirir.",
     "peopleEyebrow": "Kimler Dahil",
     "peopleTitle": "Şirketler, danışmanlar ve bağımsız uzmanlar",
-    "peopleText": "Çoğu katılımcı bir çalışmaya katılan şirketlerdir. Bunların yanında, akademik araştırmacılar metodolojimizi gözden geçirmeye yardımcı olurlar ve bağımsız danışmanlar bazen sonuçları tarafından vurgulanan bir alanda destek isteyen bir şirket için mevcuttur — bu bizim yardımcı olduğumuz bir bağlantı, herhangi bir bireysel veya firma için bir onay veya sertifikasyon değildir."
+    "peopleText": "Çoğu katılımcı bir çalışmaya katılan şirketlerdir. Bunların yanında, akademik araştırmacılar metodolojimizi gözden geçirmeye yardımcı olurlar ve bağımsız danışmanlar bazen sonuçları tarafından vurgulanan bir alanda destek isteyen bir şirket için mevcuttur - bu bizim yardımcı olduğumuz bir bağlantı, herhangi bir bireysel veya firma için bir onay veya sertifikasyon değildir."
   },
 
   "pricing": {
@@ -118,23 +118,23 @@
     "discount30": "-30%",
     "discount30Desc": "Anketi tamamlayan herkes, katıldığı çalışmanın herhangi bir rapor katmanında %30 indirim alır.",
     "discount40": "-10% daha",
-    "discount40Desc": "Kuruluşunuzdan 5'ten fazla kişi anketi tamamlarsa (ör. farklı departmanlar arasında), ek %10 indirim alırsınız — toplam %40'a kadar.",
+    "discount40Desc": "Kuruluşunuzdan 5'ten fazla kişi anketi tamamlarsa (ör. farklı departmanlar arasında), ek %10 indirim alırsınız - toplam %40'a kadar.",
     "archiveTitle": "Geçmiş Çalışma Raporları",
-    "archiveDesc": "Bir çalışma kapandığında, anonimleştirilmiş bulgular raporu herkesin satın alması için kullanılabilir hale gelir — o turda katılmasanız bile. Genel sonuçları ve eğilimleri kapsar.",
+    "archiveDesc": "Bir çalışma kapandığında, anonimleştirilmiş bulgular raporu herkesin satın alması için kullanılabilir hale gelir - o turda katılmasanız bile. Genel sonuçları ve eğilimleri kapsar.",
     "archivePrice": "$299",
     "archivePricePer": "rapor başına",
-    "noteText": "Gösterilen tüm fiyatlar uygulanabilir vergiler hariç (ör. KDV veya satış vergisi). Konumunuza ve kuruluş türüne bağlı olarak, vergi ödeme anında eklenebilir veya kendi tarafınızdan işlenebilir — bu, ödeme alınmadan önce onaylanacaktır.<br><br>Ankete katılmak ücretsizdir ve Dijital Olgunluk Özeti her durumda sizdir. Yukarıdaki Standart, Pro ve Premium raporları ödeme alındıktan sonra sunulur — indirimler geçerlidir, ancak raporlar ödeme alınmadan sunulmaz.<br><br>Fiyatlar ilk çalışma için mevcut planlarımızı yansıtır ve başlatmadan önce değişebilir. Katılımcı indirimleri, katıldığınız çalışmanın raporları için geçerlidir ve bu çalışmanın raporu hazır olduğunda onaylanır."
+    "noteText": "Gösterilen tüm fiyatlar uygulanabilir vergiler hariç (ör. KDV veya satış vergisi). Konumunuza ve kuruluş türüne bağlı olarak, vergi ödeme anında eklenebilir veya kendi tarafınızdan işlenebilir - bu, ödeme alınmadan önce onaylanacaktır.<br><br>Ankete katılmak ücretsizdir ve Dijital Olgunluk Özeti her durumda sizdir. Yukarıdaki Standart, Pro ve Premium raporları ödeme alındıktan sonra sunulur - indirimler geçerlidir, ancak raporlar ödeme alınmadan sunulmaz.<br><br>Fiyatlar ilk çalışma için mevcut planlarımızı yansıtır ve başlatmadan önce değişebilir. Katılımcı indirimleri, katıldığınız çalışmanın raporları için geçerlidir ve bu çalışmanın raporu hazır olduğunda onaylanır."
   },
 
   "privacy": {
     "pageTitle": "Gizlilik Politikası",
-    "lastUpdated": "Son Güncelleme: 17 Haziran 2026 — Erken Erişim İçin Taslak",
+    "lastUpdated": "Son Güncelleme: 17 Haziran 2026 - Erken Erişim İçin Taslak",
     "section1Title": "1. Ne toplarız",
     "section1Text": "Çalışmaları yürütmek için kişisel bilgilere ihtiyacımız yoktur ve talep etmeyiz. Topladığımız bilgiler iki kategoriye ayrılır:",
-    "section1Item1": "<strong>İletişim bilgileri:</strong> erken erişim için kaydolursanız, e-posta adresiniz, katılımcı türünüz (şirket, danışman/danışman veya akademisyen/araştırmacı), kuruluşunuzun adı ve sektörünü — ilgili güncellemeler göndermek için depolarız.",
-    "section1Item2": "<strong>Anket Yanıtları:</strong> bir çalışma canlı olduğunda, verdiğiniz yanıtlar kuruluşunuzun (araçları, süreçleri ve uygulamaları) hakkında — bir bireyin değil.",
+    "section1Item1": "<strong>İletişim bilgileri:</strong> erken erişim için kaydolursanız, e-posta adresiniz, katılımcı türünüz (şirket, danışman/danışman veya akademisyen/araştırmacı), kuruluşunuzun adı ve sektörünü - ilgili güncellemeler göndermek için depolarız.",
+    "section1Item2": "<strong>Anket Yanıtları:</strong> bir çalışma canlı olduğunda, verdiğiniz yanıtlar kuruluşunuzun (araçları, süreçleri ve uygulamaları) hakkında - bir bireyin değil.",
     "section2Title": "2. Verilerinizi Nasıl Kullanırız",
-    "section2Text": "Kendi anket yanıtlarınız, kişisel Dijital Olgunluk Özeti'nizi ve daha sonra Kıyaslama Raporunuzu oluşturmak için kullanılır. Bunun ötesinde, bireysel yanıtlarınız herkesin yanıtlarıyla birleştirilir, anonimleştirilir ve toplu hale getirilir — örneğin, \"boyutunuz ve sektörünüz gereğince ortalama puan.\" Hiçbir bireysel şirketin yanıtları asla başka herkese gösterilmez veya kimliği belirlenebilir.",
+    "section2Text": "Kendi anket yanıtlarınız, kişisel Dijital Olgunluk Özeti'nizi ve daha sonra Kıyaslama Raporunuzu oluşturmak için kullanılır. Bunun ötesinde, bireysel yanıtlarınız herkesin yanıtlarıyla birleştirilir, anonimleştirilir ve toplu hale getirilir - örneğin, \"boyutunuz ve sektörünüz gereğince ortalama puan.\" Hiçbir bireysel şirketin yanıtları asla başka herkese gösterilmez veya kimliği belirlenebilir.",
     "section3Title": "3. Verilerinizi Kimler Görebilir",
     "section3Item1": "Kendi sonuçlarınız yalnızca sizin tarafınızdan görülür.",
     "section3Item2": "Toplu, anonimleştirilmiş istatistikler (birçok şirketi kapsayan) kıyaslama raporlarında görünür ve genel olarak paylaşılabilir veya araştırma bulguları olarak satılabilir.",
@@ -146,10 +146,10 @@
     "section6Title": "6. Haklarınız",
     "section6Text": "Bulunduğunuz yere bağlı olarak, hakkınız olduğunuz bilgileri erişme, düzeltme veya silme haklarına ve bunun belirli kullanımlarına itiraz etme veya kısıtlama haklarına sahip olabilirsiniz. Bu haklardan herhangi birini kullanmak için <strong>privacy@collectiveresearchs.com</strong> adresine bize başvurun.",
     "section7Title": "7. Bu Politikada Değişiklikler",
-    "section7Text": "Collective Research geliştikçe — özellikle ilk anketimiz katılımcılara açılmadan önce — bu politika güncellenebilir. Güncelleme tarihini bu sayfanın üstünde not edeceğiz.",
+    "section7Text": "Collective Research geliştikçe - özellikle ilk anketimiz katılımcılara açılmadan önce - bu politika güncellenebilir. Güncelleme tarihini bu sayfanın üstünde not edeceğiz.",
     "section8Title": "8. İletişim",
     "section8Text": "Bu politika hakkında veya verilerinizin nasıl işlendiği hakkında sorular <strong>privacy@collectiveresearchs.com</strong> adresine gönderilebilir.",
-    "noteText": "Bu sayfa, veri işleme yaklaşımımızı sade ifadelerle tanımlar. Erken erişim sırasında şeffaflık için sağlanmaktadır ve resmi hukuki tavsiyelerin yerini almaz — nihai politika, anket katılımcılara açılmadan önce nitelikli bir profesyonel tarafından gözden geçirilecektir."
+    "noteText": "Bu sayfa, veri işleme yaklaşımımızı sade ifadelerle tanımlar. Erken erişim sırasında şeffaflık için sağlanmaktadır ve resmi hukuki tavsiyelerin yerini almaz - nihai politika, anket katılımcılara açılmadan önce nitelikli bir profesyonel tarafından gözden geçirilecektir."
   },
 
   "support": {
@@ -160,13 +160,13 @@
     "faq1Q": "Bu gerçekten ücretsiz mi? Yakalanacak bir şey var mı?",
     "faq1A": "Ankete katılmak ve Dijital Olgunluk Özeti almak tamamen ücretsizdir ve hiçbir şey satın almak zorunda değilsiniz. Bir çalışma kapandığında daha ayrıntılı kıyaslama raporları sunuyoruz, ancak bunlar tamamen isteğe bağlıdır. Ücretsiz özet kendi başına gerçekten yararlıdır ve bize inancınızı kazanmayı tercih ederiz.",
     "faq2Q": "Collective Research'in arkasında kimler var?",
-    "faq2A": "Collective Research, kıyaslama kalitesindeki araştırmayı daha küçük ve orta ölçekli kuruluşların erişimi içine almak amacıyla kurulan bağımsız bir araştırma girişimidir. Her şirketin açık, dürüst bir resme layık olduğu ilkesine dayalı olarak inşa edilmiştir — sadece büyük danışmanlık bütçeleri olanlar değil.",
+    "faq2A": "Collective Research, kıyaslama kalitesindeki araştırmayı daha küçük ve orta ölçekli kuruluşların erişimi içine almak amacıyla kurulan bağımsız bir araştırma girişimidir. Her şirketin açık, dürüst bir resme layık olduğu ilkesine dayalı olarak inşa edilmiştir - sadece büyük danışmanlık bütçeleri olanlar değil.",
     "faq3Q": "Anket ne kadar sürer?",
-    "faq3A": "Dijital Olgunluk anketi tamamlanması yaklaşık 10–15 dakika sürer. Araştırma veya şirket kayıtlarına bakma gerektirmeyecek şekilde tasarlanmıştır — çoğu soruyu kuruluşunuz hakkında bildiklerinize göre cevaplandırabilirsiniz.",
+    "faq3A": "Dijital Olgunluk anketi tamamlanması yaklaşık 10–15 dakika sürer. Araştırma veya şirket kayıtlarına bakma gerektirmeyecek şekilde tasarlanmıştır - çoğu soruyu kuruluşunuz hakkında bildiklerinize göre cevaplandırabilirsiniz.",
     "faq4Q": "Bireysel cevaplarım paylaşılacak mı?",
     "faq4A": "Hayır. Bireysel anket yanıtlarınız asla başka herkese, diğer katılımcılar dahil olmak üzere paylaşılmaz. Yalnızca anonimleştirilmiş, toplu istatistikler (\"sektörünüzdeki şirketler için ortalama\" vb.) raporlarda görünür. Belirli yanıtlarınız yalnızca kendi özetinizi hesaplamak ve bu toplu karşılaştırmalara katkı sağlamak için kullanılır.",
     "faq5Q": "Ankette geri bildirim varsa ne yapmalıyım?",
-    "faq5A": "Bunu duymak isterdik. Aşağıdaki iletişim formunu kullanın veya doğrudan bize e-posta gönderin. Katılımcılardan gelen geri bildirim gerçekten anketin gelecek sürümlerinin nasıl tasarlandığını şekillendirir — bu sürüm birdir ve bunu o şekilde ele alırız.",
+    "faq5A": "Bunu duymak isterdik. Aşağıdaki iletişim formunu kullanın veya doğrudan bize e-posta gönderin. Katılımcılardan gelen geri bildirim gerçekten anketin gelecek sürümlerinin nasıl tasarlandığını şekillendirir - bu sürüm birdir ve bunu o şekilde ele alırız.",
     "contactEyebrow": "Bize Ulaşın",
     "contactTitle": "Hala soruları var mı?",
     "emailLabel": "E-posta adresiniz",

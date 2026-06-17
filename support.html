@@ -1,394 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="icon" href="https://collectiveresearch.net/favicon.svg" type="image/svg+xml">
-<title>Support — Collective Research</title>
-<meta name="description" content="Answers to common questions about the Collective Research benchmark study, and a way to get in touch if you need more help.">
-<meta property="og:title" content="Support — Collective Research">
-<meta property="og:description" content="Common questions answered, and a contact form if you need more help.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://collectiveresearch.net/support.html">
-<meta property="og:image" content="https://collectiveresearch.net/og-image.svg">
-<meta property="og:image:type" content="image/svg+xml">
-<meta name="twitter:card" content="summary">
-<link rel="canonical" href="https://collectiveresearch.net/support.html">
-<link rel="stylesheet" href="styles.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
-<style>
-
-  .content { max-width: var(--text-width); margin: 0 auto; padding: 56px 32px; }
-  h1 { font-size: 30px; font-weight: 500; margin: 0 0 12px; }
-  .lede { font-size: 15px; color: var(--gray-text); line-height: 1.7; margin: 0 0 56px; }
-  .section-eyebrow { font-size: 12px; letter-spacing: 0.06em; color: var(--teal); text-transform: uppercase; font-weight: 500; margin: 0 0 8px; }
-  .section-title { font-size: 20px; font-weight: 500; margin: 0 0 28px; }
-  .faq-list { list-style: none; padding: 0; margin: 0 0 64px; }
-  .faq-item { border-top: 1px solid var(--border); }
-  .faq-item:last-child { border-bottom: 1px solid var(--border); }
-  .faq-btn { width: 100%; text-align: left; background: none; border: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 18px 0; font-family: inherit; font-size: 14px; font-weight: 500; color: var(--charcoal); transition: color .15s ease; }
-  .faq-btn:hover, .faq-btn[aria-expanded="true"] { color: var(--teal); }
-  .faq-icon { flex-shrink: 0; width: 20px; height: 20px; border-radius: 50%; border: 1.5px solid var(--border); display: flex; align-items: center; justify-content: center; font-size: 14px; color: var(--gray-faint); transition: background .15s ease, border-color .15s ease, color .15s ease, transform .25s ease; }
-  .faq-btn[aria-expanded="true"] .faq-icon { background: var(--teal); border-color: var(--teal); color: #fff; transform: rotate(45deg); }
-  .faq-body { overflow: hidden; max-height: 0; transition: max-height .35s ease; }
-  .faq-body.open { max-height: 400px; }
-  .faq-body p { font-size: 14px; line-height: 1.75; color: var(--gray-text); padding-bottom: 18px; margin: 0; }
-  .contact-section { background: var(--bg-soft); border: 1px solid var(--border); border-radius: var(--radius); padding: 36px; }
-  .contact-section .section-title { margin-bottom: 6px; }
-  .contact-lede { font-size: 14px; color: var(--gray-text); line-height: 1.7; margin: 0 0 28px; }
-  .form-field { margin-bottom: 16px; }
-  .form-field label { display: block; font-size: 12px; font-weight: 500; color: var(--charcoal); margin-bottom: 6px; }
-  .form-field input, .form-field textarea { width: 100%; font-family: inherit; font-size: 14px; padding: 10px 14px; border: 1px solid var(--border); border-radius: var(--radius); background: #fff; color: var(--charcoal); resize: vertical; transition: border-color .2s ease, box-shadow .2s ease; }
-  .form-field textarea { min-height: 120px; }
-  .form-field input:focus, .form-field textarea:focus { outline: none; border-color: var(--teal); box-shadow: 0 0 0 3px rgba(29,158,117,0.12); }
-  .form-submit { font-family: inherit; font-size: 14px; font-weight: 500; padding: 12px 28px; background: var(--teal); color: #fff; border: none; border-radius: var(--radius); cursor: pointer; transition: transform .15s ease, box-shadow .15s ease, background .15s ease; }
-  .form-submit:hover { transform: translateY(-1px); box-shadow: 0 6px 16px rgba(29,158,117,0.3); background: #178a64; }
-  .form-success { display: none; text-align: center; padding: 20px 0; }
-  .form-success .check { width: 48px; height: 48px; border-radius: 50%; background: var(--bg-success); display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; font-size: 22px; color: var(--teal); }
-  .form-success h3 { font-size: 16px; font-weight: 500; margin: 0 0 6px; }
-  .form-success p { font-size: 13px; color: var(--gray-text); margin: 0; line-height: 1.7; }
-  @media (max-width: 640px) { .content { padding-left: 20px; padding-right: 20px; } .contact-section { padding: 24px 20px; } }
-
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Support - Collective Research</title>
+  <meta property="og:title" content="Support - Collective Research">
+  <meta property="og:image" content="https://collectiveresearch.net/og-image.svg">
+  <link rel="icon" href="https://collectiveresearch.net/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+  <script src="i18n.js"></script>
+  <style>
+    .accordion { list-style: none; margin: 48px 0; padding: 0; }
+    .accordion-item { border: 1px solid var(--border); border-radius: var(--radius); margin-bottom: 12px; }
+    .accordion-button { width: 100%; padding: 20px; text-align: left; background: white; border: none; cursor: pointer; font-size: 16px; font-weight: 500; color: var(--charcoal); transition: all .2s ease; }
+    .accordion-button:hover { background: var(--bg-soft); }
+    .accordion-button[aria-expanded="true"] { background: var(--bg-secondary); color: var(--teal); }
+    .accordion-panel { padding: 0 20px; max-height: 0; overflow: hidden; transition: max-height .3s ease; }
+    .accordion-panel[aria-hidden="false"] { padding: 20px; max-height: 500px; }
+    .accordion-panel p { margin: 0; color: var(--gray-text); line-height: 1.75; }
+  </style>
 </head>
 <body>
-<a class="skip-link" href="#main-content">Skip to main content</a>
-<div class="page">
-  <main id="main-content">
-    <div class="content">
+  <main role="main">
+    <div class="page">
       <h1 data-i18n="support.pageTitle">Support</h1>
-      <p class="lede" data-i18n="support.pageDesc">Most questions are answered below. If yours isn't, use the form at the bottom and we'll get back to you.</p>
-      <section aria-labelledby="faq-heading">
+      <p class="lede" data-i18n="support.pageDesc">Most questions are answered below. If not, use the form below and we'll help you out.</p>
+
+      <section>
         <p class="section-eyebrow" data-i18n="support.faqEyebrow">Frequently asked questions</p>
         <h2 class="section-title" id="faq-heading" data-i18n="support.faqTitle">Common questions</h2>
-        <ul class="faq-list" id="faq-list">
-          <li class="faq-item">
-            <button class="faq-btn" aria-expanded="false" aria-controls="faq-body-0" id="faq-btn-0">
-              Is this really free? What's the catch?
-              <span class="faq-icon" aria-hidden="true">+</span>
-            </button>
-            <div class="faq-body" id="faq-body-0" role="region" aria-labelledby="faq-btn-0">
-              <p>Taking part in the survey and receiving your Digital Maturity Snapshot is completely free, with no obligation to purchase anything. We do offer more detailed benchmark reports for a fee once a study closes, but these are entirely optional. The free snapshot is genuinely useful on its own, and we'd rather earn your trust with it than pressure you into buying something.</p>
-            </div>
+
+        <ul class="accordion" role="region" aria-labelledby="faq-heading">
+          <li class="accordion-item">
+            <button class="accordion-button" aria-expanded="false" aria-controls="faq1" data-i18n="support.faq1Q">Is this really free? What's the catch?</button>
+            <div id="faq1" class="accordion-panel" aria-hidden="true" data-i18n="support.faq1A">Participation in the survey and receipt of your Digital Maturity Snapshot are completely free, with no commitment to buy anything. We offer more detailed benchmark reports for a fee when a study ends, but that's entirely optional.</div>
           </li>
-          <li class="faq-item">
-            <button class="faq-btn" aria-expanded="false" aria-controls="faq-body-1" id="faq-btn-1">
-              Who is behind Collective Research?
-              <span class="faq-icon" aria-hidden="true">+</span>
-            </button>
-            <div class="faq-body" id="faq-body-1" role="region" aria-labelledby="faq-btn-1">
-              <p>Collective Research is an independent research initiative, not affiliated with any consulting firm, software vendor, or industry body. Our goal is to produce honest, useful benchmark data, not to sell services off the back of it. That independence is the whole point.</p>
-            </div>
+
+          <li class="accordion-item">
+            <button class="accordion-button" aria-expanded="false" aria-controls="faq2" data-i18n="support.faq2Q">Who's behind Collective Research?</button>
+            <div id="faq2" class="accordion-panel" aria-hidden="true" data-i18n="support.faq2A">Collective Research is an independent research initiative created to make high-quality benchmark research accessible to small and mid-sized organizations.</div>
           </li>
-          <li class="faq-item">
-            <button class="faq-btn" aria-expanded="false" aria-controls="faq-body-2" id="faq-btn-2">
-              How is this different from a consulting pitch or lead generation exercise?
-              <span class="faq-icon" aria-hidden="true">+</span>
-            </button>
-            <div class="faq-body" id="faq-body-2" role="region" aria-labelledby="faq-btn-2">
-              <p>It isn't one. We don't share your contact details or company information with any third party, including vendors, consultants, or sponsors. No one will contact you as a result of taking part unless you ask us to make an introduction. If that changes, we'll tell you clearly before it does.</p>
-            </div>
+
+          <li class="accordion-item">
+            <button class="accordion-button" aria-expanded="false" aria-controls="faq3" data-i18n="support.faq3Q">How long does the survey take?</button>
+            <div id="faq3" class="accordion-panel" aria-hidden="true" data-i18n="support.faq3A">The digital maturity survey takes roughly 10 to 15 minutes. It's designed to be straightforward and requires no research.</div>
           </li>
-          <li class="faq-item">
-            <button class="faq-btn" aria-expanded="false" aria-controls="faq-body-3" id="faq-btn-3">
-              Will my competitors be able to see my company's answers?
-              <span class="faq-icon" aria-hidden="true">+</span>
-            </button>
-            <div class="faq-body" id="faq-body-3" role="region" aria-labelledby="faq-btn-3">
-              <p>No. Your individual responses are never visible to other participants or any third party. What appears in benchmark reports is always aggregated and anonymized data across many companies, in a way that makes individual companies unidentifiable. Even we do not publish company-level results without your explicit permission.</p>
-            </div>
+
+          <li class="accordion-item">
+            <button class="accordion-button" aria-expanded="false" aria-controls="faq4" data-i18n="support.faq4Q">Will my individual answers be shared?</button>
+            <div id="faq4" class="accordion-panel" aria-hidden="true" data-i18n="support.faq4A">No. Your individual survey answers are never shared with anyone else, not even with other participants. Only anonymized, aggregated statistics appear in reports.</div>
           </li>
-          <li class="faq-item">
-            <button class="faq-btn" aria-expanded="false" aria-controls="faq-body-4" id="faq-btn-4">
-              What data do you actually collect?
-              <span class="faq-icon" aria-hidden="true">+</span>
-            </button>
-            <div class="faq-body" id="faq-body-4" role="region" aria-labelledby="faq-btn-4">
-              <p>For the early-access list: your email address, organization name, sector, and the type of participant you are. For the survey itself: operational and organizational information about your company, its tools, processes, and practices. We do not ask for personal information, financial data, or anything that would identify individual employees.</p>
-            </div>
-          </li>
-          <li class="faq-item">
-            <button class="faq-btn" aria-expanded="false" aria-controls="faq-body-5" id="faq-btn-5">
-              What is 'digital maturity' and how is it measured?
-              <span class="faq-icon" aria-hidden="true">+</span>
-            </button>
-            <div class="faq-body" id="faq-body-5" role="region" aria-labelledby="faq-btn-5">
-              <p>Digital maturity refers to how effectively an organization uses digital tools, processes, and ways of working across its operations. Our survey measures this across several dimensions, including technology and data, people and talent, strategy and leadership, processes and operations, and customer experience. Each dimension is scored on a 1-5 scale based on your responses, producing a profile rather than a single number.</p>
-            </div>
-          </li>
-          <li class="faq-item">
-            <button class="faq-btn" aria-expanded="false" aria-controls="faq-body-6" id="faq-btn-6">
-              How meaningful is the benchmark if not many companies have participated yet?
-              <span class="faq-icon" aria-hidden="true">+</span>
-            </button>
-            <div class="faq-body" id="faq-body-6" role="region" aria-labelledby="faq-btn-6">
-              <p>That's a fair concern, and we're transparent about it. In the early stages of a study, we supplement real participant data with carefully researched secondary data to give context to your results. As more companies take part, real peer comparisons replace these estimates. We show sample sizes clearly in every report so you always know exactly what you're being compared against.</p>
-            </div>
-          </li>
-          <li class="faq-item">
-            <button class="faq-btn" aria-expanded="false" aria-controls="faq-body-7" id="faq-btn-7">
-              How long does the survey take?
-              <span class="faq-icon" aria-hidden="true">+</span>
-            </button>
-            <div class="faq-body" id="faq-body-7" role="region" aria-labelledby="faq-btn-7">
-              <p>Around 10 to 15 minutes for most respondents. The questions are multiple-choice or short scale responses, not open-ended essays. You can complete it in one sitting or return to it if needed, and your progress is saved.</p>
-            </div>
-          </li>
-          <li class="faq-item">
-            <button class="faq-btn" aria-expanded="false" aria-controls="faq-body-8" id="faq-btn-8">
-              Do I need to buy a report to get value from taking part?
-              <span class="faq-icon" aria-hidden="true">+</span>
-            </button>
-            <div class="faq-body" id="faq-body-8" role="region" aria-labelledby="faq-btn-8">
-              <p>No. Every participant receives a free Digital Maturity Snapshot immediately after completing the survey. This includes your scores across all dimensions and a plain-language summary of where you stand. The paid reports add peer comparison by sector and company size, and in the Premium tier, tailored recommendations. The snapshot alone is genuinely useful as a starting point.</p>
-            </div>
-          </li>
-          <li class="faq-item">
-            <button class="faq-btn" aria-expanded="false" aria-controls="faq-body-9" id="faq-btn-9">
-              What if our company has multiple locations, divisions, or business units?
-              <span class="faq-icon" aria-hidden="true">+</span>
-            </button>
-            <div class="faq-body" id="faq-body-9" role="region" aria-labelledby="faq-btn-9">
-              <p>You can complete the survey as a whole organization, or as a specific division or location if that's more meaningful. If several people from the same organization take part independently, we can combine their responses, and there's a discount for five or more participants from the same organization. Contact us if you'd like to coordinate a multi-respondent approach.</p>
-            </div>
-          </li>
-          <li class="faq-item">
-            <button class="faq-btn" aria-expanded="false" aria-controls="faq-body-10" id="faq-btn-10">
-              Is the methodology validated by external experts?
-              <span class="faq-icon" aria-hidden="true">+</span>
-            </button>
-            <div class="faq-body" id="faq-body-10" role="region" aria-labelledby="faq-btn-10">
-              <p>Our survey framework draws on established, peer-reviewed research on digital maturity and organizational readiness. The specific instrument is reviewed by independent academic advisors before each study, and we publish a methodology note alongside every report. We treat each study as a version: participant feedback directly shapes what we ask in the next one.</p>
-            </div>
-          </li>
-          <li class="faq-item">
-            <button class="faq-btn" aria-expanded="false" aria-controls="faq-body-11" id="faq-btn-11">
-              How is this different from formal assessments like SIRI or similar frameworks?
-              <span class="faq-icon" aria-hidden="true">+</span>
-            </button>
-            <div class="faq-body" id="faq-body-11" role="region" aria-labelledby="faq-btn-11">
-              <p>Formal assessments like SIRI are rigorous, certified, and involve trained evaluators and structured workshops. They're excellent for organizations ready to commit significant time and budget. Collective Research is designed as a lighter, self-serve alternative: faster to complete, lower cost, and accessible to companies that aren't yet at the stage of commissioning a full assessment. Think of it as a useful first picture, not a replacement for a deeper process.</p>
-            </div>
-          </li>
-          <li class="faq-item">
-            <button class="faq-btn" aria-expanded="false" aria-controls="faq-body-12" id="faq-btn-12">
-              What happens to my data after the study closes?
-              <span class="faq-icon" aria-hidden="true">+</span>
-            </button>
-            <div class="faq-body" id="faq-body-12" role="region" aria-labelledby="faq-btn-12">
-              <p>Your contact details are deleted once the study concludes unless you ask us to keep them for future studies. Your survey responses are retained in anonymized, aggregated form to contribute to ongoing benchmarks, but in a way that makes your company unidentifiable. You can request deletion of your identifiable data at any time before the anonymization step by emailing us.</p>
-            </div>
-          </li>
-          <li class="faq-item">
-            <button class="faq-btn" aria-expanded="false" aria-controls="faq-body-13" id="faq-btn-13">
-              Can I withdraw my participation after submitting?
-              <span class="faq-icon" aria-hidden="true">+</span>
-            </button>
-            <div class="faq-body" id="faq-body-13" role="region" aria-labelledby="faq-btn-13">
-              <p>Yes, up to the point where your responses have been anonymized and included in the aggregate dataset. Once that step has happened, it's technically impossible to remove your contribution without affecting the integrity of the benchmark for other participants. We'll let you know the anonymization timeline for each study. To request withdrawal, email privacy@collectiveresearchs.com.</p>
-            </div>
-          </li>
-          <li class="faq-item">
-            <button class="faq-btn" aria-expanded="false" aria-controls="faq-body-14" id="faq-btn-14">
-              When does the survey launch?
-              <span class="faq-icon" aria-hidden="true">+</span>
-            </button>
-            <div class="faq-body" id="faq-body-14" role="region" aria-labelledby="faq-btn-14">
-              <p>We're building the early-access list now. We'll announce a launch date once we have enough organizations signed up to make the benchmark meaningful from day one. Signing up for early access costs nothing and doesn't commit you to taking part. You'll get one email when the survey opens, and that's it unless you ask for more.</p>
-            </div>
+
+          <li class="accordion-item">
+            <button class="accordion-button" aria-expanded="false" aria-controls="faq5" data-i18n="support.faq5Q">What should I do if I have feedback on the survey?</button>
+            <div id="faq5" class="accordion-panel" aria-hidden="true" data-i18n="support.faq5A">We'd love to hear it. Use the contact form below or send us a direct email. Feedback from participants really does shape how we design future versions of the survey.</div>
           </li>
         </ul>
       </section>
-      <section aria-labelledby="contact-heading" class="contact-section">
-        <p class="section-eyebrow">Get in touch</p>
-        <h2 class="section-title" id="contact-heading">Still have questions?</h2>
-        <p class="contact-lede">Send us a message and we'll respond within one business day.</p>
-        <div id="contact-form-wrap">
-          <form id="contact-form" novalidate>
-            <div class="form-field"><label for="contact-email">Your email address</label><input type="email" id="contact-email" name="email" placeholder="you@company.com" autocomplete="email" required aria-required="true" aria-describedby="contact-email-error"><div id="contact-email-error" role="alert" aria-live="polite" style="font-size: 12px; color: #E53E3E; margin-top: 4px; min-height: 14px;"></div></div>
-            <div class="form-field"><label for="contact-subject">Subject</label><input type="text" id="contact-subject" name="subject" placeholder="e.g. Question about the survey"></div>
-            <div class="form-field"><label for="contact-message">Message</label><textarea id="contact-message" name="message" placeholder="What would you like to know?" required aria-required="true" aria-describedby="contact-message-error"></textarea><div id="contact-message-error" role="alert" aria-live="polite" style="font-size: 12px; color: #E53E3E; margin-top: 4px; min-height: 14px;"></div></div>
-            <button type="submit" class="form-submit">Send message</button>
-          </form>
-        </div>
-        <div class="form-success" id="contact-success" role="status" aria-live="polite">
-          <div class="check" aria-hidden="true">&#10003;</div>
-          <h3>Message sent</h3>
-          <p>Thanks for getting in touch. We'll reply to you within one business day.</p>
+
+      <section>
+        <p class="section-eyebrow" data-i18n="support.contactEyebrow">Get in touch</p>
+        <h2 data-i18n="support.contactTitle">Still have questions?</h2>
+
+        <form id="support-form" style="max-width:500px;">
+          <div class="form-field">
+            <label for="support-email" data-i18n="support.emailLabel">Your email address</label>
+            <input type="email" id="support-email" name="email" placeholder="you@company.com" data-i18n-placeholder="support.emailPlaceholder" required>
+            <div class="error-message" role="alert"></div>
+          </div>
+
+          <div class="form-field">
+            <label for="support-subject" data-i18n="support.subjectLabel">Subject</label>
+            <input type="text" id="support-subject" name="subject" placeholder="e.g. Question about the survey" data-i18n-placeholder="support.subjectPlaceholder" required>
+            <div class="error-message" role="alert"></div>
+          </div>
+
+          <div class="form-field">
+            <label for="support-message" data-i18n="support.messageLabel">Message</label>
+            <textarea id="support-message" name="message" placeholder="What would you like to know?" data-i18n-placeholder="support.messagePlaceholder" required></textarea>
+            <div class="error-message" role="alert"></div>
+          </div>
+
+          <button type="submit" class="primary" data-i18n="support.submitButton">Send message</button>
+        </form>
+
+        <div id="support-success" style="display:none; margin-top:24px; padding:16px; background:var(--bg-success); border-radius:var(--radius);">
+          <h3 data-i18n="support.successTitle">Thanks for reaching out</h3>
+          <p data-i18n="support.successMessage">We received your message and will get back to you within 48 hours.</p>
         </div>
       </section>
     </div>
   </main>
-</div>
-<script src="nav.js"></script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Is this really free? What's the catch?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Taking part in the survey and receiving your Digital Maturity Snapshot is completely free, with no obligation to purchase anything. We do offer more detailed benchmark reports for a fee once a study closes, but these are entirely optional."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Who is behind Collective Research?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Collective Research is an independent research initiative, not affiliated with any consulting firm, software vendor, or industry body. Our goal is to produce honest, useful benchmark data."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How is this different from a consulting pitch or lead generation exercise?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "It isn't one. We don't share your contact details or company information with any third party, including vendors, consultants, or sponsors."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Will my competitors be able to see my company's answers?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "No. Your individual responses are never visible to other participants or any third party. Only aggregated and anonymized data across many companies appears in benchmark reports."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What data do you actually collect?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "For the early-access list: email address, organization name, sector, and participant type. For the survey: operational and organizational information about your company. We do not ask for personal information or financial data."
-      }
-    }
-  ]
-}
-</script>
-<script>
-  var faqBtns = document.querySelectorAll('.faq-btn');
-  
-  faqBtns.forEach(function(btn, index) {
-    // Click handler
-    btn.addEventListener('click', function() {
-      toggleFaq(btn);
-    });
-    
-    // Keyboard handler (Enter/Space)
-    btn.addEventListener('keydown', function(e) {
-      if (e.key === 'Enter' || e.key === ' ') {
-        e.preventDefault();
-        toggleFaq(btn);
-      }
-    });
-  });
-  
-  function toggleFaq(btn) {
-    var expanded = btn.getAttribute('aria-expanded') === 'true';
-    faqBtns.forEach(function(b) {
-      b.setAttribute('aria-expanded', 'false');
-      document.getElementById(b.getAttribute('aria-controls')).classList.remove('open');
-    });
-    if (!expanded) {
-      btn.setAttribute('aria-expanded', 'true');
-      document.getElementById(btn.getAttribute('aria-controls')).classList.add('open');
-      
-      // Track FAQ open
-      if (typeof gtag !== 'undefined') {
-        var faqText = btn.textContent.trim().split('\n')[0];
-        gtag('event', 'faq_opened', {
-          'faq_question': faqText.substring(0, 50),
-          'faq_id': btn.id
-        });
-      }
-      
-      // Smooth scroll to FAQ item
-      var bodyRect = document.body.getBoundingClientRect();
-      var elemRect = btn.getBoundingClientRect();
-      var offset = elemRect.top - bodyRect.top - 100;
-      window.scrollTo({ top: offset, behavior: 'smooth' });
-    }
-  }
-  
-  // Handle hash-based anchor links (#faq-btn-0, #faq-btn-1, etc)
-  if (window.location.hash) {
-    var hashBtn = document.querySelector(window.location.hash);
-    if (hashBtn && hashBtn.classList.contains('faq-btn')) {
-      setTimeout(function() { toggleFaq(hashBtn); }, 100);
-    }
-  }
-  
-  window.addEventListener('hashchange', function() {
-    var hashBtn = document.querySelector(window.location.hash);
-    if (hashBtn && hashBtn.classList.contains('faq-btn')) {
-      toggleFaq(hashBtn);
-    }
-  });
-  document.getElementById('contact-form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    var email = document.getElementById('contact-email').value.trim();
-    var message = document.getElementById('contact-message').value.trim();
-    var emailError = document.getElementById('contact-email-error');
-    var messageError = document.getElementById('contact-message-error');
-    var submitBtn = this.querySelector('.form-submit');
-    
-    emailError.textContent = '';
-    messageError.textContent = '';
-    var hasError = false;
-    
-    if (!email) {
-      emailError.textContent = 'Email is required';
-      document.getElementById('contact-email').focus();
-      hasError = true;
-    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-      emailError.textContent = 'Please enter a valid email';
-      document.getElementById('contact-email').focus();
-      hasError = true;
-    }
-    
-    if (!message) {
-      messageError.textContent = 'Message is required';
-      if (!hasError) document.getElementById('contact-message').focus();
-      hasError = true;
-    }
-    
-    if (hasError) return;
-    
-    // Loading state
-    submitBtn.disabled = true;
-    var originalText = submitBtn.textContent;
-    submitBtn.textContent = 'Sending...';
-    
-    // Track form submission
-    if (typeof gtag !== 'undefined') {
-      gtag('event', 'form_submission', {
-        'form_name': 'contact_form',
-        'form_location': 'support_page'
+
+  <script src="nav.js"></script>
+  <script>
+    const accordionButtons = document.querySelectorAll('.accordion-button');
+    accordionButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const expanded = button.getAttribute('aria-expanded') === 'true';
+        const controlId = button.getAttribute('aria-controls');
+        const panel = document.getElementById(controlId);
+        
+        button.setAttribute('aria-expanded', !expanded);
+        panel.setAttribute('aria-hidden', expanded);
+        
+        if (typeof gtag !== 'undefined') {
+          gtag('event', 'faq_expand', {
+            'faq_id': controlId,
+            'expanded': !expanded
+          });
+        }
       });
-    }
-    
-    // TODO: POST to n8n webhook when ready
-    // Simulate network delay
-    setTimeout(function() {
-      document.getElementById('contact-form').reset();
-      document.getElementById('contact-form-wrap').style.display = 'none';
-      document.getElementById('contact-success').style.display = 'block';
+    });
+
+    const form = document.getElementById('support-form');
+    const successDiv = document.getElementById('support-success');
+    const formFields = form.querySelectorAll('input, textarea');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
       
-      // Auto-reset form after 4 seconds
-      setTimeout(function() {
-        document.getElementById('contact-form-wrap').style.display = 'block';
-        document.getElementById('contact-success').style.display = 'none';
-        submitBtn.disabled = false;
-        submitBtn.textContent = originalText;
-      }, 4000);
-    }, 800);
-  });
-</script>
+      let valid = true;
+      formFields.forEach(field => {
+        const errorEl = field.closest('.form-field').querySelector('.error-message');
+        errorEl.textContent = '';
+        
+        if (!field.value.trim()) {
+          errorEl.textContent = 'This field is required';
+          valid = false;
+        } else if (field.type === 'email' && !field.value.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) {
+          errorEl.textContent = 'Please enter a valid email';
+          valid = false;
+        }
+      });
+
+      if (!valid) return;
+
+      const button = form.querySelector('button[type="submit"]');
+      button.disabled = true;
+      button.textContent = 'Sending...';
+
+      const data = {
+        email: document.getElementById('support-email').value,
+        subject: document.getElementById('support-subject').value,
+        message: document.getElementById('support-message').value,
+        timestamp: new Date().toISOString()
+      };
+
+      // TODO: Replace with your n8n webhook URL
+      const webhookURL = 'https://your-n8n-instance.com/webhook/collective-research-support';
+
+      fetch(webhookURL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+      })
+      .then(() => {
+        form.style.display = 'none';
+        successDiv.style.display = 'block';
+        if (typeof gtag !== 'undefined') {
+          gtag('event', 'contact_form_submit', {
+            'form_type': 'support'
+          });
+        }
+      })
+      .catch(err => {
+        console.error('Error:', err);
+        button.disabled = false;
+        button.textContent = 'Send message';
+        alert('An error occurred. Please try again.');
+      });
+    });
+  </script>
 </body>
 </html>
