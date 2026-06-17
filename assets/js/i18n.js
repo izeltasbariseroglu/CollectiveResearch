@@ -119,7 +119,7 @@ window.I18n = function() {
       
       const selectedDisplay = document.createElement('div');
       selectedDisplay.className = 'select-selected';
-      selectedDisplay.innerHTML = <img src=" + currentFlag + " class="flag-icon" alt="flag"> <span class="lang-text"> + this.currentLang.toUpperCase() + </span>;
+      selectedDisplay.innerHTML = '<img src="' + currentFlag + '" class="flag-icon" alt="flag"> <span class="lang-text">' + this.currentLang.toUpperCase() + '</span>';
       
       const optionsContainer = document.createElement('div');
       optionsContainer.className = 'select-items select-hide';
@@ -128,7 +128,7 @@ window.I18n = function() {
         const option = document.createElement('div');
         option.className = 'lang-option';
         if (lang === this.currentLang) option.classList.add('active');
-        option.innerHTML = <img src=" + this.getFlagUrl(lang) + " class="flag-icon" alt="flag"> <span> + this.languageNames[lang] + </span>;
+        option.innerHTML = '<img src="' + this.getFlagUrl(lang) + '" class="flag-icon" alt="flag"> <span>' + this.languageNames[lang] + '</span>';
         option.addEventListener('click', () => {
           this.switchLanguage(lang);
         });
@@ -204,5 +204,7 @@ window.I18n = function() {
 
 // Initialize global instance
 window.i18n = new window.I18n();
+
+
 
 
