@@ -18,7 +18,7 @@
 
   "homepage": {
     "heroTitle": "How does your company's digital maturity compare to your industry?",
-    "heroSubtitle": "Collective Research is running a confidential benchmark study on digital transformation. Take a short survey about your organization and get your own Digital Maturity Snapshot in return - and as more companies join, a fuller picture of how you compare to your industry.",
+    "heroSubtitle": "Collective Research is running a confidential benchmark study on digital transformation. Take a short survey about your organization and get your own Digital Maturity Snapshot in return, and as more companies join, a fuller picture of how you compare to your industry.",
     "step1Title": "Take a 10-minute confidential survey",
     "step1Desc": "Take a 10-minute confidential survey about your tools, processes and team readiness.",
     "step2Title": "Get your own Digital Maturity Snapshot",
@@ -123,7 +123,7 @@
     "archiveDesc": "Once a study closes, an anonymized findings report becomes available for anyone to purchase - even if you didn't take part in that round. It covers overall results and trends, without any company-specific comparison.",
     "archivePrice": "$299",
     "archivePricePer": "per report",
-    "noteText": "All prices shown are exclusive of any applicable taxes (e.g. VAT or sales tax). Depending on your location and organization type, tax may be added at checkout or handled via self-assessment on your end - this will be confirmed before any payment is taken.<br><br>Taking part in the survey is free, and your Digital Maturity Snapshot is yours either way. The Standard, Pro and Premium reports above are delivered once payment is received - discounts apply, but reports are not sent out before payment.<br><br>Prices reflect our current plans for the first study and may be refined before launch. Participant discounts apply to reports from the study you took part in, and are confirmed once that study's report is ready."
+    "noteText": "All prices shown are exclusive of any applicable taxes (e.g. VAT or sales tax). Depending on your location and organization type, tax may be added at checkout or handled via self-assessment on your end, and this will be confirmed before any payment is taken.<br><br>Taking part in the survey is free, and your Digital Maturity Snapshot is yours either way. The Standard, Pro and Premium reports above are delivered once payment is received - discounts apply, but reports are not sent out before payment.<br><br>Prices reflect our current plans for the first study and may be refined before launch. Participant discounts apply to reports from the study you took part in, and are confirmed once that study's report is ready."
   },
 
   "privacy": {
@@ -195,3 +195,4 @@
     "joining": "Joining..."
   }
 }
+

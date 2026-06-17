@@ -23,7 +23,12 @@ window.I18n = function() {
   
   this.init = function(translations) {
     this.strings = translations;
-    const saved = localStorage.getItem('selectedLanguage') || this.detectBrowserLanguage();
+    let saved = 'en';
+    try {
+      saved = localStorage.getItem('selectedLanguage') || this.detectBrowserLanguage();
+    } catch (e) {
+      saved = this.detectBrowserLanguage();
+    }
     this.switchLanguage(saved);
     this.setupLanguageSwitcher();
   };
@@ -35,7 +40,7 @@ window.I18n = function() {
       const key = el.getAttribute('data-i18n');
       const value = this.getString(key, lang);
       if (value) {
-        if (/<[a-z][\s\S]*>/i.test(value)) {
+        if (this.htmlTranslationKeys.has(key)) {
           el.innerHTML = value;
         } else {
           el.textContent = value;
@@ -61,13 +66,16 @@ window.I18n = function() {
       if (value) el.setAttribute('aria-label', value);
     });
     document.documentElement.lang = lang;
+    document.documentElement.dir = this.isRTL() ? 'rtl' : 'ltr';
     this.updateHrefLang();
   };
   
   this.switchLanguage = function(lang) {
     if (!this.supportedLanguages.includes(lang)) lang = 'en';
     this.currentLang = lang;
-    localStorage.setItem('selectedLanguage', lang);
+    try {
+      localStorage.setItem('selectedLanguage', lang);
+    } catch(e) {}
     this.applyLanguage(lang);
     if (typeof gtag !== 'undefined') {
       gtag('event', 'language_switch', {
@@ -128,14 +136,18 @@ window.I18n = function() {
       const link = document.createElement('link');
       link.rel = 'alternate';
       link.hreflang = lang;
-      link.href = pathname + (pathname.includes('?') ? '&' : '?') + 'lang=' + lang;
+      link.href = pathname + '?lang=' + lang;
       document.head.appendChild(link);
     });
     
-    const canonical = document.createElement('link');
-    canonical.rel = 'canonical';
-    canonical.href = window.location.href;
-    document.head.appendChild(canonical);
+    let existingCanonical = document.querySelector('link[rel="canonical"]');
+    if (!existingCanonical) {
+      existingCanonical = document.createElement('link');
+      existingCanonical.rel = 'canonical';
+      document.head.appendChild(existingCanonical);
+    }
+    const cleanUrl = window.location.protocol + '//' + window.location.host + window.location.pathname;
+    existingCanonical.href = cleanUrl;
   };
   
   this.detectBrowserLanguage = function() {

@@ -11,7 +11,7 @@
     { href: 'how-it-works.html', label: 'How it works', i18n: 'nav.howItWorks' },
     { href: 'pricing.html',      label: 'Pricing',      i18n: 'nav.pricing' },
     { href: 'privacy.html',      label: 'Privacy',      i18n: 'nav.privacy' },
-    { href: 'support.html',      label: 'Support' },
+    { href: 'support.html',      label: 'Support',      i18n: 'nav.support' },
   ];
 
   var LOGO = '<svg class="nav-logo" viewBox="0 0 56 56" aria-hidden="true" focusable="false">'
@@ -42,13 +42,7 @@
   }).join('');
 
   // Header HTML
-  // Language switcher
-  var langSwitcher = '<div class="language-switcher">';
-  ['en', 'tr', 'de', 'fr', 'it'].forEach(function(lang) {
-    langSwitcher += '<button class="lang-btn" data-lang="' + lang + '" aria-label="Switch to ' + lang + '">'
-      + lang.toUpperCase() + '</button>';
-  });
-  langSwitcher += '</div>';
+  var langSwitcher = '<button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">&#9789;</button><div class="language-switcher"></div>';
 
   var header = '<header class="site-header" id="site-header">'
     + '<nav class="nav" aria-label="Main navigation">'
@@ -78,14 +72,34 @@
   }
 
 
+    // Theme toggle logic
+  function setupThemeToggle() {
+    var toggleBtn = document.getElementById('theme-toggle');
+    if (!toggleBtn) return;
+    
+    // Check saved preference or OS preference
+    var savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark' || (!savedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.body.classList.add('dark-mode');
+      toggleBtn.innerHTML = '&#9728;';
+    }
+    
+    toggleBtn.addEventListener('click', function() {
+      document.body.classList.toggle('dark-mode');
+      var isDark = document.body.classList.contains('dark-mode');
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+      toggleBtn.innerHTML = isDark ? '&#9728;' : '&#9789;';
+    });
+  }
+
   function initializeI18n() {
     if (typeof window.i18n === 'undefined') return;
     Promise.all([
-      fetch('locales/en.json').then(function(r){ return r.json(); }).catch(function(){ return {}; }),
-      fetch('locales/tr.json').then(function(r){ return r.json(); }).catch(function(){ return {}; }),
-      fetch('locales/de.json').then(function(r){ return r.json(); }).catch(function(){ return {}; }),
-      fetch('locales/fr.json').then(function(r){ return r.json(); }).catch(function(){ return {}; }),
-      fetch('locales/it.json').then(function(r){ return r.json(); }).catch(function(){ return {}; })
+      fetch('locales/en.json').then(function(r){ if(!r.ok) throw new Error(); return r.json(); }).catch(function(){ return {}; }),
+      fetch('locales/tr.json').then(function(r){ if(!r.ok) throw new Error(); return r.json(); }).catch(function(){ return {}; }),
+      fetch('locales/de.json').then(function(r){ if(!r.ok) throw new Error(); return r.json(); }).catch(function(){ return {}; }),
+      fetch('locales/fr.json').then(function(r){ if(!r.ok) throw new Error(); return r.json(); }).catch(function(){ return {}; }),
+      fetch('locales/it.json').then(function(r){ if(!r.ok) throw new Error(); return r.json(); }).catch(function(){ return {}; })
     ]).then(function(results) {
       window.i18n.init({
         en: results[0],
@@ -94,20 +108,13 @@
         fr: results[3],
         it: results[4]
       });
-
-      var languageButtons = document.querySelectorAll('.lang-btn');
-      languageButtons.forEach(function(btn) {
-        btn.addEventListener('click', function() {
-          var lang = btn.getAttribute('data-lang');
-          window.i18n.switchLanguage(lang);
-        });
-      });
     }).catch(function(err) {
       console.warn('i18n loading error:', err);
     });
   }
 
   if (typeof window.i18n !== 'undefined') {
+    setupThemeToggle();
     initializeI18n();
   } else {
     var i18nScript = document.createElement('script');
@@ -123,3 +130,4 @@
   }, { passive: true });
 
 })();
+

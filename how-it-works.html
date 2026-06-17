@@ -15,29 +15,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
-<style>
 
-  .content { max-width: var(--text-width); margin: 0 auto; padding: 56px 32px; }
-  h1 { font-size: 30px; font-weight: 500; line-height: 1.3; margin: 0 0 12px; }
-  .lede { font-size: 15px; color: var(--gray-text); line-height: 1.7; margin: 0 0 48px; }
-  section { margin-bottom: 48px; }
-  h2 { font-size: 18px; font-weight: 500; margin: 0 0 12px; }
-  p { font-size: 14px; line-height: 1.75; color: var(--gray-text); margin: 0 0 12px; }
-  .eyebrow { font-size: 12px; letter-spacing: 0.06em; color: var(--teal); text-transform: uppercase; margin: 0 0 8px; font-weight: 500; }
-  .timeline { border-left: 2px solid var(--border); padding-left: 24px; display: flex; flex-direction: column; gap: 24px; list-style: none; margin: 0; }
-  .timeline-item { position: relative; }
-  .timeline-item::before { content: ''; position: absolute; left: -29px; top: 4px; width: 10px; height: 10px; border-radius: 50%; background: var(--teal); }
-  .timeline-item h3 { font-size: 14px; font-weight: 500; margin: 0 0 4px; }
-  .timeline-item p { margin: 0; }
-  .cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
-  .card { border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; background: var(--bg-soft); }
-  .card h3 { font-size: 14px; font-weight: 500; margin: 0 0 8px; }
-  .card p { margin: 0; font-size: 13px; }
-  .back-link { display: inline-block; margin-top: 8px; font-size: 13px; color: var(--teal); text-decoration: none; font-weight: 500; }
-  .back-link:hover { text-decoration: underline; }
-  @media (max-width: 640px) { .content { padding-left: 20px; padding-right: 20px; } .cards { grid-template-columns: 1fr; } }
-
-</style>
+  <meta property="og:image" content="https://collectiveresearch.net/assets/img/og-image.svg">
 </head>
 <body>
 <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -55,7 +34,7 @@
           <li class="timeline-item"><h3>1. Early access</h3><p>You sign up to be notified. This costs nothing and doesn't commit you to anything.</p></li>
           <li class="timeline-item"><h3>2. Launch</h3><p>Once enough companies have signed up, we announce a launch: how many companies are already on board, and a clear survey window (around 30 days).</p></li>
           <li class="timeline-item"><h3>3. Survey window (~30 days)</h3><p>You complete a confidential 10-15 minute survey about your organization. Immediately afterwards, you receive your own Digital Maturity Snapshot, a summary of your results.</p></li>
-          <li class="timeline-item"><h3>4. Full report (~45 days from launch)</h3><p>Once the survey window closes, we compile the complete peer-benchmarked report from all participants and make it available to you.</p></li>
+          <li class="timeline-item"><h3>4. Full report (~45 days from launch)</h3><p>Once the survey window closes, we compile the complete peer-benchmarked report from all participants and make it available for purchase at a participant discount.</p></li>
         </ol>
       </section>
       <section aria-labelledby="whatyouget-heading">
@@ -75,7 +54,10 @@
     </div>
   </main>
 </div>
-<script src="assets/js/nav.js"></script>
+<script src="assets/js/nav.js" defer></script>
 
 </body>
 </html>
+
+
+

@@ -15,40 +15,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
-<style>
 
-  .content { max-width: var(--text-width); margin: 0 auto; padding: 56px 32px; }
-  h1 { font-size: 30px; font-weight: 500; margin: 0 0 12px; }
-  .lede { font-size: 15px; color: var(--gray-text); line-height: 1.7; margin: 0 0 56px; }
-  .section-eyebrow { font-size: 12px; letter-spacing: 0.06em; color: var(--teal); text-transform: uppercase; font-weight: 500; margin: 0 0 8px; }
-  .section-title { font-size: 20px; font-weight: 500; margin: 0 0 28px; }
-  .faq-list { list-style: none; padding: 0; margin: 0 0 64px; }
-  .faq-item { border-top: 1px solid var(--border); }
-  .faq-item:last-child { border-bottom: 1px solid var(--border); }
-  .faq-btn { width: 100%; text-align: left; background: none; border: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 18px 0; font-family: inherit; font-size: 14px; font-weight: 500; color: var(--charcoal); transition: color .15s ease; }
-  .faq-btn:hover, .faq-btn[aria-expanded="true"] { color: var(--teal); }
-  .faq-icon { flex-shrink: 0; width: 20px; height: 20px; border-radius: 50%; border: 1.5px solid var(--border); display: flex; align-items: center; justify-content: center; font-size: 14px; color: var(--gray-faint); transition: background .15s ease, border-color .15s ease, color .15s ease, transform .25s ease; }
-  .faq-btn[aria-expanded="true"] .faq-icon { background: var(--teal); border-color: var(--teal); color: #fff; transform: rotate(45deg); }
-  .faq-body { overflow: hidden; max-height: 0; transition: max-height .35s ease; }
-  .faq-body.open { max-height: 400px; }
-  .faq-body p { font-size: 14px; line-height: 1.75; color: var(--gray-text); padding-bottom: 18px; margin: 0; }
-  .contact-section { background: var(--bg-soft); border: 1px solid var(--border); border-radius: var(--radius); padding: 36px; }
-  .contact-section .section-title { margin-bottom: 6px; }
-  .contact-lede { font-size: 14px; color: var(--gray-text); line-height: 1.7; margin: 0 0 28px; }
-  .form-field { margin-bottom: 16px; }
-  .form-field label { display: block; font-size: 12px; font-weight: 500; color: var(--charcoal); margin-bottom: 6px; }
-  .form-field input, .form-field textarea { width: 100%; font-family: inherit; font-size: 14px; padding: 10px 14px; border: 1px solid var(--border); border-radius: var(--radius); background: #fff; color: var(--charcoal); resize: vertical; transition: border-color .2s ease, box-shadow .2s ease; }
-  .form-field textarea { min-height: 120px; }
-  .form-field input:focus, .form-field textarea:focus { outline: none; border-color: var(--teal); box-shadow: 0 0 0 3px rgba(29,158,117,0.12); }
-  .form-submit { font-family: inherit; font-size: 14px; font-weight: 500; padding: 12px 28px; background: var(--teal); color: #fff; border: none; border-radius: var(--radius); cursor: pointer; transition: transform .15s ease, box-shadow .15s ease, background .15s ease; }
-  .form-submit:hover { transform: translateY(-1px); box-shadow: 0 6px 16px rgba(29,158,117,0.3); background: #178a64; }
-  .form-success { display: none; text-align: center; padding: 20px 0; }
-  .form-success .check { width: 48px; height: 48px; border-radius: 50%; background: #E1F5EE; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; font-size: 22px; color: var(--teal); }
-  .form-success h3 { font-size: 16px; font-weight: 500; margin: 0 0 6px; }
-  .form-success p { font-size: 13px; color: var(--gray-text); margin: 0; line-height: 1.7; }
-  @media (max-width: 640px) { .content { padding-left: 20px; padding-right: 20px; } .contact-section { padding: 24px 20px; } }
-
-</style>
+  <meta property="og:image" content="https://collectiveresearch.net/assets/img/og-image.svg">
 </head>
 <body>
 <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -112,7 +80,7 @@
               <span class="faq-icon" aria-hidden="true">+</span>
             </button>
             <div class="faq-body" id="faq-body-5" role="region" aria-labelledby="faq-btn-5">
-              <p>Digital maturity refers to how effectively an organization uses digital tools, processes, and ways of working across its operations. Our survey measures this across several dimensions, including technology and data, people and talent, strategy and leadership, processes and operations, and customer experience. Each dimension is scored on a 1-5 scale based on your responses, producing a profile rather than a single number.</p>
+              <p>Digital maturity refers to how effectively an organization uses digital tools, processes, and ways of working across its operations. Our survey measures this across several dimensions, including technology and data, people and talent, strategy and leadership, processes and operations, and customer experience. Each dimension is scored on a 1-10 scale based on your responses, producing a profile rather than a single number.</p>
             </div>
           </li>
           <li class="faq-item">
@@ -193,7 +161,7 @@
               <span class="faq-icon" aria-hidden="true">+</span>
             </button>
             <div class="faq-body" id="faq-body-14" role="region" aria-labelledby="faq-btn-14">
-              <p>We're building the early-access list now. We'll announce a launch date once we have enough organizations signed up to make the benchmark meaningful from day one. Signing up for early access costs nothing and doesn't commit you to taking part. You'll get one email when the survey opens, and that's it unless you ask for more.</p>
+              <p>We're building the early-access list now. We'll announce a launch date once we have enough organizations signed up to make the benchmark meaningful from day one. Signing up for early access costs nothing and doesn't commit you to taking part. You'll get tailored updates about the survey launch and relevant industry insights based on your profile.</p>
             </div>
           </li>
         </ul>
@@ -203,11 +171,17 @@
         <h2 class="section-title" id="contact-heading">Still have questions?</h2>
         <p class="contact-lede">Send us a message and we'll respond within one business day.</p>
         <div id="contact-form-wrap">
-          <form id="contact-form" novalidate>
+          <form id="contact-form">
             <div class="form-field"><label for="contact-email">Your email address</label><input type="email" id="contact-email" name="email" placeholder="you@company.com" autocomplete="email" required aria-required="true"></div>
             <div class="form-field"><label for="contact-subject">Subject</label><input type="text" id="contact-subject" name="subject" placeholder="e.g. Question about the survey"></div>
             <div class="form-field"><label for="contact-message">Message</label><textarea id="contact-message" name="message" placeholder="What would you like to know?" required aria-required="true"></textarea></div>
-            <button type="submit" class="form-submit">Send message</button>
+                      <div class="form-field" style="margin-top: 12px;">
+            <label style="display: flex; align-items: flex-start; gap: 8px; font-size: 12px; color: var(--gray-text); cursor: pointer; font-weight: 400;">
+              <input type="checkbox" required name="consent_support" style="flex-shrink: 0; margin-top: 2px; accent-color: var(--teal);">
+              <span data-i18n="form.consent">I agree to the <a href="privacy.html" style="color:var(--teal)">Privacy Policy</a> and <a href="terms.html" style="color:var(--teal)">Terms of Service</a>.</span>
+            </label>
+          </div>
+          <button type="submit" class="form-submit">Send message</button>
           </form>
         </div>
         <div class="form-success" id="contact-success" role="status" aria-live="polite">
@@ -219,7 +193,7 @@
     </div>
   </main>
 </div>
-<script src="assets/js/nav.js"></script>
+<script src="assets/js/nav.js" defer></script>
 <script>
   var faqBtns = document.querySelectorAll('.faq-btn');
   faqBtns.forEach(function(btn) {
@@ -245,3 +219,6 @@
 </script>
 </body>
 </html>
+
+
+

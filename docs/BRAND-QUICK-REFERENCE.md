@@ -177,4 +177,19 @@ Slowest: 0.7s (hero fade stagger)
 
 ---
 
-**Version:** 2.0 | **Updated:** 17 Jun 2026 | **Status:** Active
+## 📧 İletişim & Domain Kuralları
+
+- **Ana Domain:** `collectiveresearch.net` (Web sitesi yayını)
+- **Email Domain:** `collectiveresearchs.com` (İletişim ve mailler)
+> **Not:** Sonunda 's' harfi olan `collectiveresearchs.com` domaini kasıtlı olarak alınmış olup, güvenlik ve izolasyon sağlamak adına tüm email trafiği bu domaine bağlanmıştır. Denetimlerde bunun bir "yazım hatası" (typo) olarak işaretlenmemesi gerekir.
+
+---
+
+## 🌍 Dil ve Çeviri Kuralları (Localization)
+
+- **Temel Dil (Base Language):** Sitenin ve projenin her zaman temel/ana dili **İngilizce'dir (EN)**.
+- Tüm çeviriler (TR, DE, FR, IT vb.) İngilizce referans alınarak ve İngilizce baz dosyasına sadık kalınarak üretilecektir. Herhangi bir tutarsızlık durumunda İngilizce metin geçerlidir.
+
+---
+
+**Version:** 2.2 | **Updated:** 17 Jun 2026 | **Status:** Active
