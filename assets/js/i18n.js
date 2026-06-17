@@ -85,13 +85,7 @@ window.I18n = function() {
         'page_location': window.location.href
       });
     }
-    const buttons = document.querySelectorAll('.lang-btn');
-    buttons.forEach(btn => {
-      btn.classList.remove('active');
-      if (btn.getAttribute('data-lang') === lang) {
-        btn.classList.add('active');
-      }
-    });
+    this.setupLanguageSwitcher();
   };
   
   this.getString = function(key, lang) {
@@ -204,6 +198,7 @@ window.I18n = function() {
 
 // Initialize global instance
 window.i18n = new window.I18n();
+
 
 
 
