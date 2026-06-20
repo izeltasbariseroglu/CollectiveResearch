@@ -2,7 +2,7 @@
     "common": {
         "appName": "Collective Research",
         "tagline": "Ortak güç. Keskin içgörü. Akılcı strateji.",
-        "privacyFooter": "Collective Research bağımsız bir araştırma girişimidir. Verileriniz asla bireysel olarak paylaşılmaz - yalnızca kıyaslama amacıyla toplu ve anonimleştirilmiş formatta kullanılır.",
+        "privacyFooter": "Collective Research bağımsız bir araştırma girişimidir. Verileriniz asla bireysel olarak paylaşılmaz, yalnızca kıyaslama amacıyla toplu ve anonimleştirilmiş formatta kullanılır.",
         "loading": "Yükleniyor...",
         "sending": "Gönderiliyor...",
         "joining": "Katılım sağlanıyor...",
@@ -81,7 +81,7 @@
         "timeline2Title": "2. Lansman",
         "timeline2Desc": "Yeterli katılımcı sayısına ulaşıldığında, mevcut şirket sayısını ve net anket takvimini (yaklaşık 30 gün) içeren bir duyuru gerçekleştiririz.",
         "timeline3Title": "3. Anket Dönemi (~30 gün)",
-        "timeline3Desc": "Kurumunuzla ilgili 30 dakikalık gizli bir anketi doldurursunuz. Tamamladığınız an, sonuçlarınızın özetini içeren Dijital Olgunluk Özeti'ne erişirsiniz.",
+        "timeline3Desc": "Kurumunuzla ilgili 10–15 dakikalık gizli bir anketi doldurursunuz. Tamamladığınız an, sonuçlarınızın özetini içeren Dijital Olgunluk Özeti'ne erişirsiniz.",
         "timeline4Title": "4. Kapsamlı Rapor (Lansmandan itibaren ~45 gün)",
         "timeline4Desc": "Anket dönemi kapandığında, tüm katılımcıların verileriyle oluşturulan sektörel kıyaslama raporunu derler ve kullanımınıza sunarız.",
         "youGetEyebrow": "Kazanımlarınız",
@@ -118,7 +118,7 @@
         "text13": "2. Lansman",
         "text14": "Yeterli katılımcı sayısına ulaşıldığında, mevcut şirket sayısını ve net anket takvimini (yaklaşık 30 gün) içeren bir duyuru gerçekleştiririz.",
         "text15": "3. Anket Dönemi (~30 gün)",
-        "text16": "Kurumunuzla ilgili 30 dakikalık gizli bir anketi doldurursunuz. Tamamladığınız an, sonuçlarınızın özetini içeren Dijital Olgunluk Özeti'ne erişirsiniz.",
+        "text16": "Kurumunuzla ilgili 10–15 dakikalık gizli bir anketi doldurursunuz. Tamamladığınız an, sonuçlarınızın özetini içeren Dijital Olgunluk Özeti'ne erişirsiniz.",
         "text17": "4. Kapsamlı Rapor (Lansmandan itibaren ~45 gün)",
         "text18": "Anket dönemi kapandığında, tüm katılımcıların verileriyle oluşturulan sektörel kıyaslama raporunu derler ve katılımcılara indirimli olarak sunarız.",
         "text19": "Kazanımlarınız",
@@ -141,7 +141,6 @@
         "text36": "Şirketler, Danışmanlar ve Bağımsız Uzmanlar",
         "text37": "Katılımcıların büyük çoğunluğunu araştırmaya dahil olan şirketler oluşturur. Bunun yanı sıra, akademik araştırmacılar metodolojimizi incelememize destek olurken; şirketler sonuçlarında öne çıkan bir alanda destek talep ettiğinde bağımsız danışmanlarla bağlantı kurulabilir. Bu süreç tamamen bir eşleştirme hizmeti olup, herhangi bir kişi veya kurumun tarafımızca sertifikalandırılması veya onaylanması anlamına gelmez."
     },
-
     "pricing": {
         "pageTitle": "Raporlar ve Fiyatlandırma",
         "pageDesc": "Dijital Olgunluk Özeti, anketin hemen ardından her katılımcıya ücretsiz olarak sunulmaktadır. Aşağıda yer alan raporlar ise, çalışma tamamlandıktan sonra erişilebilecek olan detaylı kıyaslama (benchmark) raporlarıdır.",
@@ -177,7 +176,7 @@
         "text1": "Anketi tamamlayan her katılımcı anında ücretsiz bir Dijital Olgunluk Özeti edinir. Aşağıdaki raporlar ise sektör, ölçek ve daha fazla kritere göre akran kıyaslaması sunarak bir adım daha ileri gider. <a href=\"sample-report.html\" style=\"color: var(--teal); font-weight: 500;\">Örnek bir rapor inceleyin →</a>",
         "text2": "her zaman",
         "text3": "Her katılımcı için ücretsizdir, satın alma gerektirmez.",
-        "text4": "Anketi tamamlayın (30 dakika)",
+        "text4": "Anketi tamamlayın (10–15 dakika)",
         "text5": "Dijital Olgunluk Özetinize anında ulaşın",
         "text6": "Ölçülen tüm boyutlardaki performans skorları",
         "text7": "Güçlü yönleriniz ve gelişim alanlarınızın anlaşılır özeti",
@@ -223,13 +222,13 @@
         "section4Title": "4. Verileriniz Nerede Saklanıyor?",
         "section4Text": "Verileriniz, Avrupa Birliği sınırları içerisinde yer alan sunucularda depolanmaktadır. Veri erişimi yalnızca Collective Research operasyonlarını yürüten yetkililerle sınırlı olup; koruma sağlamak amacıyla makul teknik güvenlik önlemleri (aktarım sırasında şifreleme, erişim kontrolleri) uygulanmaktadır.",
         "section5Title": "5. Veri Saklama Süresi ve Silme İşlemi",
-        "section5Text": "İletişim bilgileriniz (erken erişim güncellemeleri için), siz silinmesini talep edene kadar veya ilgili çalışma sonuçlanana kadar (hangisi daha önce gerçekleşirse) saklanır. Anket yanıtları, raporunuzu oluşturmak ve toplu kıyaslamalara katkıda bulunmak için gerekli olan süre boyunca tutulur; veriler anonimleştirilip kümeli hale getirildikten sonra, bireysel yanıtlar tanımlanabilir bir formatta muhafaza edilmez.<br><br>İletişim bilgilerinizin silinmesini veya anket yanıtlarınızın geri çekilmesini (veriler anonimleştirilmeden ve kümeli hale gelmeden önce) dilediğiniz zaman <strong>privacy@collectiveresearch.net</strong> adresine e-posta göndererek talep edebilirsiniz. Talebiniz makul bir süre içerisinde işleme alınacaktır.",
+        "section5Text": "İletişim bilgileriniz (erken erişim güncellemeleri için), siz silinmesini talep edene kadar veya ilgili çalışma sonuçlanana kadar (hangisi daha önce gerçekleşirse) saklanır. Anket yanıtları, raporunuzu oluşturmak ve toplu kıyaslamalara katkıda bulunmak için gerekli olan süre boyunca tutulur; veriler anonimleştirilip kümeli hale getirildikten sonra, bireysel yanıtlar tanımlanabilir bir formatta muhafaza edilmez.<br><br>İletişim bilgilerinizin silinmesini veya anket yanıtlarınızın geri çekilmesini (veriler anonimleştirilmeden ve kümeli hale gelmeden önce) dilediğiniz zaman <strong>privacy@collectiveresearchs.com</strong> adresine e-posta göndererek talep edebilirsiniz. Talebiniz makul bir süre içerisinde işleme alınacaktır.",
         "section6Title": "6. Haklarınız",
-        "section6Text": "Bulunduğunuz bölgenin yasal düzenlemelerine bağlı olarak; hakkınızda tuttuğumuz bilgilere erişme, bunları düzeltme veya silme, ayrıca verilerinizin belirli kullanımlarına itiraz etme veya bunları sınırlandırma hakkına sahip olabilirsiniz. Bu haklarınızı kullanmak için <strong>privacy@collectiveresearch.net</strong> adresi üzerinden bizimle iletişime geçebilirsiniz.",
+        "section6Text": "Bulunduğunuz bölgenin yasal düzenlemelerine bağlı olarak; hakkınızda tuttuğumuz bilgilere erişme, bunları düzeltme veya silme, ayrıca verilerinizin belirli kullanımlarına itiraz etme veya bunları sınırlandırma hakkına sahip olabilirsiniz. Bu haklarınızı kullanmak için <strong>privacy@collectiveresearchs.com</strong> adresi üzerinden bizimle iletişime geçebilirsiniz.",
         "section7Title": "7. Politikadaki Değişiklikler",
         "section7Text": "Collective Research geliştikçe - ve özellikle ilk anketimiz katılımcılara açılmadan önce - bu politika güncellenebilir. En son güncelleme tarihini bu sayfanın üst kısmında belirteceğiz.",
         "section8Title": "8. İletişim",
-        "section8Text": "Bu politika veya verilerinizin nasıl işlendiği ile ilgili sorularınızı <strong>privacy@collectiveresearch.net</strong> adresine iletebilirsiniz.",
+        "section8Text": "Bu politika veya verilerinizin nasıl işlendiği ile ilgili sorularınızı <strong>privacy@collectiveresearchs.com</strong> adresine iletebilirsiniz.",
         "noteText": "Bu sayfa, veri işleme yaklaşımımızı sade bir dille açıklamaktadır. Erken erişim aşamasında şeffaflık sağlamak amacıyla sunulmuş olup, resmi bir hukuki danışmanlık yerine geçmez. Anket katılımcılara açılmadan önce nihai politika, yetkin bir hukuk profesyoneli tarafından incelenecektir."
     },
     "support": {
@@ -242,7 +241,7 @@
         "faq2Q": "Collective Research'ün arkasında kim var?",
         "faq2A": "Collective Research, kıyaslama kalitesindeki araştırmaları küçük ve orta ölçekli kurumların da erişimine sunmak amacıyla kurulmuş bağımsız bir araştırma girişimidir. Yalnızca yüksek danışmanlık bütçesine sahip olanların değil, her şirketin mevcut durumuna ilişkin net ve dürüst bir perspektife sahip olması gerektiği ilkesiyle hareket ediyoruz.",
         "faq3Q": "Anketi tamamlamak ne kadar sürer?",
-        "faq3A": "Dijital Olgunluk anketini tamamlamak yaklaşık 30 dakika sürmektedir. Ön araştırma yapmanızı veya şirket kayıtlarını incelemenizi gerektirmeyecek şekilde, kurumunuz hakkındaki mevcut bilginizle kolayca yanıtlayabileceğiniz şekilde tasarlanmıştır.",
+        "faq3A": "Dijital Olgunluk anketini tamamlamak yaklaşık 10–15 dakika sürmektedir. Ön araştırma yapmanızı veya şirket kayıtlarını incelemenizi gerektirmeyecek şekilde, kurumunuz hakkındaki mevcut bilginizle kolayca yanıtlayabileceğiniz şekilde tasarlanmıştır.",
         "faq4Q": "Bireysel yanıtlarım paylaşılacak mı?",
         "faq4A": "Hayır. Bireysel anket yanıtlarınız, diğer katılımcılar dahil olmak üzere hiçbir üçüncü tarafla paylaşılmaz. Raporlarda yalnızca anonimleştirilmiş ve kümelenmiş istatistikler (ör. \"sektörünüzdeki şirketlerin ortalaması\") yer alır. Spesifik yanıtlarınız, sadece size özel özet raporu oluşturmak ve genel kıyaslama verilerine katkı sağlamak amacıyla kullanılır.",
         "faq5Q": "Anketle ilgili geri bildirimde bulunmak istersem ne yapmalıyım?",
@@ -280,7 +279,7 @@
         "text17": "Henüz yeterli katılım sağlanmadıysa kıyaslama verileri ne kadar anlamlıdır?\n              <span class=\"faq-icon\" aria-hidden=\"true\">+</span>",
         "text18": "Bu çok haklı bir endişedir ve bu konuda tamamen şeffafız. Çalışmanın ilk aşamalarında, sonuçlarınıza bağlam kazandırmak için gerçek katılımcı verilerini dikkatle araştırılmış ikincil verilerle destekliyoruz. Katılımcı sayısı arttıkça bu tahminlerin yerini gerçek akran kıyaslamaları alır. Tam olarak kiminle kıyaslandığınızı her zaman bilebilmeniz için tüm raporlarda örneklem boyutlarını açıkça belirtiyoruz.",
         "text19": "Anketi tamamlamak ne kadar sürer?\n              <span class=\"faq-icon\" aria-hidden=\"true\">+</span>",
-        "text20": "Çoğu katılımcı için yaklaşık 30 dakika sürer. Sorular uzun denemeler gerektirmez; çoktan seçmeli veya kısa ölçekli yanıtlardan oluşur. Anketi tek seferde tamamlayabilir veya ihtiyaç halinde kaydederek daha sonra devam edebilirsiniz.",
+        "text20": "Çoğu katılımcı için yaklaşık 10 ila 15 dakika sürer. Sorular uzun denemeler gerektirmez; çoktan seçmeli veya kısa ölçekli yanıtlardan oluşur. Anketi tek seferde tamamlayabilir veya ihtiyaç halinde kaydederek daha sonra devam edebilirsiniz.",
         "text21": "Katılımımın değer yaratması için rapor satın almam zorunlu mu?\n              <span class=\"faq-icon\" aria-hidden=\"true\">+</span>",
         "text22": "Hayır. Anketi tamamlayan her katılımcı, hemen ardından ücretsiz bir Dijital Olgunluk Özeti alır. Bu özet, tüm boyutlardaki skorlarınızı ve konumunuzu sade bir dille özetler. Ücretli raporlar ise sektör ve şirket ölçeğine göre akran kıyaslaması ekler ve Premium seviyesinde size özel öneriler sunar. Ancak ücretsiz özet rapor tek başına mükemmel bir başlangıç noktasıdır.",
         "text23": "Şirketimizin birden fazla lokasyonu, birimi veya iş kolu varsa ne yapmalıyız?\n              <span class=\"faq-icon\" aria-hidden=\"true\">+</span>",
@@ -292,7 +291,7 @@
         "text29": "Çalışma kapandıktan sonra verilerime ne olacak?\n              <span class=\"faq-icon\" aria-hidden=\"true\">+</span>",
         "text30": "Gelecekteki çalışmalar için tutmamızı talep etmediğiniz sürece, çalışma kapandığında iletişim bilgileriniz silinir. Anket yanıtlarınız ise, şirketinizin kimliğini açık etmeyecek şekilde, süregelen kıyaslama verilerine katkıda bulunmak üzere anonimleştirilmiş ve birleştirilmiş formda muhafaza edilir. Anonimleştirme adımından önce dilediğiniz zaman bize e-posta göndererek tanımlanabilir verilerinizin silinmesini talep edebilirsiniz.",
         "text31": "Gönderim yaptıktan sonra katılımımı iptal edebilir miyim?\n              <span class=\"faq-icon\" aria-hidden=\"true\">+</span>",
-        "text32": "Evet, yanıtlarınız anonimleştirilip toplu veri setine dahil edilene kadar iptal edebilirsiniz. Bu adım gerçekleştiğinde, diğer katılımcılar için oluşturulan kıyaslama verilerinin bütünlüğünü bozmadan katkınızı veri setinden çıkarmak teknik olarak imkansız hale gelir. Her çalışma için anonimleştirme takvimini sizlerle paylaşacağız. İptal talebi için privacy@collectiveresearch.net adresine e-posta gönderebilirsiniz.",
+        "text32": "Evet, yanıtlarınız anonimleştirilip toplu veri setine dahil edilene kadar iptal edebilirsiniz. Bu adım gerçekleştiğinde, diğer katılımcılar için oluşturulan kıyaslama verilerinin bütünlüğünü bozmadan katkınızı veri setinden çıkarmak teknik olarak imkansız hale gelir. Her çalışma için anonimleştirme takvimini sizlerle paylaşacağız. İptal talebi için privacy@collectiveresearchs.com adresine e-posta gönderebilirsiniz.",
         "text33": "Anket ne zaman başlayacak?\n              <span class=\"faq-icon\" aria-hidden=\"true\">+</span>",
         "text34": "Şu anda erken erişim listesini oluşturuyoruz. Kıyaslama verilerinin ilk günden itibaren anlamlı olmasını sağlayacak yeterli şirket sayısına ulaştığımızda lansman tarihini duyuracağız. Erken erişime kaydolmak tamamen ücretsizdir ve herhangi bir katılım taahhüdü gerektirmez. Anket lansmanı hakkında güncellemeler ve profilinize uygun sektörel içgörüler alırsınız.",
         "text35": "Bize Ulaşın",
@@ -385,9 +384,9 @@
         "text8": "Erken erişim bilgilendirmeleri için toplanan iletişim bilgileri, silinmesini talep ettiğiniz tarihe veya ilgili araştırmanın tamamlanmasına kadar (hangisi daha önce gerçekleşirse) saklanmaktadır. Anket yanıtları ise raporunuzun oluşturulması ve genel kıyaslama modellerine katkı sağlaması için gereken süre boyunca muhafaza edilir; anonimleştirilip konsolide edildikten sonra, bireysel yanıtlar hiçbir şekilde tanımlanabilir bir formatta tutulmaz.",
         "text9": "Collective Research faaliyet alanını ve hizmetlerini geliştirdikçe, bu gizlilik politikası güncellenebilir. En güncel revizyon tarihi, her zaman bu sayfanın en üst kısmında belirtilecektir."
     },
-    
-    
-    
+    "termsPage": {},
+    "cookiePage": {},
+    "cookiesPage": {},
     "notFound": {
         "text1": "Sayfa bulunamadı",
         "text2": "Aradığınız içeriğe şu anda ulaşılamamaktadır."

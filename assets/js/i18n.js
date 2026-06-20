@@ -1,15 +1,15 @@
-﻿// Multi-language support for Collective Research
+// Multi-language support for Collective Research
 window.I18n = function() {
   this.currentLang = 'en';
   this.strings = {};
   this.supportedLanguages = ['en', 'tr', 'de', 'fr', 'it', 'es'];
   this.languageNames = {
     'en': 'English',
-    'tr': 'TÃ¼rkÃ§e',
+    'tr': 'Türkçe',
     'de': 'Deutsch',
-    'fr': 'FranÃ§ais',
+    'fr': 'Français',
     'it': 'Italiano',
-    'es': 'EspaÃ±ol'
+    'es': 'Español'
   };
   this.rtlLanguages = ['ar', 'he', 'fa'];
   this.init = function(translations) {
