@@ -1,4 +1,4 @@
-﻿{
+{
     "common": {
         "appName": "Collective Research",
         "tagline": "Shared strength. Sharper insight. Smarter strategy.",
@@ -385,12 +385,11 @@
         "text8": "Contact details (for early access updates) are kept until you ask us to remove them, or until the related study concludes, whichever is sooner. Survey responses are kept for as long as needed to generate your report and contribute to aggregate benchmarks; once anonymized and aggregated, individual responses are not retained in identifiable form.",
         "text9": "As Collective Research develops, this policy may be updated. We'll note the date of the latest update at the top of this page."
     },
-    
-    
-    
+    "termsPage": {},
+    "cookiePage": {},
+    "cookiesPage": {},
     "notFound": {
         "text1": "Page not found",
         "text2": "We couldn't find what you're looking for."
     }
 }
-
