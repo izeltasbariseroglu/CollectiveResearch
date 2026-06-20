@@ -63,7 +63,7 @@
     + 'Your data is never shared individually, only used in aggregate, anonymized form for benchmarking.</span>'
     + ' &nbsp;&middot;&nbsp; <a href="privacy.html" data-i18n="nav.privacy">Privacy policy</a>'
     + ' &nbsp;&middot;&nbsp; <a href="terms.html" data-i18n="nav.terms">Terms of service</a>'
-    + ' &nbsp;&middot;&nbsp; <a href="cookie.html" data-i18n="nav.cookie">Cookie policy</a></p>'
+    + ' &nbsp;&middot;&nbsp; <a href="cookies.html" data-i18n="nav.cookie">Cookie policy</a></p>'
     + '</div></footer>';
 
   // Inject into .page

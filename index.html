@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Collective Research — How does your company's digital maturity compare?</title>
+<title>Collective Research â€” How does your company's digital maturity compare?</title>
 <meta name="description" content="Collective Research is running a confidential benchmark study on digital transformation. Take a 30-minute survey and get a free, personalized Digital Maturity Snapshot in return.">
 <meta property="og:title" content="How does your company's digital maturity compare to your industry?">
 <meta property="og:description" content="Take a short confidential survey and get a free Digital Maturity Snapshot. See how your organization compares to peers in your sector.">
@@ -25,6 +25,20 @@
   gtag('js', new Date());
 
   gtag('config', 'G-B1EGSNQBL9');
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Collective Research",
+  "url": "https://collectiveresearch.net/",
+  "logo": "https://collectiveresearch.net/assets/img/og-image.svg",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "email": "hello@collectiveresearch.net",
+    "contactType": "customer support"
+  }
+}
 </script>
 </head>
 <body>
@@ -134,17 +148,18 @@
   var formView = document.getElementById('modal-form-view');
   var successView = document.getElementById('modal-success-view');
   var detailsForm = document.getElementById('details-form');
-  function openModal() { overlay.classList.add('open'); overlay.setAttribute('aria-hidden','false'); document.body.style.overflow='hidden'; }
-  function closeModal() { overlay.classList.remove('open'); overlay.setAttribute('aria-hidden','true'); document.body.style.overflow=''; }
+  function openModal() { overlay.classList.add('open'); overlay.setAttribute('aria-hidden','false'); document.body.style.overflow='hidden'; document.querySelector('.page-wrapper').inert = true; document.getElementById('org-name').focus(); }
+  function closeModal() { overlay.classList.remove('open'); overlay.setAttribute('aria-hidden','true'); document.body.style.overflow=''; document.querySelector('.page-wrapper').inert = false; }
   ctaForm.addEventListener('submit', function(e) { e.preventDefault(); openModal(); });
   document.getElementById('modal-cancel').addEventListener('click', closeModal);
   overlay.addEventListener('click', function(e) { if(e.target===overlay) closeModal(); });
   document.addEventListener('keydown', function(e) { if(e.key==='Escape' && overlay.classList.contains('open')) closeModal(); });
-  detailsForm.addEventListener('submit', function(e) { e.preventDefault(); formView.style.display='none'; successView.style.display='block'; });
+  detailsForm.addEventListener('submit', function(e) { if(!detailsForm.checkValidity()){ e.preventDefault(); detailsForm.classList.add('submitted'); detailsForm.querySelectorAll(':invalid').forEach(el => el.setAttribute('aria-invalid', 'true')); return; } e.preventDefault(); formView.style.display='none'; successView.style.display='block'; document.getElementById('modal-close').focus(); });
   document.getElementById('modal-close').addEventListener('click', closeModal);
 </script>
 </body>
 </html>
+
 
 
 

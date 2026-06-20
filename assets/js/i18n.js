@@ -1,15 +1,15 @@
-// Multi-language support for Collective Research
+﻿// Multi-language support for Collective Research
 window.I18n = function() {
   this.currentLang = 'en';
   this.strings = {};
   this.supportedLanguages = ['en', 'tr', 'de', 'fr', 'it', 'es'];
   this.languageNames = {
     'en': 'English',
-    'tr': 'Türkçe',
+    'tr': 'TÃ¼rkÃ§e',
     'de': 'Deutsch',
-    'fr': 'Français',
+    'fr': 'FranÃ§ais',
     'it': 'Italiano',
-    'es': 'Español'
+    'es': 'EspaÃ±ol'
   };
   this.rtlLanguages = ['ar', 'he', 'fa'];
   this.init = function(translations) {
@@ -99,7 +99,7 @@ window.I18n = function() {
       if (existing) existing.remove();
       
       const switcher = document.createElement('div');
-      switcher.className = 'language-switcher custom-select';
+      switcher.className = 'language-switcher custom-select'; switcher.setAttribute('role', 'combobox'); switcher.setAttribute('aria-expanded', 'false'); switcher.setAttribute('aria-haspopup', 'listbox'); switcher.tabIndex = 0;
       
       const currentFlag = this.getFlagUrl(this.currentLang);
       
@@ -108,16 +108,15 @@ window.I18n = function() {
       selectedDisplay.innerHTML = '<img src="' + currentFlag + '" class="flag-icon" alt="flag"> <span class="lang-text">' + this.currentLang.toUpperCase() + '</span>';
       
       const optionsContainer = document.createElement('div');
-      optionsContainer.className = 'select-items select-hide';
+      optionsContainer.className = 'select-items select-hide'; optionsContainer.setAttribute('role', 'listbox');
       
       this.supportedLanguages.forEach(lang => {
         const option = document.createElement('div');
-        option.className = 'lang-option';
-        if (lang === this.currentLang) option.classList.add('active');
+        option.className = 'lang-option'; option.setAttribute('role', 'option');
+        if (lang === this.currentLang) option.classList.add('active'); option.setAttribute('aria-selected', 'true');
         option.innerHTML = '<img src="' + this.getFlagUrl(lang) + '" class="flag-icon" alt="flag"> <span>' + this.languageNames[lang] + '</span>';
         option.addEventListener('click', () => {
-          this.switchLanguage(lang);
-        });
+          this.switchLanguage(lang); }); option.tabIndex = -1; if(lang !== this.currentLang) { option.setAttribute('aria-selected', 'false'); }
         optionsContainer.appendChild(option);
       });
       
@@ -191,6 +190,7 @@ window.I18n = function() {
 
 // Initialize global instance
 window.i18n = new window.I18n();
+
 
 
 
