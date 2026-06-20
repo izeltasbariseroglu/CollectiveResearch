@@ -50,7 +50,7 @@ Collective Research, bağımsız ve tarafsız bir araştırma girişimidir. Şir
 ### Logo Açıklaması
 
 **Sembol:** Geometrik bir "ağ düğümü" tasarımı
-- **Temel Şekil:** Beşgen (5 noktası = 5 dil/konu/paydaş)
+- **Temel Şekil:** Beşgen (5 noktası = 6 dil/konu/paydaş)
 - **İç Yapı:** Merkezi bir düğüm (mor, #7F77DD) 5 çevre düğümüne (turkuaz tonları) bağlı
 - **Bağlantılar:** İnce çizgiler (mor #AFA9EC), veri akışı/bağlantı görselleştirir
 
@@ -199,7 +199,7 @@ Fallback:     -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Ar
 **Neden Inter?**
 - Geometrik ve açık (danışman güveni)
 - Mükemmel web okunabilirliği (16px)
-- Uluslararası karakterler tamamen desteklenir (5 dil)
+- Uluslararası karakterler tamamen desteklenir (6 dil)
 - Değişken font (gelecek ölçekleme için hazır)
 
 ### Tipografi Ölçeği
@@ -795,7 +795,7 @@ collective-research/
 ├── 404.html                (Hata sayfası)
 ├── sample-report.html      (Örnek rapor)
 ├── styles.css              (Tüm stilleri içerir)
-├── i18n.js                 (5 dil yöneticisi)
+├── i18n.js                 (6 dil yöneticisi)
 ├── favicon.svg             (24×24 logo)
 ├── og-image.svg            (1200×630 sosyal paylaş)
 ├── en.json                 (İngilizce çeviriler)
@@ -812,7 +812,7 @@ collective-research/
 
 | Versiyon | Tarih | Değişiklikler |
 |----------|-------|----------------|
-| **2.0** | 17 Haz 2026 | Tam 5 dilli sistem, CSS revizyonu, erişilebilirlik AA |
+| **2.0** | 17 Haz 2026 | Tam 6 dilli sistem, CSS revizyonu, erişilebilirlik AA |
 | **1.0** | 1 Nis 2026 | İlk marka rehberi, İngilizce + Türkçe |
 
 ---

@@ -143,7 +143,7 @@ Mobile  (640px):  1 column grid
 
 - [ ] GA4 ID güncelle (index.html ~37)
 - [ ] n8n webhooks ekle (form handlers)
-- [ ] JSON dosyaları yüklü (5 dil)
+- [ ] JSON dosyaları yüklü (6 dil)
 - [ ] Logo/SVG: absolute URL
 - [ ] CSS: min.css veya inline
 - [ ] i18n.js: minified
@@ -170,7 +170,7 @@ Slowest: 0.7s (hero fade stagger)
 ```
 7 HTML  | index, how-it-works, pricing, privacy, support, 404, sample
 1 CSS   | styles.css (13.6 KB, tüm mobile breakpoints)
-1 JS    | i18n.js (2.4 KB, 5 dil yöneticisi)
+1 JS    | i18n.js (2.4 KB, 6 dil yöneticisi)
 5 JSON  | en/tr/de/fr/it.json (~17 KB her biri)
 2 SVG   | favicon.svg, og-image.svg
 ```
@@ -180,8 +180,7 @@ Slowest: 0.7s (hero fade stagger)
 ## 📧 İletişim & Domain Kuralları
 
 - **Ana Domain:** `collectiveresearch.net` (Web sitesi yayını)
-- **Email Domain:** `collectiveresearchs.com` (İletişim ve mailler)
-> **Not:** Sonunda 's' harfi olan `collectiveresearchs.com` domaini kasıtlı olarak alınmış olup, güvenlik ve izolasyon sağlamak adına tüm email trafiği bu domaine bağlanmıştır. Denetimlerde bunun bir "yazım hatası" (typo) olarak işaretlenmemesi gerekir.
+- **Email Domain:** `collectiveresearch.net domaini tüm frontend maillerinde kullanılır. coresearchs.com outreach içindir.
 
 ---
 
