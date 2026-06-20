@@ -1,6 +1,6 @@
 {
   "common": {
-    "appName": "Investigación Colectiva",
+    "appName": "Collective Research",
     "tagline": "Fortaleza compartida. Perspicacia más clara. Estrategia más inteligente.",
     "privacyFooter": "Investigación Colectiva es una iniciativa de investigación independiente. Sus datos nunca se comparten individualmente, solo se utilizan de forma agregada y anónima para realizar evaluaciones comparativas.",
     "loading": "Cargando...",
@@ -384,9 +384,9 @@
     "text8": "Los datos de contacto (para actualizaciones de acceso temprano) se conservan hasta que usted nos solicite que los eliminemos o hasta que concluya el estudio relacionado, lo que ocurra primero. Las respuestas de la encuesta se conservan durante el tiempo necesario para generar su informe y contribuir a los puntos de referencia agregados; Una vez anonimizadas y agregadas, las respuestas individuales no se conservan de forma identificable.",
     "text9": "A medida que se desarrolle la Investigación Colectiva, esta política podrá actualizarse. Anotaremos la fecha de la última actualización en la parte superior de esta página."
   },
-  "termsPage": {},
-  "cookiePage": {},
-  "cookiesPage": {},
+  
+  
+  
   "notFound": {
     "text1": "Página no encontrada",
     "text2": "No pudimos encontrar lo que estás buscando."
