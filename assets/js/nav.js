@@ -122,7 +122,7 @@
     initializeI18n();
   } else {
     var i18nScript = document.createElement('script');
-    i18nScript.src = 'assets/js/i18n.js';
+    i18nScript.src = 'assets/js/i18n.js?v=2';
     i18nScript.onload = initializeI18n;
     document.head.appendChild(i18nScript);
   }
