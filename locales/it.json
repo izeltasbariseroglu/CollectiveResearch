@@ -371,7 +371,13 @@
         "text41": "Le organizzazioni peer con performance superiori nel Capitale Umano (3.0-3.1) privilegiano tipicamente micro-sessioni continuative di formazione digitale rispetto a interventi formativi estemporanei o verticali.",
         "text42": "L'Esperienza del Cliente come benchmark interno",
         "text43": "Acme vanta un posizionamento di eccellenza in questa area (8.2/10). Le best practice operative e metodologiche alla base di questo successo possono costituire un valido modello interno per innalzare le performance dei processi meno maturi.",
-        "text44": "Collective Research è un'iniziativa di ricerca indipendente. I vostri dati non vengono mai condivisi singolarmente, bensì utilizzati esclusivamente in forma aggregata e anonimizzata a fini di benchmarking."
+        "text44": "Collective Research è un'iniziativa di ricerca indipendente. I vostri dati non vengono mai condivisi singolarmente, bensì utilizzati esclusivamente in forma aggregata e anonimizzata a fini di benchmarking.",
+        "disclaimer": "Solo dati di esempio. Tutti i punteggi, i nomi delle aziende, le dimensioni dei campioni e le cifre in questa pagina sono illustrativi e non riflettono alcuno studio o azienda reale.",
+        "scoreNote": "Il punteggio complessivo di maturità digitale di Acme Manufacturing, leggermente superiore alla media di 3,2 di tutti i partecipanti.",
+        "legendYourScore": "Il tuo punteggio",
+        "legendAllAvg": "Media di tutti i partecipanti (N=47)",
+        "legendMfgAvg": "Media del settore manifatturiero (N=9)",
+        "legendEmpAvg": "Media per 51-200 dipendenti (N=14)"
     },
     "privacyPage": {
         "text1": "Ultimo aggiornamento: Giugno 2026",

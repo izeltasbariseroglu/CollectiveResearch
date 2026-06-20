@@ -371,7 +371,13 @@
         "text41": "İnsan Kaynağı ve Yetenek alanında daha yüksek skor alan (3.0-3.1) benzer şirketler, tek seferlik eğitim etkinlikleri yerine kısa ve düzenli dijital beceri oturumları düzenlemektedir.",
         "text42": "Müşteri Deneyimini iç örnek olarak kullanın",
         "text43": "Acme bu alanda ortalamanın oldukça üzerinde bir skor elde etmiştir (8.2/10). Bu gücün arkasındaki uygulamalar, diğer alanların iyileştirilmesinde faydalı bir iç referans noktası olabilir.",
-        "text44": "Collective Research bağımsız bir araştırma girişimidir. Verileriniz asla bireysel olarak paylaşılmaz, yalnızca kıyaslama amacıyla toplu ve anonimleştirilmiş formatta kullanılır."
+        "text44": "Collective Research bağımsız bir araştırma girişimidir. Verileriniz asla bireysel olarak paylaşılmaz, yalnızca kıyaslama amacıyla toplu ve anonimleştirilmiş formatta kullanılır.",
+        "disclaimer": "Sadece örnek veriler. Bu sayfadaki tüm skorlar, şirket isimleri, örneklem büyüklükleri ve rakamlar temsilidir ve gerçek bir çalışmayı veya şirketi yansıtmaz.",
+        "scoreNote": "Acme Üretim A.Ş.'nin genel Dijital Olgunluk skoru, tüm katılımcıların ortalaması olan 3.2'nin biraz üzerindedir.",
+        "legendYourScore": "Sizin skorunuz",
+        "legendAllAvg": "Tüm katılımcıların ortalaması (N=47)",
+        "legendMfgAvg": "Üretim sektörü ortalaması (N=9)",
+        "legendEmpAvg": "51-200 çalışan ortalaması (N=14)"
     },
     "privacyPage": {
         "text1": "Son güncelleme: Haziran 2026",

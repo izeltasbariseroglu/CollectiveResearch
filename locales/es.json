@@ -371,7 +371,13 @@
         "text41": "Comparar a las empresas que obtuvieron puntuaciones más altas en People & Talent (3.0-3.1) suele impartir sesiones breves y periódicas sobre habilidades digitales en lugar de eventos de formación puntuales.",
         "text42": "Utilice la experiencia del cliente como ejemplo interno.",
         "text43": "Acme obtiene aquí una puntuación muy por encima del promedio (8,2/10). Las prácticas detrás de esta fortaleza pueden ser un punto de referencia interno útil para mejorar otras áreas.",
-        "text44": "Investigación Colectiva es una iniciativa de investigación independiente. Sus datos nunca se comparten individualmente, solo se utilizan de forma agregada y anónima para realizar evaluaciones comparativas."
+        "text44": "Investigación Colectiva es una iniciativa de investigación independiente. Sus datos nunca se comparten individualmente, solo se utilizan de forma agregada y anónima para realizar evaluaciones comparativas.",
+        "disclaimer": "Solo datos de muestra. Todas las puntuaciones, nombres de empresas, tamaños de muestra y cifras en esta página son ilustrativos y no reflejan ningún estudio o empresa real.",
+        "scoreNote": "La puntuación general de madurez digital de Acme Manufacturing, ligeramente por encima del promedio de 3.2 de todos los participantes.",
+        "legendYourScore": "Tu puntuación",
+        "legendAllAvg": "Promedio de todos los participantes (N=47)",
+        "legendMfgAvg": "Promedio del sector manufacturero (N=9)",
+        "legendEmpAvg": "Promedio de 51-200 empleados (N=14)"
     },
     "privacyPage": {
         "text1": "Última actualización: junio de 2026",

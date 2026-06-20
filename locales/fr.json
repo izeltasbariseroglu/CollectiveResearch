@@ -371,7 +371,13 @@
         "text41": "Les entreprises du même secteur affichant de meilleurs scores en Humains & Talents (3.0-3.1) déploient fréquemment des sessions courtes et régulières de montée en compétences numériques plutôt que des formations ponctuelles de grande ampleur.",
         "text42": "Faire de l'Expérience Client une référence interne",
         "text43": "Acme surperforme la moyenne sur cette dimension (8.2/10). Les pratiques qui sous-tendent cette réussite peuvent constituer un cas d'usage interne pertinent pour optimiser les autres pôles.",
-        "text44": "Collective Research est une initiative de recherche indépendante. Vos données ne sont jamais partagées individuellement, elles sont exclusivement exploitées sous forme agrégée et anonymisée à des fins de benchmarking."
+        "text44": "Collective Research est une initiative de recherche indépendante. Vos données ne sont jamais partagées individuellement, elles sont exclusivement exploitées sous forme agrégée et anonymisée à des fins de benchmarking.",
+        "disclaimer": "Exemples de données uniquement. Tous les scores, noms d'entreprises, tailles d'échantillons et chiffres sur cette page sont illustratifs et ne reflètent aucune étude ou entreprise réelle.",
+        "scoreNote": "Le score global de maturité numérique d'Acme Manufacturing, légèrement supérieur à la moyenne de 3,2 de tous les participants.",
+        "legendYourScore": "Votre score",
+        "legendAllAvg": "Moyenne de tous les participants (N=47)",
+        "legendMfgAvg": "Moyenne du secteur manufacturier (N=9)",
+        "legendEmpAvg": "Moyenne des 51-200 employés (N=14)"
     },
     "privacyPage": {
         "text1": "Dernière mise à jour : Juin 2026",

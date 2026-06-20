@@ -371,7 +371,13 @@
         "text41": "Peer-Unternehmen mit überdurchschnittlichen Scores im Bereich Personal & Talent (3.0-3.1) setzen mehrheitlich auf hochfrequente, kompakte Sessions zum digitalen Kompetenzaufbau anstelle isolierter, großvolumiger Trainingsinitiativen.",
         "text42": "Nutzung der Customer Experience als internes Best-Practice-Modell",
         "text43": "Acme performt in diesem Cluster signifikant über dem Durchschnitt (8.2/10). Die diesem Erfolg zugrunde liegenden Best Practices sollten als intern zu adaptierende Blueprint-Modelle für die Weiterentwicklung defizitärer Bereiche herangezogen werden.",
-        "text44": "Collective Research ist eine unabhängige Forschungsinitiative. Ihre Daten werden niemals individuell weitergegeben, die Nutzung erfolgt ausschließlich in aggregierter und anonymisierter Form für tiefgreifendes Benchmarking."
+        "text44": "Collective Research ist eine unabhängige Forschungsinitiative. Ihre Daten werden niemals individuell weitergegeben, die Nutzung erfolgt ausschließlich in aggregierter und anonymisierter Form für tiefgreifendes Benchmarking.",
+        "disclaimer": "Nur Beispieldaten. Alle Werte, Unternehmensnamen, Stichprobengrößen und Zahlen auf dieser Seite sind illustrativ und spiegeln keine echte Studie oder Firma wider.",
+        "scoreNote": "Die Gesamtbewertung der digitalen Reife von Acme Manufacturing liegt leicht über dem Durchschnitt aller Teilnehmer von 3,2.",
+        "legendYourScore": "Ihr Ergebnis",
+        "legendAllAvg": "Durchschnitt aller Teilnehmer (N=47)",
+        "legendMfgAvg": "Durchschnitt im verarbeitenden Gewerbe (N=9)",
+        "legendEmpAvg": "Durchschnitt 51-200 Mitarbeiter (N=14)"
     },
     "privacyPage": {
         "text1": "Letzte Aktualisierung: Juni 2026",

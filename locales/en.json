@@ -371,7 +371,13 @@
         "text41": "Peer companies that scored higher in People & Talent (3.0-3.1) commonly run short, regular digital-skills sessions rather than one-off training events.",
         "text42": "Use Customer Experience as an internal example",
         "text43": "Acme scores well above average here (8.2/10). The practices behind this strength may be a useful internal reference point for improving other areas.",
-        "text44": "Collective Research is an independent research initiative. Your data is never shared individually, only used in aggregate, anonymized form for benchmarking."
+        "text44": "Collective Research is an independent research initiative. Your data is never shared individually, only used in aggregate, anonymized form for benchmarking.",
+        "disclaimer": "Sample data only. All scores, company names, sample sizes and figures on this page are illustrative and do not reflect any real study or company.",
+        "scoreNote": "Acme Manufacturing's overall Digital Maturity score, slightly above the all-participant average of 3.2.",
+        "legendYourScore": "Your score",
+        "legendAllAvg": "All-participant average (N=47)",
+        "legendMfgAvg": "Manufacturing sector average (N=9)",
+        "legendEmpAvg": "51-200 employees average (N=14)"
     },
     "privacyPage": {
         "text1": "Last updated: June 2026",
