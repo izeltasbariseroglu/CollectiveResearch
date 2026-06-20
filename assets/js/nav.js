@@ -101,14 +101,16 @@
       fetch('locales/tr.json').then(function(r){ if(!r.ok) throw new Error(); return r.json(); }).catch(function(){ return {}; }),
       fetch('locales/de.json').then(function(r){ if(!r.ok) throw new Error(); return r.json(); }).catch(function(){ return {}; }),
       fetch('locales/fr.json').then(function(r){ if(!r.ok) throw new Error(); return r.json(); }).catch(function(){ return {}; }),
-      fetch('locales/it.json').then(function(r){ if(!r.ok) throw new Error(); return r.json(); }).catch(function(){ return {}; })
+      fetch('locales/it.json').then(function(r){ if(!r.ok) throw new Error(); return r.json(); }).catch(function(){ return {}; }),
+      fetch('locales/es.json').then(function(r){ if(!r.ok) throw new Error(); return r.json(); }).catch(function(){ return {}; })
     ]).then(function(results) {
       window.i18n.init({
         en: results[0],
         tr: results[1],
         de: results[2],
         fr: results[3],
-        it: results[4]
+        it: results[4],
+        es: results[5]
       });
     }).catch(function(err) {
       console.warn('i18n loading error:', err);

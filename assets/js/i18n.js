@@ -2,13 +2,14 @@
 window.I18n = function() {
   this.currentLang = 'en';
   this.strings = {};
-  this.supportedLanguages = ['en', 'tr', 'de', 'fr', 'it'];
+  this.supportedLanguages = ['en', 'tr', 'de', 'fr', 'it', 'es'];
   this.languageNames = {
     'en': 'English',
     'tr': 'Türkçe',
     'de': 'Deutsch',
     'fr': 'Français',
-    'it': 'Italiano'
+    'it': 'Italiano',
+    'es': 'Español'
   };
   this.rtlLanguages = ['ar', 'he', 'fa'];
   this.init = function(translations) {
@@ -144,7 +145,8 @@ window.I18n = function() {
         'tr': 'tr',
         'de': 'de',
         'fr': 'fr',
-        'it': 'it'
+        'it': 'it',
+        'es': 'es'
       };
       return 'https://flagcdn.com/w20/' + map[lang] + '.png';
     };
