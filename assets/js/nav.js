@@ -97,12 +97,12 @@
   function initializeI18n() {
     if (typeof window.i18n === 'undefined') return;
     Promise.all([
-      fetch('locales/en.json').then(function(r){ if(!r.ok) throw new Error(); return r.json(); }).catch(function(){ return {}; }),
-      fetch('locales/tr.json').then(function(r){ if(!r.ok) throw new Error(); return r.json(); }).catch(function(){ return {}; }),
-      fetch('locales/de.json').then(function(r){ if(!r.ok) throw new Error(); return r.json(); }).catch(function(){ return {}; }),
-      fetch('locales/fr.json').then(function(r){ if(!r.ok) throw new Error(); return r.json(); }).catch(function(){ return {}; }),
-      fetch('locales/it.json').then(function(r){ if(!r.ok) throw new Error(); return r.json(); }).catch(function(){ return {}; }),
-      fetch('locales/es.json').then(function(r){ if(!r.ok) throw new Error(); return r.json(); }).catch(function(){ return {}; })
+      fetch('locales/en.json?v=3').then(function(r){ if(!r.ok) throw new Error(); return r.json(); }).catch(function(){ return {}; }),
+      fetch('locales/tr.json?v=3').then(function(r){ if(!r.ok) throw new Error(); return r.json(); }).catch(function(){ return {}; }),
+      fetch('locales/de.json?v=3').then(function(r){ if(!r.ok) throw new Error(); return r.json(); }).catch(function(){ return {}; }),
+      fetch('locales/fr.json?v=3').then(function(r){ if(!r.ok) throw new Error(); return r.json(); }).catch(function(){ return {}; }),
+      fetch('locales/it.json?v=3').then(function(r){ if(!r.ok) throw new Error(); return r.json(); }).catch(function(){ return {}; }),
+      fetch('locales/es.json?v=3').then(function(r){ if(!r.ok) throw new Error(); return r.json(); }).catch(function(){ return {}; })
     ]).then(function(results) {
       window.i18n.init({
         en: results[0],
@@ -122,7 +122,7 @@
     initializeI18n();
   } else {
     var i18nScript = document.createElement('script');
-    i18nScript.src = 'assets/js/i18n.js?v=2';
+    i18nScript.src = 'assets/js/i18n.js?v=3';
     i18nScript.onload = initializeI18n;
     document.head.appendChild(i18nScript);
   }
